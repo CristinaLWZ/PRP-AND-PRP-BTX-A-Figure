@@ -1,0 +1,2433 @@
+"patient_id","group","metric_cn","metric_en","timepoint_cn","day","value"
+"EXP 001","Treatment","毛发密度","Hair density","基线",0,144.430836074919
+"EXP 001","Treatment","毛发密度","Hair density","30天",30,122.453589917395
+"EXP 001","Treatment","毛发密度","Hair density","90天",90,139.803424154047
+"EXP 001","Treatment","毛发密度","Hair density","180天",180,128.694340012858
+"EXP 001","Treatment","毛发直径","Hair shaft diameter","基线",0,59.5126211259116
+"EXP 001","Treatment","毛发直径","Hair shaft diameter","30天",30,60.7429271408166
+"EXP 001","Treatment","毛发直径","Hair shaft diameter","90天",90,70.4937759262602
+"EXP 001","Treatment","毛发直径","Hair shaft diameter","180天",180,69.9155417197916
+"EXP 001","Treatment","覆盖率","Coverage index","基线",0,0.87476903188315
+"EXP 001","Treatment","覆盖率","Coverage index","30天",30,1.39287168960517
+"EXP 001","Treatment","覆盖率","Coverage index","90天",90,2.39285856375201
+"EXP 001","Treatment","覆盖率","Coverage index","180天",180,2.1031256545654
+"EXP 001","Treatment","终毛比例","Terminal hair ratio","基线",0,29.0176177996196
+"EXP 001","Treatment","终毛比例","Terminal hair ratio","30天",30,33.2188385471833
+"EXP 001","Treatment","终毛比例","Terminal hair ratio","90天",90,41.0957400938703
+"EXP 001","Treatment","终毛比例","Terminal hair ratio","180天",180,42.3345272405432
+"EXP 001","Treatment","毳毛比例","Vellus hair ratio","基线",0,12.2686101999585
+"EXP 001","Treatment","毳毛比例","Vellus hair ratio","30天",30,12.8289196247922
+"EXP 001","Treatment","毳毛比例","Vellus hair ratio","90天",90,11.7379960129622
+"EXP 001","Treatment","毳毛比例","Vellus hair ratio","180天",180,10.3291192536084
+"EXP 001","Treatment","油脂分泌","Sebum secretion","基线",0,156.057393381387
+"EXP 001","Treatment","油脂分泌","Sebum secretion","30天",30,88.7233878765808
+"EXP 001","Treatment","油脂分泌","Sebum secretion","90天",90,87.261397674064
+"EXP 001","Treatment","油脂分泌","Sebum secretion","180天",180,115.157126032581
+"EXP 001","Treatment","头皮硬度","Scalp stiffness","基线",0,23.4862317206082
+"EXP 001","Treatment","头皮硬度","Scalp stiffness","30天",30,19.1713851886077
+"EXP 001","Treatment","头皮硬度","Scalp stiffness","90天",90,12.9164872645276
+"EXP 001","Treatment","头皮硬度","Scalp stiffness","180天",180,15.2795796128712
+"EXP 001","Treatment","头皮血流","Scalp blood flow","基线",0,179.685606027382
+"EXP 001","Treatment","头皮血流","Scalp blood flow","30天",30,278.331619398804
+"EXP 001","Treatment","头皮血流","Scalp blood flow","90天",90,381.321334584432
+"EXP 001","Treatment","头皮血流","Scalp blood flow","180天",180,341.512793998888
+"EXP 002","Treatment","毛发密度","Hair density","基线",0,97.2725151018381
+"EXP 002","Treatment","毛发密度","Hair density","30天",30,104.686975589573
+"EXP 002","Treatment","毛发密度","Hair density","90天",90,141.569907506664
+"EXP 002","Treatment","毛发密度","Hair density","180天",180,124.137671365523
+"EXP 002","Treatment","毛发直径","Hair shaft diameter","基线",0,54.2767395383308
+"EXP 002","Treatment","毛发直径","Hair shaft diameter","30天",30,58.5912815680533
+"EXP 002","Treatment","毛发直径","Hair shaft diameter","90天",90,64.5705498475037
+"EXP 002","Treatment","毛发直径","Hair shaft diameter","180天",180,67.2996106288842
+"EXP 002","Treatment","覆盖率","Coverage index","基线",0,0.752578140915349
+"EXP 002","Treatment","覆盖率","Coverage index","30天",30,1.3093458561505
+"EXP 002","Treatment","覆盖率","Coverage index","90天",90,2.01669949908126
+"EXP 002","Treatment","覆盖率","Coverage index","180天",180,2.00425028863908
+"EXP 002","Treatment","终毛比例","Terminal hair ratio","基线",0,36.9469869567277
+"EXP 002","Treatment","终毛比例","Terminal hair ratio","30天",30,36.9869274237916
+"EXP 002","Treatment","终毛比例","Terminal hair ratio","90天",90,46.552069704289
+"EXP 002","Treatment","终毛比例","Terminal hair ratio","180天",180,49.0462956578341
+"EXP 002","Treatment","毳毛比例","Vellus hair ratio","基线",0,10.4711882416904
+"EXP 002","Treatment","毳毛比例","Vellus hair ratio","30天",30,11.6893047160241
+"EXP 002","Treatment","毳毛比例","Vellus hair ratio","90天",90,10.9593782490249
+"EXP 002","Treatment","毳毛比例","Vellus hair ratio","180天",180,9.41070440281938
+"EXP 002","Treatment","油脂分泌","Sebum secretion","基线",0,147.643826858998
+"EXP 002","Treatment","油脂分泌","Sebum secretion","30天",30,102.411196292938
+"EXP 002","Treatment","油脂分泌","Sebum secretion","90天",90,113.319436459898
+"EXP 002","Treatment","油脂分泌","Sebum secretion","180天",180,152.006668600264
+"EXP 002","Treatment","头皮硬度","Scalp stiffness","基线",0,24.578507872885
+"EXP 002","Treatment","头皮硬度","Scalp stiffness","30天",30,21.8232746958902
+"EXP 002","Treatment","头皮硬度","Scalp stiffness","90天",90,18.0082628314712
+"EXP 002","Treatment","头皮硬度","Scalp stiffness","180天",180,20.3644015409128
+"EXP 002","Treatment","头皮血流","Scalp blood flow","基线",0,208.093130635708
+"EXP 002","Treatment","头皮血流","Scalp blood flow","30天",30,324.010324914487
+"EXP 002","Treatment","头皮血流","Scalp blood flow","90天",90,396.489475239743
+"EXP 002","Treatment","头皮血流","Scalp blood flow","180天",180,375.090102025979
+"EXP 003","Treatment","毛发密度","Hair density","基线",0,111.211443210751
+"EXP 003","Treatment","毛发密度","Hair density","30天",30,103.415388691767
+"EXP 003","Treatment","毛发密度","Hair density","90天",90,122.846359012121
+"EXP 003","Treatment","毛发密度","Hair density","180天",180,114.019587209494
+"EXP 003","Treatment","毛发直径","Hair shaft diameter","基线",0,44.4984003217522
+"EXP 003","Treatment","毛发直径","Hair shaft diameter","30天",30,54.4700006223782
+"EXP 003","Treatment","毛发直径","Hair shaft diameter","90天",90,53.688915282338
+"EXP 003","Treatment","毛发直径","Hair shaft diameter","180天",180,58.5578383116706
+"EXP 003","Treatment","覆盖率","Coverage index","基线",0,0.101959433384088
+"EXP 003","Treatment","覆盖率","Coverage index","30天",30,0.395428714979128
+"EXP 003","Treatment","覆盖率","Coverage index","90天",90,1.33127395626545
+"EXP 003","Treatment","覆盖率","Coverage index","180天",180,1.21512670948686
+"EXP 003","Treatment","终毛比例","Terminal hair ratio","基线",0,56.5730754875151
+"EXP 003","Treatment","终毛比例","Terminal hair ratio","30天",30,56.3411192454669
+"EXP 003","Treatment","终毛比例","Terminal hair ratio","90天",90,71.7612056908589
+"EXP 003","Treatment","终毛比例","Terminal hair ratio","180天",180,74.8931145249162
+"EXP 003","Treatment","毳毛比例","Vellus hair ratio","基线",0,8.58405909648362
+"EXP 003","Treatment","毳毛比例","Vellus hair ratio","30天",30,9.54807705524106
+"EXP 003","Treatment","毳毛比例","Vellus hair ratio","90天",90,8.84873077589511
+"EXP 003","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.22998383172824
+"EXP 003","Treatment","油脂分泌","Sebum secretion","基线",0,129.158247625807
+"EXP 003","Treatment","油脂分泌","Sebum secretion","30天",30,95.1945793272833
+"EXP 003","Treatment","油脂分泌","Sebum secretion","90天",90,95.1329132145876
+"EXP 003","Treatment","油脂分泌","Sebum secretion","180天",180,136.728792546976
+"EXP 003","Treatment","头皮硬度","Scalp stiffness","基线",0,21.1449819212613
+"EXP 003","Treatment","头皮硬度","Scalp stiffness","30天",30,18.7307271470448
+"EXP 003","Treatment","头皮硬度","Scalp stiffness","90天",90,16.2967412406678
+"EXP 003","Treatment","头皮硬度","Scalp stiffness","180天",180,18.0886666752049
+"EXP 003","Treatment","头皮血流","Scalp blood flow","基线",0,120.211985151096
+"EXP 003","Treatment","头皮血流","Scalp blood flow","30天",30,206.355078075593
+"EXP 003","Treatment","头皮血流","Scalp blood flow","90天",90,278.273511866495
+"EXP 003","Treatment","头皮血流","Scalp blood flow","180天",180,272.729830290042
+"EXP 004","Treatment","毛发密度","Hair density","基线",0,160.496194121585
+"EXP 004","Treatment","毛发密度","Hair density","30天",30,154.2547242598
+"EXP 004","Treatment","毛发密度","Hair density","90天",90,183.225688394335
+"EXP 004","Treatment","毛发密度","Hair density","180天",180,191.844399021582
+"EXP 004","Treatment","毛发直径","Hair shaft diameter","基线",0,58.1856781188638
+"EXP 004","Treatment","毛发直径","Hair shaft diameter","30天",30,61.1914788874807
+"EXP 004","Treatment","毛发直径","Hair shaft diameter","90天",90,70.7793873536554
+"EXP 004","Treatment","毛发直径","Hair shaft diameter","180天",180,67.6867240392413
+"EXP 004","Treatment","覆盖率","Coverage index","基线",0,0.497590896063107
+"EXP 004","Treatment","覆盖率","Coverage index","30天",30,0.949007681622209
+"EXP 004","Treatment","覆盖率","Coverage index","90天",90,1.87583536307903
+"EXP 004","Treatment","覆盖率","Coverage index","180天",180,1.59476769875144
+"EXP 004","Treatment","终毛比例","Terminal hair ratio","基线",0,46.6574133361278
+"EXP 004","Treatment","终毛比例","Terminal hair ratio","30天",30,48.500068524189
+"EXP 004","Treatment","终毛比例","Terminal hair ratio","90天",90,59.9063519366671
+"EXP 004","Treatment","终毛比例","Terminal hair ratio","180天",180,63.3888322401214
+"EXP 004","Treatment","毳毛比例","Vellus hair ratio","基线",0,33.7055781028422
+"EXP 004","Treatment","毳毛比例","Vellus hair ratio","30天",30,30.280744327172
+"EXP 004","Treatment","毳毛比例","Vellus hair ratio","90天",90,23.6631820575703
+"EXP 004","Treatment","毳毛比例","Vellus hair ratio","180天",180,18.8742196850151
+"EXP 004","Treatment","油脂分泌","Sebum secretion","基线",0,152.930302771584
+"EXP 004","Treatment","油脂分泌","Sebum secretion","30天",30,89.9894356419922
+"EXP 004","Treatment","油脂分泌","Sebum secretion","90天",90,92.3440289526167
+"EXP 004","Treatment","油脂分泌","Sebum secretion","180天",180,110.273179684754
+"EXP 004","Treatment","头皮硬度","Scalp stiffness","基线",0,11.6812985675237
+"EXP 004","Treatment","头皮硬度","Scalp stiffness","30天",30,12.9241920683304
+"EXP 004","Treatment","头皮硬度","Scalp stiffness","90天",90,3.87756681447019
+"EXP 004","Treatment","头皮硬度","Scalp stiffness","180天",180,6.76524742362786
+"EXP 004","Treatment","头皮血流","Scalp blood flow","基线",0,150.837654266915
+"EXP 004","Treatment","头皮血流","Scalp blood flow","30天",30,248.441296154772
+"EXP 004","Treatment","头皮血流","Scalp blood flow","90天",90,314.109090944544
+"EXP 004","Treatment","头皮血流","Scalp blood flow","180天",180,306.334114572633
+"EXP 005","Treatment","毛发密度","Hair density","基线",0,234.169985854628
+"EXP 005","Treatment","毛发密度","Hair density","30天",30,260.166212822921
+"EXP 005","Treatment","毛发密度","Hair density","90天",90,271.743771227686
+"EXP 005","Treatment","毛发密度","Hair density","180天",180,285.532407313093
+"EXP 005","Treatment","毛发直径","Hair shaft diameter","基线",0,26.4937394054054
+"EXP 005","Treatment","毛发直径","Hair shaft diameter","30天",30,32.2537025723982
+"EXP 005","Treatment","毛发直径","Hair shaft diameter","90天",90,26.9308730651269
+"EXP 005","Treatment","毛发直径","Hair shaft diameter","180天",180,43.3719461020094
+"EXP 005","Treatment","覆盖率","Coverage index","基线",0,0.255334751636894
+"EXP 005","Treatment","覆盖率","Coverage index","30天",30,0.786295790219417
+"EXP 005","Treatment","覆盖率","Coverage index","90天",90,1.70499652684225
+"EXP 005","Treatment","覆盖率","Coverage index","180天",180,1.68018571241958
+"EXP 005","Treatment","终毛比例","Terminal hair ratio","基线",0,55.7063018690761
+"EXP 005","Treatment","终毛比例","Terminal hair ratio","30天",30,52.2762598719372
+"EXP 005","Treatment","终毛比例","Terminal hair ratio","90天",90,64.7842192997183
+"EXP 005","Treatment","终毛比例","Terminal hair ratio","180天",180,65.4756087236425
+"EXP 005","Treatment","毳毛比例","Vellus hair ratio","基线",0,14.0347906512667
+"EXP 005","Treatment","毳毛比例","Vellus hair ratio","30天",30,14.1140022852951
+"EXP 005","Treatment","毳毛比例","Vellus hair ratio","90天",90,12.0590132739955
+"EXP 005","Treatment","毳毛比例","Vellus hair ratio","180天",180,10.5305353247667
+"EXP 005","Treatment","油脂分泌","Sebum secretion","基线",0,154.447481440625
+"EXP 005","Treatment","油脂分泌","Sebum secretion","30天",30,104.017218563719
+"EXP 005","Treatment","油脂分泌","Sebum secretion","90天",90,105.721913241858
+"EXP 005","Treatment","油脂分泌","Sebum secretion","180天",180,134.156765336176
+"EXP 005","Treatment","头皮硬度","Scalp stiffness","基线",0,34.0938497109456
+"EXP 005","Treatment","头皮硬度","Scalp stiffness","30天",30,23.6386149369283
+"EXP 005","Treatment","头皮硬度","Scalp stiffness","90天",90,20.9947313439313
+"EXP 005","Treatment","头皮硬度","Scalp stiffness","180天",180,21.5101867698825
+"EXP 005","Treatment","头皮血流","Scalp blood flow","基线",0,190.662249878368
+"EXP 005","Treatment","头皮血流","Scalp blood flow","30天",30,303.782315838356
+"EXP 005","Treatment","头皮血流","Scalp blood flow","90天",90,389.032553192327
+"EXP 005","Treatment","头皮血流","Scalp blood flow","180天",180,366.227061063154
+"EXP 006","Treatment","毛发密度","Hair density","基线",0,209.752834113519
+"EXP 006","Treatment","毛发密度","Hair density","30天",30,226.347381791086
+"EXP 006","Treatment","毛发密度","Hair density","90天",90,242.879096308523
+"EXP 006","Treatment","毛发密度","Hair density","180天",180,273.155533925142
+"EXP 006","Treatment","毛发直径","Hair shaft diameter","基线",0,50.5746986693565
+"EXP 006","Treatment","毛发直径","Hair shaft diameter","30天",30,48.8655952679099
+"EXP 006","Treatment","毛发直径","Hair shaft diameter","90天",90,57.0094584944423
+"EXP 006","Treatment","毛发直径","Hair shaft diameter","180天",180,61.7255802865949
+"EXP 006","Treatment","覆盖率","Coverage index","基线",0,0.414028374988707
+"EXP 006","Treatment","覆盖率","Coverage index","30天",30,0.91736127574024
+"EXP 006","Treatment","覆盖率","Coverage index","90天",90,1.93938061722903
+"EXP 006","Treatment","覆盖率","Coverage index","180天",180,1.45867410538444
+"EXP 006","Treatment","终毛比例","Terminal hair ratio","基线",0,44.5194179467226
+"EXP 006","Treatment","终毛比例","Terminal hair ratio","30天",30,45.1183107336423
+"EXP 006","Treatment","终毛比例","Terminal hair ratio","90天",90,55.86012761897
+"EXP 006","Treatment","终毛比例","Terminal hair ratio","180天",180,56.184516369191
+"EXP 006","Treatment","毳毛比例","Vellus hair ratio","基线",0,7.51234712201948
+"EXP 006","Treatment","毳毛比例","Vellus hair ratio","30天",30,10.0957563286823
+"EXP 006","Treatment","毳毛比例","Vellus hair ratio","90天",90,10.1137461245849
+"EXP 006","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.92232753081901
+"EXP 006","Treatment","油脂分泌","Sebum secretion","基线",0,162.660742074764
+"EXP 006","Treatment","油脂分泌","Sebum secretion","30天",30,120.778636607883
+"EXP 006","Treatment","油脂分泌","Sebum secretion","90天",90,125.49980632266
+"EXP 006","Treatment","油脂分泌","Sebum secretion","180天",180,171.975949295734
+"EXP 006","Treatment","头皮硬度","Scalp stiffness","基线",0,17.7070583626582
+"EXP 006","Treatment","头皮硬度","Scalp stiffness","30天",30,16.7917468942937
+"EXP 006","Treatment","头皮硬度","Scalp stiffness","90天",90,11.818270409812
+"EXP 006","Treatment","头皮硬度","Scalp stiffness","180天",180,13.2228015747761
+"EXP 006","Treatment","头皮血流","Scalp blood flow","基线",0,250.943313262199
+"EXP 006","Treatment","头皮血流","Scalp blood flow","30天",30,346.108200663785
+"EXP 006","Treatment","头皮血流","Scalp blood flow","90天",90,476.38306660858
+"EXP 006","Treatment","头皮血流","Scalp blood flow","180天",180,455.949372116846
+"EXP 007","Treatment","毛发密度","Hair density","基线",0,144.816623025984
+"EXP 007","Treatment","毛发密度","Hair density","30天",30,127.956472215568
+"EXP 007","Treatment","毛发密度","Hair density","90天",90,158.42014324281
+"EXP 007","Treatment","毛发密度","Hair density","180天",180,134.5323221693
+"EXP 007","Treatment","毛发直径","Hair shaft diameter","基线",0,38.4019702316319
+"EXP 007","Treatment","毛发直径","Hair shaft diameter","30天",30,44.7943744516273
+"EXP 007","Treatment","毛发直径","Hair shaft diameter","90天",90,46.7186810205392
+"EXP 007","Treatment","毛发直径","Hair shaft diameter","180天",180,51.4930664670836
+"EXP 007","Treatment","覆盖率","Coverage index","基线",0,0.50950002367628
+"EXP 007","Treatment","覆盖率","Coverage index","30天",30,0.0908350692350173
+"EXP 007","Treatment","覆盖率","Coverage index","90天",90,0.825806322938513
+"EXP 007","Treatment","覆盖率","Coverage index","180天",180,0.716497478825099
+"EXP 007","Treatment","终毛比例","Terminal hair ratio","基线",0,47.4475591521737
+"EXP 007","Treatment","终毛比例","Terminal hair ratio","30天",30,46.7000355217099
+"EXP 007","Treatment","终毛比例","Terminal hair ratio","90天",90,57.4884085498492
+"EXP 007","Treatment","终毛比例","Terminal hair ratio","180天",180,62.575027116012
+"EXP 007","Treatment","毳毛比例","Vellus hair ratio","基线",0,15.7417787308711
+"EXP 007","Treatment","毳毛比例","Vellus hair ratio","30天",30,14.4374212363437
+"EXP 007","Treatment","毳毛比例","Vellus hair ratio","90天",90,13.0273226187708
+"EXP 007","Treatment","毳毛比例","Vellus hair ratio","180天",180,12.6190302756989
+"EXP 007","Treatment","油脂分泌","Sebum secretion","基线",0,135.58681888398
+"EXP 007","Treatment","油脂分泌","Sebum secretion","30天",30,87.5091130120409
+"EXP 007","Treatment","油脂分泌","Sebum secretion","90天",90,91.8635471733828
+"EXP 007","Treatment","油脂分泌","Sebum secretion","180天",180,122.108415430195
+"EXP 007","Treatment","头皮硬度","Scalp stiffness","基线",0,17.8617317782021
+"EXP 007","Treatment","头皮硬度","Scalp stiffness","30天",30,14.4321774433625
+"EXP 007","Treatment","头皮硬度","Scalp stiffness","90天",90,6.28786821476466
+"EXP 007","Treatment","头皮硬度","Scalp stiffness","180天",180,9.80509588848225
+"EXP 007","Treatment","头皮血流","Scalp blood flow","基线",0,110.462101940826
+"EXP 007","Treatment","头皮血流","Scalp blood flow","30天",30,194.941051452924
+"EXP 007","Treatment","头皮血流","Scalp blood flow","90天",90,253.527238816697
+"EXP 007","Treatment","头皮血流","Scalp blood flow","180天",180,246.86724007704
+"EXP 008","Treatment","毛发密度","Hair density","基线",0,120.947237809823
+"EXP 008","Treatment","毛发密度","Hair density","30天",30,105.338369041632
+"EXP 008","Treatment","毛发密度","Hair density","90天",90,120.516264117757
+"EXP 008","Treatment","毛发密度","Hair density","180天",180,109.244901375918
+"EXP 008","Treatment","毛发直径","Hair shaft diameter","基线",0,43.315445802329
+"EXP 008","Treatment","毛发直径","Hair shaft diameter","30天",30,47.0352822498867
+"EXP 008","Treatment","毛发直径","Hair shaft diameter","90天",90,49.7767904686281
+"EXP 008","Treatment","毛发直径","Hair shaft diameter","180天",180,56.1392539743725
+"EXP 008","Treatment","覆盖率","Coverage index","基线",0,0.471941198401441
+"EXP 008","Treatment","覆盖率","Coverage index","30天",30,0.747913615064359
+"EXP 008","Treatment","覆盖率","Coverage index","90天",90,1.6666927351794
+"EXP 008","Treatment","覆盖率","Coverage index","180天",180,1.5412793403577
+"EXP 008","Treatment","终毛比例","Terminal hair ratio","基线",0,39.9040475378868
+"EXP 008","Treatment","终毛比例","Terminal hair ratio","30天",30,44.8917693481776
+"EXP 008","Treatment","终毛比例","Terminal hair ratio","90天",90,47.6365133540626
+"EXP 008","Treatment","终毛比例","Terminal hair ratio","180天",180,50.4119389772714
+"EXP 008","Treatment","毳毛比例","Vellus hair ratio","基线",0,11.2553046631306
+"EXP 008","Treatment","毳毛比例","Vellus hair ratio","30天",30,12.1547933491529
+"EXP 008","Treatment","毳毛比例","Vellus hair ratio","90天",90,10.4591573725516
+"EXP 008","Treatment","毳毛比例","Vellus hair ratio","180天",180,9.10854984873759
+"EXP 008","Treatment","油脂分泌","Sebum secretion","基线",0,134.037421667018
+"EXP 008","Treatment","油脂分泌","Sebum secretion","30天",30,85.1328511838511
+"EXP 008","Treatment","油脂分泌","Sebum secretion","90天",90,84.6768569359919
+"EXP 008","Treatment","油脂分泌","Sebum secretion","180天",180,111.964340327737
+"EXP 008","Treatment","头皮硬度","Scalp stiffness","基线",0,29.0722670339753
+"EXP 008","Treatment","头皮硬度","Scalp stiffness","30天",30,21.7580205114756
+"EXP 008","Treatment","头皮硬度","Scalp stiffness","90天",90,17.85898559859
+"EXP 008","Treatment","头皮硬度","Scalp stiffness","180天",180,19.5436147776676
+"EXP 008","Treatment","头皮血流","Scalp blood flow","基线",0,166.351030833985
+"EXP 008","Treatment","头皮血流","Scalp blood flow","30天",30,240.694546867878
+"EXP 008","Treatment","头皮血流","Scalp blood flow","90天",90,321.61215964974
+"EXP 008","Treatment","头皮血流","Scalp blood flow","180天",180,314.535035390215
+"EXP 009","Treatment","毛发密度","Hair density","基线",0,130.080656718371
+"EXP 009","Treatment","毛发密度","Hair density","30天",30,135.597180894013
+"EXP 009","Treatment","毛发密度","Hair density","90天",90,152.032753385108
+"EXP 009","Treatment","毛发密度","Hair density","180天",180,154.606618597324
+"EXP 009","Treatment","毛发直径","Hair shaft diameter","基线",0,61.5315823744324
+"EXP 009","Treatment","毛发直径","Hair shaft diameter","30天",30,63.4713566237035
+"EXP 009","Treatment","毛发直径","Hair shaft diameter","90天",90,76.3896687108095
+"EXP 009","Treatment","毛发直径","Hair shaft diameter","180天",180,74.2144218557108
+"EXP 009","Treatment","覆盖率","Coverage index","基线",0,0.180582724278215
+"EXP 009","Treatment","覆盖率","Coverage index","30天",30,0.833198544415708
+"EXP 009","Treatment","覆盖率","Coverage index","90天",90,1.78227662720036
+"EXP 009","Treatment","覆盖率","Coverage index","180天",180,1.65408546118513
+"EXP 009","Treatment","终毛比例","Terminal hair ratio","基线",0,47.0632936289796
+"EXP 009","Treatment","终毛比例","Terminal hair ratio","30天",30,49.3068086792334
+"EXP 009","Treatment","终毛比例","Terminal hair ratio","90天",90,59.8814210908955
+"EXP 009","Treatment","终毛比例","Terminal hair ratio","180天",180,59.0648867469897
+"EXP 009","Treatment","毳毛比例","Vellus hair ratio","基线",0,16.9234612328582
+"EXP 009","Treatment","毳毛比例","Vellus hair ratio","30天",30,15.3916268180935
+"EXP 009","Treatment","毳毛比例","Vellus hair ratio","90天",90,12.7786927217247
+"EXP 009","Treatment","毳毛比例","Vellus hair ratio","180天",180,10.8239309523018
+"EXP 009","Treatment","油脂分泌","Sebum secretion","基线",0,177.15476284027
+"EXP 009","Treatment","油脂分泌","Sebum secretion","30天",30,125.721702502525
+"EXP 009","Treatment","油脂分泌","Sebum secretion","90天",90,130.097979148127
+"EXP 009","Treatment","油脂分泌","Sebum secretion","180天",180,159.856698701361
+"EXP 009","Treatment","头皮硬度","Scalp stiffness","基线",0,22.6115834200268
+"EXP 009","Treatment","头皮硬度","Scalp stiffness","30天",30,19.5816051890014
+"EXP 009","Treatment","头皮硬度","Scalp stiffness","90天",90,15.2761617112414
+"EXP 009","Treatment","头皮硬度","Scalp stiffness","180天",180,15.6857573530183
+"EXP 009","Treatment","头皮血流","Scalp blood flow","基线",0,184.162973741651
+"EXP 009","Treatment","头皮血流","Scalp blood flow","30天",30,241.88531398014
+"EXP 009","Treatment","头皮血流","Scalp blood flow","90天",90,296.447931568922
+"EXP 009","Treatment","头皮血流","Scalp blood flow","180天",180,286.600452955767
+"EXP 010","Treatment","毛发密度","Hair density","基线",0,137.164360561427
+"EXP 010","Treatment","毛发密度","Hair density","30天",30,140.865608981209
+"EXP 010","Treatment","毛发密度","Hair density","90天",90,155.427622816769
+"EXP 010","Treatment","毛发密度","Hair density","180天",180,160.945939758446
+"EXP 010","Treatment","毛发直径","Hair shaft diameter","基线",0,91.3287004098806
+"EXP 010","Treatment","毛发直径","Hair shaft diameter","30天",30,90.7821093721749
+"EXP 010","Treatment","毛发直径","Hair shaft diameter","90天",90,117.41840237359
+"EXP 010","Treatment","毛发直径","Hair shaft diameter","180天",180,95.523564941821
+"EXP 010","Treatment","覆盖率","Coverage index","基线",0,0.242911475664137
+"EXP 010","Treatment","覆盖率","Coverage index","30天",30,0.615363888022574
+"EXP 010","Treatment","覆盖率","Coverage index","90天",90,1.56781930553397
+"EXP 010","Treatment","覆盖率","Coverage index","180天",180,1.43264367002672
+"EXP 010","Treatment","终毛比例","Terminal hair ratio","基线",0,55.9499825048088
+"EXP 010","Treatment","终毛比例","Terminal hair ratio","30天",30,63.0293714211645
+"EXP 010","Treatment","终毛比例","Terminal hair ratio","90天",90,72.1798128827539
+"EXP 010","Treatment","终毛比例","Terminal hair ratio","180天",180,77.4423095648258
+"EXP 010","Treatment","毳毛比例","Vellus hair ratio","基线",0,2.89588268379391
+"EXP 010","Treatment","毳毛比例","Vellus hair ratio","30天",30,3.78908109624089
+"EXP 010","Treatment","毳毛比例","Vellus hair ratio","90天",90,5.50983566248586
+"EXP 010","Treatment","毳毛比例","Vellus hair ratio","180天",180,5.61835234374841
+"EXP 010","Treatment","油脂分泌","Sebum secretion","基线",0,128.989440434193
+"EXP 010","Treatment","油脂分泌","Sebum secretion","30天",30,82.5456196896773
+"EXP 010","Treatment","油脂分泌","Sebum secretion","90天",90,80.3855376205025
+"EXP 010","Treatment","油脂分泌","Sebum secretion","180天",180,95.7944290756362
+"EXP 010","Treatment","头皮硬度","Scalp stiffness","基线",0,20.5032301099051
+"EXP 010","Treatment","头皮硬度","Scalp stiffness","30天",30,17.9435963932456
+"EXP 010","Treatment","头皮硬度","Scalp stiffness","90天",90,13.4350535083985
+"EXP 010","Treatment","头皮硬度","Scalp stiffness","180天",180,15.150846294109
+"EXP 010","Treatment","头皮血流","Scalp blood flow","基线",0,139.595382872463
+"EXP 010","Treatment","头皮血流","Scalp blood flow","30天",30,225.109508701073
+"EXP 010","Treatment","头皮血流","Scalp blood flow","90天",90,264.609147632846
+"EXP 010","Treatment","头皮血流","Scalp blood flow","180天",180,244.81823847735
+"EXP 011","Treatment","毛发密度","Hair density","基线",0,83.6262049336161
+"EXP 011","Treatment","毛发密度","Hair density","30天",30,96.9827841424843
+"EXP 011","Treatment","毛发密度","Hair density","90天",90,113.846896763857
+"EXP 011","Treatment","毛发密度","Hair density","180天",180,103.503148839902
+"EXP 011","Treatment","毛发直径","Hair shaft diameter","基线",0,59.2428113265683
+"EXP 011","Treatment","毛发直径","Hair shaft diameter","30天",30,61.6053781416621
+"EXP 011","Treatment","毛发直径","Hair shaft diameter","90天",90,66.9232497017768
+"EXP 011","Treatment","毛发直径","Hair shaft diameter","180天",180,65.4581038926329
+"EXP 011","Treatment","覆盖率","Coverage index","基线",0,1.07486953429907
+"EXP 011","Treatment","覆盖率","Coverage index","30天",30,1.72154832177375
+"EXP 011","Treatment","覆盖率","Coverage index","90天",90,2.67904848442588
+"EXP 011","Treatment","覆盖率","Coverage index","180天",180,2.35832496135391
+"EXP 011","Treatment","终毛比例","Terminal hair ratio","基线",0,63.0141107825493
+"EXP 011","Treatment","终毛比例","Terminal hair ratio","30天",30,61.8480075490187
+"EXP 011","Treatment","终毛比例","Terminal hair ratio","90天",90,70.466605130848
+"EXP 011","Treatment","终毛比例","Terminal hair ratio","180天",180,74.1581386756161
+"EXP 011","Treatment","毳毛比例","Vellus hair ratio","基线",0,30.3105207008814
+"EXP 011","Treatment","毳毛比例","Vellus hair ratio","30天",30,26.2421541639385
+"EXP 011","Treatment","毳毛比例","Vellus hair ratio","90天",90,20.6275644515265
+"EXP 011","Treatment","毳毛比例","Vellus hair ratio","180天",180,18.7342817328707
+"EXP 011","Treatment","油脂分泌","Sebum secretion","基线",0,147.341652878919
+"EXP 011","Treatment","油脂分泌","Sebum secretion","30天",30,94.8869844372244
+"EXP 011","Treatment","油脂分泌","Sebum secretion","90天",90,101.864880869753
+"EXP 011","Treatment","油脂分泌","Sebum secretion","180天",180,125.046755707361
+"EXP 011","Treatment","头皮硬度","Scalp stiffness","基线",0,25.1119698911969
+"EXP 011","Treatment","头皮硬度","Scalp stiffness","30天",30,20.8651172250547
+"EXP 011","Treatment","头皮硬度","Scalp stiffness","90天",90,15.3694472938869
+"EXP 011","Treatment","头皮硬度","Scalp stiffness","180天",180,17.0411817154917
+"EXP 011","Treatment","头皮血流","Scalp blood flow","基线",0,172.106520134714
+"EXP 011","Treatment","头皮血流","Scalp blood flow","30天",30,228.012434439415
+"EXP 011","Treatment","头皮血流","Scalp blood flow","90天",90,292.512473799168
+"EXP 011","Treatment","头皮血流","Scalp blood flow","180天",180,270.664392101242
+"EXP 012","Treatment","毛发密度","Hair density","基线",0,122.311776701949
+"EXP 012","Treatment","毛发密度","Hair density","30天",30,132.61115368853
+"EXP 012","Treatment","毛发密度","Hair density","90天",90,164.233121841172
+"EXP 012","Treatment","毛发密度","Hair density","180天",180,170.754270587493
+"EXP 012","Treatment","毛发直径","Hair shaft diameter","基线",0,58.6300882051198
+"EXP 012","Treatment","毛发直径","Hair shaft diameter","30天",30,61.8261075533713
+"EXP 012","Treatment","毛发直径","Hair shaft diameter","90天",90,62.2157940400087
+"EXP 012","Treatment","毛发直径","Hair shaft diameter","180天",180,64.597242917123
+"EXP 012","Treatment","覆盖率","Coverage index","基线",0,0.445301849406967
+"EXP 012","Treatment","覆盖率","Coverage index","30天",30,0.986776297154269
+"EXP 012","Treatment","覆盖率","Coverage index","90天",90,1.9447676423639
+"EXP 012","Treatment","覆盖率","Coverage index","180天",180,1.72697018987168
+"EXP 012","Treatment","终毛比例","Terminal hair ratio","基线",0,36.9595326359654
+"EXP 012","Treatment","终毛比例","Terminal hair ratio","30天",30,38.4144390884396
+"EXP 012","Treatment","终毛比例","Terminal hair ratio","90天",90,46.6512210292072
+"EXP 012","Treatment","终毛比例","Terminal hair ratio","180天",180,48.4967928388413
+"EXP 012","Treatment","毳毛比例","Vellus hair ratio","基线",0,13.5882819227905
+"EXP 012","Treatment","毳毛比例","Vellus hair ratio","30天",30,13.5130629342659
+"EXP 012","Treatment","毳毛比例","Vellus hair ratio","90天",90,12.1686922762404
+"EXP 012","Treatment","毳毛比例","Vellus hair ratio","180天",180,10.5263135146115
+"EXP 012","Treatment","油脂分泌","Sebum secretion","基线",0,148.41859099644
+"EXP 012","Treatment","油脂分泌","Sebum secretion","30天",30,92.2384575045882
+"EXP 012","Treatment","油脂分泌","Sebum secretion","90天",90,90.3820113035615
+"EXP 012","Treatment","油脂分泌","Sebum secretion","180天",180,111.275830934082
+"EXP 012","Treatment","头皮硬度","Scalp stiffness","基线",0,25.3834443874512
+"EXP 012","Treatment","头皮硬度","Scalp stiffness","30天",30,20.2926393775783
+"EXP 012","Treatment","头皮硬度","Scalp stiffness","90天",90,17.8862554622048
+"EXP 012","Treatment","头皮硬度","Scalp stiffness","180天",180,19.883748140846
+"EXP 012","Treatment","头皮血流","Scalp blood flow","基线",0,90.4798073580352
+"EXP 012","Treatment","头皮血流","Scalp blood flow","30天",30,158.165810513309
+"EXP 012","Treatment","头皮血流","Scalp blood flow","90天",90,206.226732386676
+"EXP 012","Treatment","头皮血流","Scalp blood flow","180天",180,197.142986224469
+"EXP 013","Treatment","毛发密度","Hair density","基线",0,141.543852226024
+"EXP 013","Treatment","毛发密度","Hair density","30天",30,149.827020517956
+"EXP 013","Treatment","毛发密度","Hair density","90天",90,186.982239329329
+"EXP 013","Treatment","毛发密度","Hair density","180天",180,195.408884650636
+"EXP 013","Treatment","毛发直径","Hair shaft diameter","基线",0,53.5123568843774
+"EXP 013","Treatment","毛发直径","Hair shaft diameter","30天",30,52.0922121641467
+"EXP 013","Treatment","毛发直径","Hair shaft diameter","90天",90,56.487500557282
+"EXP 013","Treatment","毛发直径","Hair shaft diameter","180天",180,62.0741351480612
+"EXP 013","Treatment","覆盖率","Coverage index","基线",0,0.281497570214173
+"EXP 013","Treatment","覆盖率","Coverage index","30天",30,0.82186513549092
+"EXP 013","Treatment","覆盖率","Coverage index","90天",90,1.72884427617168
+"EXP 013","Treatment","覆盖率","Coverage index","180天",180,1.60222541276874
+"EXP 013","Treatment","终毛比例","Terminal hair ratio","基线",0,41.7654838275399
+"EXP 013","Treatment","终毛比例","Terminal hair ratio","30天",30,43.9350249366005
+"EXP 013","Treatment","终毛比例","Terminal hair ratio","90天",90,55.8429539471361
+"EXP 013","Treatment","终毛比例","Terminal hair ratio","180天",180,55.788316189267
+"EXP 013","Treatment","毳毛比例","Vellus hair ratio","基线",0,9.26763809633367
+"EXP 013","Treatment","毳毛比例","Vellus hair ratio","30天",30,9.12917051312384
+"EXP 013","Treatment","毳毛比例","Vellus hair ratio","90天",90,9.54388593295
+"EXP 013","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.43807072307686
+"EXP 013","Treatment","油脂分泌","Sebum secretion","基线",0,143.371382658952
+"EXP 013","Treatment","油脂分泌","Sebum secretion","30天",30,96.0195420898991
+"EXP 013","Treatment","油脂分泌","Sebum secretion","90天",90,93.8792545120308
+"EXP 013","Treatment","油脂分泌","Sebum secretion","180天",180,143.946773177219
+"EXP 013","Treatment","头皮硬度","Scalp stiffness","基线",0,16.2929187646937
+"EXP 013","Treatment","头皮硬度","Scalp stiffness","30天",30,17.3268432489622
+"EXP 013","Treatment","头皮硬度","Scalp stiffness","90天",90,13.945306857733
+"EXP 013","Treatment","头皮硬度","Scalp stiffness","180天",180,15.378272350549
+"EXP 013","Treatment","头皮血流","Scalp blood flow","基线",0,164.608391681266
+"EXP 013","Treatment","头皮血流","Scalp blood flow","30天",30,231.634069660571
+"EXP 013","Treatment","头皮血流","Scalp blood flow","90天",90,267.747615592389
+"EXP 013","Treatment","头皮血流","Scalp blood flow","180天",180,246.333253113731
+"EXP 014","Treatment","毛发密度","Hair density","基线",0,107.715401051859
+"EXP 014","Treatment","毛发密度","Hair density","30天",30,114.085471260288
+"EXP 014","Treatment","毛发密度","Hair density","90天",90,144.354408208687
+"EXP 014","Treatment","毛发密度","Hair density","180天",180,134.867279571951
+"EXP 014","Treatment","毛发直径","Hair shaft diameter","基线",0,56.94804123974
+"EXP 014","Treatment","毛发直径","Hair shaft diameter","30天",30,55.5360808503659
+"EXP 014","Treatment","毛发直径","Hair shaft diameter","90天",90,60.9434350728317
+"EXP 014","Treatment","毛发直径","Hair shaft diameter","180天",180,65.1113426844576
+"EXP 014","Treatment","覆盖率","Coverage index","基线",0,0.99071840559534
+"EXP 014","Treatment","覆盖率","Coverage index","30天",30,1.73624242652581
+"EXP 014","Treatment","覆盖率","Coverage index","90天",90,2.65690766536687
+"EXP 014","Treatment","覆盖率","Coverage index","180天",180,2.36577323121395
+"EXP 014","Treatment","终毛比例","Terminal hair ratio","基线",0,45.0749413063243
+"EXP 014","Treatment","终毛比例","Terminal hair ratio","30天",30,50.5812333253816
+"EXP 014","Treatment","终毛比例","Terminal hair ratio","90天",90,62.6261664380682
+"EXP 014","Treatment","终毛比例","Terminal hair ratio","180天",180,67.9692972453543
+"EXP 014","Treatment","毳毛比例","Vellus hair ratio","基线",0,13.0533105337904
+"EXP 014","Treatment","毳毛比例","Vellus hair ratio","30天",30,12.2340858295009
+"EXP 014","Treatment","毳毛比例","Vellus hair ratio","90天",90,10.1283023511322
+"EXP 014","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.97729301072317
+"EXP 014","Treatment","油脂分泌","Sebum secretion","基线",0,142.00003752929
+"EXP 014","Treatment","油脂分泌","Sebum secretion","30天",30,85.7287235437515
+"EXP 014","Treatment","油脂分泌","Sebum secretion","90天",90,83.3130632573265
+"EXP 014","Treatment","油脂分泌","Sebum secretion","180天",180,114.698259442472
+"EXP 014","Treatment","头皮硬度","Scalp stiffness","基线",0,19.4094813551313
+"EXP 014","Treatment","头皮硬度","Scalp stiffness","30天",30,19.6351764338117
+"EXP 014","Treatment","头皮硬度","Scalp stiffness","90天",90,13.7785452786427
+"EXP 014","Treatment","头皮硬度","Scalp stiffness","180天",180,14.9204198977308
+"EXP 014","Treatment","头皮血流","Scalp blood flow","基线",0,131.585220356945
+"EXP 014","Treatment","头皮血流","Scalp blood flow","30天",30,197.921496236196
+"EXP 014","Treatment","头皮血流","Scalp blood flow","90天",90,229.633831453737
+"EXP 014","Treatment","头皮血流","Scalp blood flow","180天",180,224.204922599112
+"EXP 015","Treatment","毛发密度","Hair density","基线",0,197.453852130211
+"EXP 015","Treatment","毛发密度","Hair density","30天",30,213.833583159634
+"EXP 015","Treatment","毛发密度","Hair density","90天",90,227.228625612736
+"EXP 015","Treatment","毛发密度","Hair density","180天",180,217.696557169167
+"EXP 015","Treatment","毛发直径","Hair shaft diameter","基线",0,71.1524883182982
+"EXP 015","Treatment","毛发直径","Hair shaft diameter","30天",30,65.0978955010827
+"EXP 015","Treatment","毛发直径","Hair shaft diameter","90天",90,80.0226612459246
+"EXP 015","Treatment","毛发直径","Hair shaft diameter","180天",180,75.5982863072431
+"EXP 015","Treatment","覆盖率","Coverage index","基线",0,0.12797929635883
+"EXP 015","Treatment","覆盖率","Coverage index","30天",30,0.642484285786532
+"EXP 015","Treatment","覆盖率","Coverage index","90天",90,1.59044207080765
+"EXP 015","Treatment","覆盖率","Coverage index","180天",180,1.45751958405116
+"EXP 015","Treatment","终毛比例","Terminal hair ratio","基线",0,38.8626257318662
+"EXP 015","Treatment","终毛比例","Terminal hair ratio","30天",30,42.0027962574901
+"EXP 015","Treatment","终毛比例","Terminal hair ratio","90天",90,50.5090256847305
+"EXP 015","Treatment","终毛比例","Terminal hair ratio","180天",180,52.7258383909417
+"EXP 015","Treatment","毳毛比例","Vellus hair ratio","基线",0,14.4799768478335
+"EXP 015","Treatment","毳毛比例","Vellus hair ratio","30天",30,15.1612207302164
+"EXP 015","Treatment","毳毛比例","Vellus hair ratio","90天",90,12.6446668802054
+"EXP 015","Treatment","毳毛比例","Vellus hair ratio","180天",180,12.0660241926443
+"EXP 015","Treatment","油脂分泌","Sebum secretion","基线",0,159.565817959
+"EXP 015","Treatment","油脂分泌","Sebum secretion","30天",30,119.092302179689
+"EXP 015","Treatment","油脂分泌","Sebum secretion","90天",90,117.167152446658
+"EXP 015","Treatment","油脂分泌","Sebum secretion","180天",180,156.253788578841
+"EXP 015","Treatment","头皮硬度","Scalp stiffness","基线",0,21.0209144060588
+"EXP 015","Treatment","头皮硬度","Scalp stiffness","30天",30,17.5180618863706
+"EXP 015","Treatment","头皮硬度","Scalp stiffness","90天",90,11.585156664313
+"EXP 015","Treatment","头皮硬度","Scalp stiffness","180天",180,13.4180759510659
+"EXP 015","Treatment","头皮血流","Scalp blood flow","基线",0,206.354402532252
+"EXP 015","Treatment","头皮血流","Scalp blood flow","30天",30,283.337982315987
+"EXP 015","Treatment","头皮血流","Scalp blood flow","90天",90,359.067928582188
+"EXP 015","Treatment","头皮血流","Scalp blood flow","180天",180,321.851533203221
+"EXP 016","Treatment","毛发密度","Hair density","基线",0,87.714597723058
+"EXP 016","Treatment","毛发密度","Hair density","30天",30,95.6927524477717
+"EXP 016","Treatment","毛发密度","Hair density","90天",90,112.892340343444
+"EXP 016","Treatment","毛发密度","Hair density","180天",180,95.7232117900084
+"EXP 016","Treatment","毛发直径","Hair shaft diameter","基线",0,75.8483749814137
+"EXP 016","Treatment","毛发直径","Hair shaft diameter","30天",30,80.3586243255358
+"EXP 016","Treatment","毛发直径","Hair shaft diameter","90天",90,86.5060963838011
+"EXP 016","Treatment","毛发直径","Hair shaft diameter","180天",180,76.7675786249258
+"EXP 016","Treatment","覆盖率","Coverage index","基线",0,0.613310339844493
+"EXP 016","Treatment","覆盖率","Coverage index","30天",30,0.939692896622224
+"EXP 016","Treatment","覆盖率","Coverage index","90天",90,1.90855172958172
+"EXP 016","Treatment","覆盖率","Coverage index","180天",180,1.64563817529205
+"EXP 016","Treatment","终毛比例","Terminal hair ratio","基线",0,54.1330848970089
+"EXP 016","Treatment","终毛比例","Terminal hair ratio","30天",30,62.1310659989457
+"EXP 016","Treatment","终毛比例","Terminal hair ratio","90天",90,70.8236549706061
+"EXP 016","Treatment","终毛比例","Terminal hair ratio","180天",180,75.6342611353885
+"EXP 016","Treatment","毳毛比例","Vellus hair ratio","基线",0,12.1537503991076
+"EXP 016","Treatment","毳毛比例","Vellus hair ratio","30天",30,11.8140422788327
+"EXP 016","Treatment","毳毛比例","Vellus hair ratio","90天",90,11.3510834086245
+"EXP 016","Treatment","毳毛比例","Vellus hair ratio","180天",180,9.71517728406229
+"EXP 016","Treatment","油脂分泌","Sebum secretion","基线",0,133.82872192248
+"EXP 016","Treatment","油脂分泌","Sebum secretion","30天",30,89.5844463258083
+"EXP 016","Treatment","油脂分泌","Sebum secretion","90天",90,90.6500435750447
+"EXP 016","Treatment","油脂分泌","Sebum secretion","180天",180,110.526877166419
+"EXP 016","Treatment","头皮硬度","Scalp stiffness","基线",0,16.9687288571017
+"EXP 016","Treatment","头皮硬度","Scalp stiffness","30天",30,16.7308737188472
+"EXP 016","Treatment","头皮硬度","Scalp stiffness","90天",90,11.3670202962616
+"EXP 016","Treatment","头皮硬度","Scalp stiffness","180天",180,12.1038628005522
+"EXP 016","Treatment","头皮血流","Scalp blood flow","基线",0,196.841157913131
+"EXP 016","Treatment","头皮血流","Scalp blood flow","30天",30,271.843151800752
+"EXP 016","Treatment","头皮血流","Scalp blood flow","90天",90,358.60658616549
+"EXP 016","Treatment","头皮血流","Scalp blood flow","180天",180,318.940169324072
+"EXP 017","Treatment","毛发密度","Hair density","基线",0,134.692638172167
+"EXP 017","Treatment","毛发密度","Hair density","30天",30,142.041907384696
+"EXP 017","Treatment","毛发密度","Hair density","90天",90,161.341265161515
+"EXP 017","Treatment","毛发密度","Hair density","180天",180,161.45013682569
+"EXP 017","Treatment","毛发直径","Hair shaft diameter","基线",0,80.6339480707026
+"EXP 017","Treatment","毛发直径","Hair shaft diameter","30天",30,84.1218156164866
+"EXP 017","Treatment","毛发直径","Hair shaft diameter","90天",90,87.6152591745773
+"EXP 017","Treatment","毛发直径","Hair shaft diameter","180天",180,78.1081854453561
+"EXP 017","Treatment","覆盖率","Coverage index","基线",0,0.38403671826323
+"EXP 017","Treatment","覆盖率","Coverage index","30天",30,1.00297022791335
+"EXP 017","Treatment","覆盖率","Coverage index","90天",90,1.89690536166694
+"EXP 017","Treatment","覆盖率","Coverage index","180天",180,1.77784440202383
+"EXP 017","Treatment","终毛比例","Terminal hair ratio","基线",0,47.6995966111524
+"EXP 017","Treatment","终毛比例","Terminal hair ratio","30天",30,51.7651280877945
+"EXP 017","Treatment","终毛比例","Terminal hair ratio","90天",90,62.609246764015
+"EXP 017","Treatment","终毛比例","Terminal hair ratio","180天",180,67.285622842561
+"EXP 017","Treatment","毳毛比例","Vellus hair ratio","基线",0,17.7724149612505
+"EXP 017","Treatment","毳毛比例","Vellus hair ratio","30天",30,18.2811965049166
+"EXP 017","Treatment","毳毛比例","Vellus hair ratio","90天",90,14.4426071402501
+"EXP 017","Treatment","毳毛比例","Vellus hair ratio","180天",180,11.8535247091943
+"EXP 017","Treatment","油脂分泌","Sebum secretion","基线",0,109.699105187636
+"EXP 017","Treatment","油脂分泌","Sebum secretion","30天",30,64.33198924166
+"EXP 017","Treatment","油脂分泌","Sebum secretion","90天",90,59.5024916108613
+"EXP 017","Treatment","油脂分泌","Sebum secretion","180天",180,74.6177293020752
+"EXP 017","Treatment","头皮硬度","Scalp stiffness","基线",0,22.2430060143301
+"EXP 017","Treatment","头皮硬度","Scalp stiffness","30天",30,17.3256975979854
+"EXP 017","Treatment","头皮硬度","Scalp stiffness","90天",90,12.2941693354903
+"EXP 017","Treatment","头皮硬度","Scalp stiffness","180天",180,15.3359816483187
+"EXP 017","Treatment","头皮血流","Scalp blood flow","基线",0,103.289063732523
+"EXP 017","Treatment","头皮血流","Scalp blood flow","30天",30,177.997263795675
+"EXP 017","Treatment","头皮血流","Scalp blood flow","90天",90,221.181677592225
+"EXP 017","Treatment","头皮血流","Scalp blood flow","180天",180,220.452828471104
+"EXP 018","Treatment","毛发密度","Hair density","基线",0,147.511129663223
+"EXP 018","Treatment","毛发密度","Hair density","30天",30,159.430348675521
+"EXP 018","Treatment","毛发密度","Hair density","90天",90,193.455828820127
+"EXP 018","Treatment","毛发密度","Hair density","180天",180,193.38265314107
+"EXP 018","Treatment","毛发直径","Hair shaft diameter","基线",0,43.2715927058217
+"EXP 018","Treatment","毛发直径","Hair shaft diameter","30天",30,44.5769037642158
+"EXP 018","Treatment","毛发直径","Hair shaft diameter","90天",90,50.9767007852904
+"EXP 018","Treatment","毛发直径","Hair shaft diameter","180天",180,58.1856775597887
+"EXP 018","Treatment","覆盖率","Coverage index","基线",0,1.52694529517608
+"EXP 018","Treatment","覆盖率","Coverage index","30天",30,1.2867887168045
+"EXP 018","Treatment","覆盖率","Coverage index","90天",90,0.572596488055738
+"EXP 018","Treatment","覆盖率","Coverage index","180天",180,0.498132235114249
+"EXP 018","Treatment","终毛比例","Terminal hair ratio","基线",0,46.852380028801
+"EXP 018","Treatment","终毛比例","Terminal hair ratio","30天",30,49.4507375419017
+"EXP 018","Treatment","终毛比例","Terminal hair ratio","90天",90,60.1879615598764
+"EXP 018","Treatment","终毛比例","Terminal hair ratio","180天",180,63.893718260652
+"EXP 018","Treatment","毳毛比例","Vellus hair ratio","基线",0,13.3651024985917
+"EXP 018","Treatment","毳毛比例","Vellus hair ratio","30天",30,13.9693028558259
+"EXP 018","Treatment","毳毛比例","Vellus hair ratio","90天",90,11.5232755041129
+"EXP 018","Treatment","毳毛比例","Vellus hair ratio","180天",180,10.2373631253212
+"EXP 018","Treatment","油脂分泌","Sebum secretion","基线",0,139.000477439485
+"EXP 018","Treatment","油脂分泌","Sebum secretion","30天",30,81.4092936271261
+"EXP 018","Treatment","油脂分泌","Sebum secretion","90天",90,78.23331882361
+"EXP 018","Treatment","油脂分泌","Sebum secretion","180天",180,94.1044076598009
+"EXP 018","Treatment","头皮硬度","Scalp stiffness","基线",0,21.9281653874434
+"EXP 018","Treatment","头皮硬度","Scalp stiffness","30天",30,17.5080537282776
+"EXP 018","Treatment","头皮硬度","Scalp stiffness","90天",90,10.6570762277648
+"EXP 018","Treatment","头皮硬度","Scalp stiffness","180天",180,12.9895687366491
+"EXP 018","Treatment","头皮血流","Scalp blood flow","基线",0,194.078831821352
+"EXP 018","Treatment","头皮血流","Scalp blood flow","30天",30,235.682786573556
+"EXP 018","Treatment","头皮血流","Scalp blood flow","90天",90,297.805181816164
+"EXP 018","Treatment","头皮血流","Scalp blood flow","180天",180,284.689260708447
+"EXP 019","Treatment","毛发密度","Hair density","基线",0,170.420384480387
+"EXP 019","Treatment","毛发密度","Hair density","30天",30,184.044935041066
+"EXP 019","Treatment","毛发密度","Hair density","90天",90,197.336990194676
+"EXP 019","Treatment","毛发密度","Hair density","180天",180,212.197876033508
+"EXP 019","Treatment","毛发直径","Hair shaft diameter","基线",0,45.6163645503708
+"EXP 019","Treatment","毛发直径","Hair shaft diameter","30天",30,45.2988521551497
+"EXP 019","Treatment","毛发直径","Hair shaft diameter","90天",90,40.7390110935673
+"EXP 019","Treatment","毛发直径","Hair shaft diameter","180天",180,52.8435303340768
+"EXP 019","Treatment","覆盖率","Coverage index","基线",0,0.312221547317773
+"EXP 019","Treatment","覆盖率","Coverage index","30天",30,0.854516642566481
+"EXP 019","Treatment","覆盖率","Coverage index","90天",90,1.71528789974406
+"EXP 019","Treatment","覆盖率","Coverage index","180天",180,1.58149102705045
+"EXP 019","Treatment","终毛比例","Terminal hair ratio","基线",0,40.0679092167121
+"EXP 019","Treatment","终毛比例","Terminal hair ratio","30天",30,40.3169182066103
+"EXP 019","Treatment","终毛比例","Terminal hair ratio","90天",90,51.1413594927183
+"EXP 019","Treatment","终毛比例","Terminal hair ratio","180天",180,51.5142006382316
+"EXP 019","Treatment","毳毛比例","Vellus hair ratio","基线",0,9.63775812091953
+"EXP 019","Treatment","毳毛比例","Vellus hair ratio","30天",30,8.88611964410645
+"EXP 019","Treatment","毳毛比例","Vellus hair ratio","90天",90,8.93214916820773
+"EXP 019","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.31883101298291
+"EXP 019","Treatment","油脂分泌","Sebum secretion","基线",0,120.726562951597
+"EXP 019","Treatment","油脂分泌","Sebum secretion","30天",30,89.3288101350123
+"EXP 019","Treatment","油脂分泌","Sebum secretion","90天",90,91.0568046457565
+"EXP 019","Treatment","油脂分泌","Sebum secretion","180天",180,137.295786707683
+"EXP 019","Treatment","头皮硬度","Scalp stiffness","基线",0,24.1773438392645
+"EXP 019","Treatment","头皮硬度","Scalp stiffness","30天",30,20.7609048191462
+"EXP 019","Treatment","头皮硬度","Scalp stiffness","90天",90,16.9905541564779
+"EXP 019","Treatment","头皮硬度","Scalp stiffness","180天",180,20.5011303088838
+"EXP 019","Treatment","头皮血流","Scalp blood flow","基线",0,155.880363210499
+"EXP 019","Treatment","头皮血流","Scalp blood flow","30天",30,215.15724532764
+"EXP 019","Treatment","头皮血流","Scalp blood flow","90天",90,289.691468920342
+"EXP 019","Treatment","头皮血流","Scalp blood flow","180天",180,266.00687421565
+"EXP 020","Treatment","毛发密度","Hair density","基线",0,86.1331210656959
+"EXP 020","Treatment","毛发密度","Hair density","30天",30,69.8982543034512
+"EXP 020","Treatment","毛发密度","Hair density","90天",90,103.195558781191
+"EXP 020","Treatment","毛发密度","Hair density","180天",180,81.3527815029545
+"EXP 020","Treatment","毛发直径","Hair shaft diameter","基线",0,73.7031796450152
+"EXP 020","Treatment","毛发直径","Hair shaft diameter","30天",30,76.9099002607769
+"EXP 020","Treatment","毛发直径","Hair shaft diameter","90天",90,95.996127156659
+"EXP 020","Treatment","毛发直径","Hair shaft diameter","180天",180,84.0146142239254
+"EXP 020","Treatment","覆盖率","Coverage index","基线",0,0.409137098049951
+"EXP 020","Treatment","覆盖率","Coverage index","30天",30,0.99172428331852
+"EXP 020","Treatment","覆盖率","Coverage index","90天",90,1.90857117487957
+"EXP 020","Treatment","覆盖率","Coverage index","180天",180,1.79080389060293
+"EXP 020","Treatment","终毛比例","Terminal hair ratio","基线",0,46.2285389788313
+"EXP 020","Treatment","终毛比例","Terminal hair ratio","30天",30,52.5370669215747
+"EXP 020","Treatment","终毛比例","Terminal hair ratio","90天",90,64.5391981086707
+"EXP 020","Treatment","终毛比例","Terminal hair ratio","180天",180,68.4073639879971
+"EXP 020","Treatment","毳毛比例","Vellus hair ratio","基线",0,15.7154852154288
+"EXP 020","Treatment","毳毛比例","Vellus hair ratio","30天",30,17.4302578559519
+"EXP 020","Treatment","毳毛比例","Vellus hair ratio","90天",90,15.0084274933362
+"EXP 020","Treatment","毳毛比例","Vellus hair ratio","180天",180,12.149718828163
+"EXP 020","Treatment","油脂分泌","Sebum secretion","基线",0,124.297403662948
+"EXP 020","Treatment","油脂分泌","Sebum secretion","30天",30,87.2335953462945
+"EXP 020","Treatment","油脂分泌","Sebum secretion","90天",90,88.2449262280881
+"EXP 020","Treatment","油脂分泌","Sebum secretion","180天",180,109.453370139524
+"EXP 020","Treatment","头皮硬度","Scalp stiffness","基线",0,23.6390672257766
+"EXP 020","Treatment","头皮硬度","Scalp stiffness","30天",30,18.2178717780553
+"EXP 020","Treatment","头皮硬度","Scalp stiffness","90天",90,13.3284627818066
+"EXP 020","Treatment","头皮硬度","Scalp stiffness","180天",180,14.69958389399
+"EXP 020","Treatment","头皮血流","Scalp blood flow","基线",0,166.447857437507
+"EXP 020","Treatment","头皮血流","Scalp blood flow","30天",30,238.248461882498
+"EXP 020","Treatment","头皮血流","Scalp blood flow","90天",90,308.775379869161
+"EXP 020","Treatment","头皮血流","Scalp blood flow","180天",180,297.911705908744
+"EXP 021","Treatment","毛发密度","Hair density","基线",0,85.2180302873361
+"EXP 021","Treatment","毛发密度","Hair density","30天",30,72.257640268035
+"EXP 021","Treatment","毛发密度","Hair density","90天",90,102.067617015033
+"EXP 021","Treatment","毛发密度","Hair density","180天",180,88.8850232968626
+"EXP 021","Treatment","毛发直径","Hair shaft diameter","基线",0,59.5272320249278
+"EXP 021","Treatment","毛发直径","Hair shaft diameter","30天",30,60.3576341584688
+"EXP 021","Treatment","毛发直径","Hair shaft diameter","90天",90,72.1380687250787
+"EXP 021","Treatment","毛发直径","Hair shaft diameter","180天",180,70.8759793195172
+"EXP 021","Treatment","覆盖率","Coverage index","基线",0,0.534586684108734
+"EXP 021","Treatment","覆盖率","Coverage index","30天",30,1.10521739542293
+"EXP 021","Treatment","覆盖率","Coverage index","90天",90,2.14020069373239
+"EXP 021","Treatment","覆盖率","Coverage index","180天",180,2.02471774252742
+"EXP 021","Treatment","终毛比例","Terminal hair ratio","基线",0,41.1719836304182
+"EXP 021","Treatment","终毛比例","Terminal hair ratio","30天",30,41.6861572741581
+"EXP 021","Treatment","终毛比例","Terminal hair ratio","90天",90,54.3764472903071
+"EXP 021","Treatment","终毛比例","Terminal hair ratio","180天",180,58.2105913512637
+"EXP 021","Treatment","毳毛比例","Vellus hair ratio","基线",0,16.4242760338759
+"EXP 021","Treatment","毳毛比例","Vellus hair ratio","30天",30,16.1429807908135
+"EXP 021","Treatment","毳毛比例","Vellus hair ratio","90天",90,14.2525832689143
+"EXP 021","Treatment","毳毛比例","Vellus hair ratio","180天",180,11.7838990593375
+"EXP 021","Treatment","油脂分泌","Sebum secretion","基线",0,184.414922308156
+"EXP 021","Treatment","油脂分泌","Sebum secretion","30天",30,114.188316751939
+"EXP 021","Treatment","油脂分泌","Sebum secretion","90天",90,126.330417556897
+"EXP 021","Treatment","油脂分泌","Sebum secretion","180天",180,161.50152230104
+"EXP 021","Treatment","头皮硬度","Scalp stiffness","基线",0,33.4586911674919
+"EXP 021","Treatment","头皮硬度","Scalp stiffness","30天",30,24.3723633812975
+"EXP 021","Treatment","头皮硬度","Scalp stiffness","90天",90,19.5870434965543
+"EXP 021","Treatment","头皮硬度","Scalp stiffness","180天",180,24.3632613077274
+"EXP 021","Treatment","头皮血流","Scalp blood flow","基线",0,168.270028946089
+"EXP 021","Treatment","头皮血流","Scalp blood flow","30天",30,247.481892363589
+"EXP 021","Treatment","头皮血流","Scalp blood flow","90天",90,334.031750656044
+"EXP 021","Treatment","头皮血流","Scalp blood flow","180天",180,312.322829749563
+"EXP 022","Treatment","毛发密度","Hair density","基线",0,178.756165738245
+"EXP 022","Treatment","毛发密度","Hair density","30天",30,185.43103959551
+"EXP 022","Treatment","毛发密度","Hair density","90天",90,191.385982270868
+"EXP 022","Treatment","毛发密度","Hair density","180天",180,201.792540485243
+"EXP 022","Treatment","毛发直径","Hair shaft diameter","基线",0,35.8131716096857
+"EXP 022","Treatment","毛发直径","Hair shaft diameter","30天",30,43.9084290213209
+"EXP 022","Treatment","毛发直径","Hair shaft diameter","90天",90,46.9174769491278
+"EXP 022","Treatment","毛发直径","Hair shaft diameter","180天",180,53.7346817020019
+"EXP 022","Treatment","覆盖率","Coverage index","基线",0,0.677702518910353
+"EXP 022","Treatment","覆盖率","Coverage index","30天",30,1.23610244653079
+"EXP 022","Treatment","覆盖率","Coverage index","90天",90,1.98968613926546
+"EXP 022","Treatment","覆盖率","Coverage index","180天",180,1.71743985774289
+"EXP 022","Treatment","终毛比例","Terminal hair ratio","基线",0,42.5085617415615
+"EXP 022","Treatment","终毛比例","Terminal hair ratio","30天",30,42.4342365580915
+"EXP 022","Treatment","终毛比例","Terminal hair ratio","90天",90,52.1559318326127
+"EXP 022","Treatment","终毛比例","Terminal hair ratio","180天",180,55.5671626739354
+"EXP 022","Treatment","毳毛比例","Vellus hair ratio","基线",0,18.2423901911836
+"EXP 022","Treatment","毳毛比例","Vellus hair ratio","30天",30,17.011193882137
+"EXP 022","Treatment","毳毛比例","Vellus hair ratio","90天",90,15.3668609495034
+"EXP 022","Treatment","毳毛比例","Vellus hair ratio","180天",180,12.6759023971218
+"EXP 022","Treatment","油脂分泌","Sebum secretion","基线",0,130.829351879642
+"EXP 022","Treatment","油脂分泌","Sebum secretion","30天",30,95.5771242144518
+"EXP 022","Treatment","油脂分泌","Sebum secretion","90天",90,99.2090692443686
+"EXP 022","Treatment","油脂分泌","Sebum secretion","180天",180,123.618443135405
+"EXP 022","Treatment","头皮硬度","Scalp stiffness","基线",0,25.3065107816271
+"EXP 022","Treatment","头皮硬度","Scalp stiffness","30天",30,20.6050241981588
+"EXP 022","Treatment","头皮硬度","Scalp stiffness","90天",90,17.462502318266
+"EXP 022","Treatment","头皮硬度","Scalp stiffness","180天",180,18.7798462948895
+"EXP 022","Treatment","头皮血流","Scalp blood flow","基线",0,195.302310585393
+"EXP 022","Treatment","头皮血流","Scalp blood flow","30天",30,250.573744581812
+"EXP 022","Treatment","头皮血流","Scalp blood flow","90天",90,328.26567948459
+"EXP 022","Treatment","头皮血流","Scalp blood flow","180天",180,294.806702192609
+"EXP 023","Treatment","毛发密度","Hair density","基线",0,181.487903007164
+"EXP 023","Treatment","毛发密度","Hair density","30天",30,187.285298013747
+"EXP 023","Treatment","毛发密度","Hair density","90天",90,202.164563651673
+"EXP 023","Treatment","毛发密度","Hair density","180天",180,213.827391537086
+"EXP 023","Treatment","毛发直径","Hair shaft diameter","基线",0,52.7444829518086
+"EXP 023","Treatment","毛发直径","Hair shaft diameter","30天",30,59.1670124764645
+"EXP 023","Treatment","毛发直径","Hair shaft diameter","90天",90,63.0369017283121
+"EXP 023","Treatment","毛发直径","Hair shaft diameter","180天",180,65.8057928332437
+"EXP 023","Treatment","覆盖率","Coverage index","基线",0,0.586119065624642
+"EXP 023","Treatment","覆盖率","Coverage index","30天",30,1.00049136198835
+"EXP 023","Treatment","覆盖率","Coverage index","90天",90,2.11789847274837
+"EXP 023","Treatment","覆盖率","Coverage index","180天",180,1.98451799856491
+"EXP 023","Treatment","终毛比例","Terminal hair ratio","基线",0,48.12325287664
+"EXP 023","Treatment","终毛比例","Terminal hair ratio","30天",30,48.2903244647459
+"EXP 023","Treatment","终毛比例","Terminal hair ratio","90天",90,59.2696706414749
+"EXP 023","Treatment","终毛比例","Terminal hair ratio","180天",180,62.0737987663525
+"EXP 023","Treatment","毳毛比例","Vellus hair ratio","基线",0,15.887181010765
+"EXP 023","Treatment","毳毛比例","Vellus hair ratio","30天",30,16.6780064502663
+"EXP 023","Treatment","毳毛比例","Vellus hair ratio","90天",90,16.2033918752522
+"EXP 023","Treatment","毳毛比例","Vellus hair ratio","180天",180,12.944663723314
+"EXP 023","Treatment","油脂分泌","Sebum secretion","基线",0,149.778415568895
+"EXP 023","Treatment","油脂分泌","Sebum secretion","30天",30,80.0435903270199
+"EXP 023","Treatment","油脂分泌","Sebum secretion","90天",90,77.9773341382297
+"EXP 023","Treatment","油脂分泌","Sebum secretion","180天",180,102.303201794868
+"EXP 023","Treatment","头皮硬度","Scalp stiffness","基线",0,24.621367665954
+"EXP 023","Treatment","头皮硬度","Scalp stiffness","30天",30,19.9172986717027
+"EXP 023","Treatment","头皮硬度","Scalp stiffness","90天",90,16.3796692617182
+"EXP 023","Treatment","头皮硬度","Scalp stiffness","180天",180,18.2447033462428
+"EXP 023","Treatment","头皮血流","Scalp blood flow","基线",0,148.551079467078
+"EXP 023","Treatment","头皮血流","Scalp blood flow","30天",30,238.732523306499
+"EXP 023","Treatment","头皮血流","Scalp blood flow","90天",90,313.17008189266
+"EXP 023","Treatment","头皮血流","Scalp blood flow","180天",180,304.055314026531
+"EXP 024","Treatment","毛发密度","Hair density","基线",0,161.802679444437
+"EXP 024","Treatment","毛发密度","Hair density","30天",30,181.829854631504
+"EXP 024","Treatment","毛发密度","Hair density","90天",90,194.551788182505
+"EXP 024","Treatment","毛发密度","Hair density","180天",180,190.263477009144
+"EXP 024","Treatment","毛发直径","Hair shaft diameter","基线",0,51.0018651437199
+"EXP 024","Treatment","毛发直径","Hair shaft diameter","30天",30,58.0718297602826
+"EXP 024","Treatment","毛发直径","Hair shaft diameter","90天",90,67.2480681055359
+"EXP 024","Treatment","毛发直径","Hair shaft diameter","180天",180,68.083351684399
+"EXP 024","Treatment","覆盖率","Coverage index","基线",0,0.634735432482898
+"EXP 024","Treatment","覆盖率","Coverage index","30天",30,1.11236825817458
+"EXP 024","Treatment","覆盖率","Coverage index","90天",90,1.93806010847219
+"EXP 024","Treatment","覆盖率","Coverage index","180天",180,1.72097546985602
+"EXP 024","Treatment","终毛比例","Terminal hair ratio","基线",0,36.8165812017985
+"EXP 024","Treatment","终毛比例","Terminal hair ratio","30天",30,42.4867303081625
+"EXP 024","Treatment","终毛比例","Terminal hair ratio","90天",90,54.4325445548238
+"EXP 024","Treatment","终毛比例","Terminal hair ratio","180天",180,57.7689791824964
+"EXP 024","Treatment","毳毛比例","Vellus hair ratio","基线",0,17.3427188085431
+"EXP 024","Treatment","毳毛比例","Vellus hair ratio","30天",30,15.8494980397748
+"EXP 024","Treatment","毳毛比例","Vellus hair ratio","90天",90,13.1966341216416
+"EXP 024","Treatment","毳毛比例","Vellus hair ratio","180天",180,11.5151853652038
+"EXP 024","Treatment","油脂分泌","Sebum secretion","基线",0,171.891742952331
+"EXP 024","Treatment","油脂分泌","Sebum secretion","30天",30,108.3591488022
+"EXP 024","Treatment","油脂分泌","Sebum secretion","90天",90,110.615122099472
+"EXP 024","Treatment","油脂分泌","Sebum secretion","180天",180,148.234019346909
+"EXP 024","Treatment","头皮硬度","Scalp stiffness","基线",0,19.773125827617
+"EXP 024","Treatment","头皮硬度","Scalp stiffness","30天",30,15.6080154259262
+"EXP 024","Treatment","头皮硬度","Scalp stiffness","90天",90,8.13243170082769
+"EXP 024","Treatment","头皮硬度","Scalp stiffness","180天",180,9.99024981537136
+"EXP 024","Treatment","头皮血流","Scalp blood flow","基线",0,142.647395770282
+"EXP 024","Treatment","头皮血流","Scalp blood flow","30天",30,203.200888757378
+"EXP 024","Treatment","头皮血流","Scalp blood flow","90天",90,264.46266374182
+"EXP 024","Treatment","头皮血流","Scalp blood flow","180天",180,240.877706895704
+"EXP 025","Treatment","毛发密度","Hair density","基线",0,126.613742866871
+"EXP 025","Treatment","毛发密度","Hair density","30天",30,117.157565355229
+"EXP 025","Treatment","毛发密度","Hair density","90天",90,155.137460428146
+"EXP 025","Treatment","毛发密度","Hair density","180天",180,122.741241514033
+"EXP 025","Treatment","毛发直径","Hair shaft diameter","基线",0,47.5171566916474
+"EXP 025","Treatment","毛发直径","Hair shaft diameter","30天",30,52.8961915974194
+"EXP 025","Treatment","毛发直径","Hair shaft diameter","90天",90,58.1968872246766
+"EXP 025","Treatment","毛发直径","Hair shaft diameter","180天",180,60.4700228005628
+"EXP 025","Treatment","覆盖率","Coverage index","基线",0,0.183809183849174
+"EXP 025","Treatment","覆盖率","Coverage index","30天",30,0.60315168296246
+"EXP 025","Treatment","覆盖率","Coverage index","90天",90,1.52461805332608
+"EXP 025","Treatment","覆盖率","Coverage index","180天",180,1.40179410427571
+"EXP 025","Treatment","终毛比例","Terminal hair ratio","基线",0,29.9888126981648
+"EXP 025","Treatment","终毛比例","Terminal hair ratio","30天",30,34.7355414919564
+"EXP 025","Treatment","终毛比例","Terminal hair ratio","90天",90,43.6079258775166
+"EXP 025","Treatment","终毛比例","Terminal hair ratio","180天",180,45.8558532518529
+"EXP 025","Treatment","毳毛比例","Vellus hair ratio","基线",0,10.4279723272175
+"EXP 025","Treatment","毳毛比例","Vellus hair ratio","30天",30,10.2545498472852
+"EXP 025","Treatment","毳毛比例","Vellus hair ratio","90天",90,9.86548864753092
+"EXP 025","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.70205723692843
+"EXP 025","Treatment","油脂分泌","Sebum secretion","基线",0,140.61060812041
+"EXP 025","Treatment","油脂分泌","Sebum secretion","30天",30,90.8749532707129
+"EXP 025","Treatment","油脂分泌","Sebum secretion","90天",90,95.2805035212635
+"EXP 025","Treatment","油脂分泌","Sebum secretion","180天",180,135.108892080782
+"EXP 025","Treatment","头皮硬度","Scalp stiffness","基线",0,27.8117874968753
+"EXP 025","Treatment","头皮硬度","Scalp stiffness","30天",30,21.8473439836477
+"EXP 025","Treatment","头皮硬度","Scalp stiffness","90天",90,19.0402741166101
+"EXP 025","Treatment","头皮硬度","Scalp stiffness","180天",180,22.3210579239268
+"EXP 025","Treatment","头皮血流","Scalp blood flow","基线",0,152.036476185457
+"EXP 025","Treatment","头皮血流","Scalp blood flow","30天",30,233.155964860062
+"EXP 025","Treatment","头皮血流","Scalp blood flow","90天",90,280.641335573995
+"EXP 025","Treatment","头皮血流","Scalp blood flow","180天",180,272.23804936661
+"EXP 026","Treatment","毛发密度","Hair density","基线",0,202.100221188108
+"EXP 026","Treatment","毛发密度","Hair density","30天",30,205.288727887133
+"EXP 026","Treatment","毛发密度","Hair density","90天",90,226.688385044428
+"EXP 026","Treatment","毛发密度","Hair density","180天",180,245.977462753387
+"EXP 026","Treatment","毛发直径","Hair shaft diameter","基线",0,60.0593031061912
+"EXP 026","Treatment","毛发直径","Hair shaft diameter","30天",30,59.6235577731808
+"EXP 026","Treatment","毛发直径","Hair shaft diameter","90天",90,67.7479998863813
+"EXP 026","Treatment","毛发直径","Hair shaft diameter","180天",180,68.5661506182272
+"EXP 026","Treatment","覆盖率","Coverage index","基线",0,0.0344612401304617
+"EXP 026","Treatment","覆盖率","Coverage index","30天",30,0.527099153131674
+"EXP 026","Treatment","覆盖率","Coverage index","90天",90,1.44972757103992
+"EXP 026","Treatment","覆盖率","Coverage index","180天",180,1.35038621099354
+"EXP 026","Treatment","终毛比例","Terminal hair ratio","基线",0,43.5049771337776
+"EXP 026","Treatment","终毛比例","Terminal hair ratio","30天",30,51.8414138694305
+"EXP 026","Treatment","终毛比例","Terminal hair ratio","90天",90,63.8588969200951
+"EXP 026","Treatment","终毛比例","Terminal hair ratio","180天",180,63.9794707646886
+"EXP 026","Treatment","毳毛比例","Vellus hair ratio","基线",0,17.0030815135051
+"EXP 026","Treatment","毳毛比例","Vellus hair ratio","30天",30,15.3162669151073
+"EXP 026","Treatment","毳毛比例","Vellus hair ratio","90天",90,13.2592347886196
+"EXP 026","Treatment","毳毛比例","Vellus hair ratio","180天",180,11.4436988747973
+"EXP 026","Treatment","油脂分泌","Sebum secretion","基线",0,144.231149908245
+"EXP 026","Treatment","油脂分泌","Sebum secretion","30天",30,103.268040388181
+"EXP 026","Treatment","油脂分泌","Sebum secretion","90天",90,96.8781868135766
+"EXP 026","Treatment","油脂分泌","Sebum secretion","180天",180,129.099003304657
+"EXP 026","Treatment","头皮硬度","Scalp stiffness","基线",0,18.7843256697881
+"EXP 026","Treatment","头皮硬度","Scalp stiffness","30天",30,15.9512647275724
+"EXP 026","Treatment","头皮硬度","Scalp stiffness","90天",90,9.46305042403898
+"EXP 026","Treatment","头皮硬度","Scalp stiffness","180天",180,10.7845083373191
+"EXP 026","Treatment","头皮血流","Scalp blood flow","基线",0,150.929794818236
+"EXP 026","Treatment","头皮血流","Scalp blood flow","30天",30,241.008512002199
+"EXP 026","Treatment","头皮血流","Scalp blood flow","90天",90,305.856127258014
+"EXP 026","Treatment","头皮血流","Scalp blood flow","180天",180,293.487680591208
+"EXP 027","Treatment","毛发密度","Hair density","基线",0,136.575867997343
+"EXP 027","Treatment","毛发密度","Hair density","30天",30,124.725815995501
+"EXP 027","Treatment","毛发密度","Hair density","90天",90,161.504267990057
+"EXP 027","Treatment","毛发密度","Hair density","180天",180,161.329779381292
+"EXP 027","Treatment","毛发直径","Hair shaft diameter","基线",0,64.5884187153004
+"EXP 027","Treatment","毛发直径","Hair shaft diameter","30天",30,59.1422654408021
+"EXP 027","Treatment","毛发直径","Hair shaft diameter","90天",90,65.1668879912101
+"EXP 027","Treatment","毛发直径","Hair shaft diameter","180天",180,66.4572267301687
+"EXP 027","Treatment","覆盖率","Coverage index","基线",0,0.373074919849028
+"EXP 027","Treatment","覆盖率","Coverage index","30天",30,0.778886691370736
+"EXP 027","Treatment","覆盖率","Coverage index","90天",90,1.78731370436778
+"EXP 027","Treatment","覆盖率","Coverage index","180天",180,1.6494571661762
+"EXP 027","Treatment","终毛比例","Terminal hair ratio","基线",0,61.1173888729228
+"EXP 027","Treatment","终毛比例","Terminal hair ratio","30天",30,56.2578381280441
+"EXP 027","Treatment","终毛比例","Terminal hair ratio","90天",90,64.5967324577063
+"EXP 027","Treatment","终毛比例","Terminal hair ratio","180天",180,69.4285899929314
+"EXP 027","Treatment","毳毛比例","Vellus hair ratio","基线",0,15.292192335148
+"EXP 027","Treatment","毳毛比例","Vellus hair ratio","30天",30,14.9683976729732
+"EXP 027","Treatment","毳毛比例","Vellus hair ratio","90天",90,12.9833051798587
+"EXP 027","Treatment","毳毛比例","Vellus hair ratio","180天",180,11.5717260586234
+"EXP 027","Treatment","油脂分泌","Sebum secretion","基线",0,155.164395361874
+"EXP 027","Treatment","油脂分泌","Sebum secretion","30天",30,88.4356385490506
+"EXP 027","Treatment","油脂分泌","Sebum secretion","90天",90,101.753842021263
+"EXP 027","Treatment","油脂分泌","Sebum secretion","180天",180,155.911980445375
+"EXP 027","Treatment","头皮硬度","Scalp stiffness","基线",0,26.3905495524023
+"EXP 027","Treatment","头皮硬度","Scalp stiffness","30天",30,21.1694485611473
+"EXP 027","Treatment","头皮硬度","Scalp stiffness","90天",90,17.3781445662597
+"EXP 027","Treatment","头皮硬度","Scalp stiffness","180天",180,18.5454518751914
+"EXP 027","Treatment","头皮血流","Scalp blood flow","基线",0,165.873536467765
+"EXP 027","Treatment","头皮血流","Scalp blood flow","30天",30,245.25610822737
+"EXP 027","Treatment","头皮血流","Scalp blood flow","90天",90,309.448718300121
+"EXP 027","Treatment","头皮血流","Scalp blood flow","180天",180,278.296893472077
+"EXP 028","Treatment","毛发密度","Hair density","基线",0,128.711935213759
+"EXP 028","Treatment","毛发密度","Hair density","30天",30,132.679206521415
+"EXP 028","Treatment","毛发密度","Hair density","90天",90,154.329590287713
+"EXP 028","Treatment","毛发密度","Hair density","180天",180,153.018106456858
+"EXP 028","Treatment","毛发直径","Hair shaft diameter","基线",0,44.8467371239656
+"EXP 028","Treatment","毛发直径","Hair shaft diameter","30天",30,46.0398788782206
+"EXP 028","Treatment","毛发直径","Hair shaft diameter","90天",90,47.9415202694013
+"EXP 028","Treatment","毛发直径","Hair shaft diameter","180天",180,56.2296523275938
+"EXP 028","Treatment","覆盖率","Coverage index","基线",0,1.06173520591099
+"EXP 028","Treatment","覆盖率","Coverage index","30天",30,1.80915837274282
+"EXP 028","Treatment","覆盖率","Coverage index","90天",90,2.64600825089614
+"EXP 028","Treatment","覆盖率","Coverage index","180天",180,2.35823602876741
+"EXP 028","Treatment","终毛比例","Terminal hair ratio","基线",0,55.8219697848497
+"EXP 028","Treatment","终毛比例","Terminal hair ratio","30天",30,52.3889867362805
+"EXP 028","Treatment","终毛比例","Terminal hair ratio","90天",90,63.8896859980505
+"EXP 028","Treatment","终毛比例","Terminal hair ratio","180天",180,65.7910688267023
+"EXP 028","Treatment","毳毛比例","Vellus hair ratio","基线",0,8.60028544843463
+"EXP 028","Treatment","毳毛比例","Vellus hair ratio","30天",30,9.6027700334623
+"EXP 028","Treatment","毳毛比例","Vellus hair ratio","90天",90,9.69591708258132
+"EXP 028","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.4245094667349
+"EXP 028","Treatment","油脂分泌","Sebum secretion","基线",0,168.333717118342
+"EXP 028","Treatment","油脂分泌","Sebum secretion","30天",30,93.0685468125487
+"EXP 028","Treatment","油脂分泌","Sebum secretion","90天",90,108.369307584886
+"EXP 028","Treatment","油脂分泌","Sebum secretion","180天",180,131.627498323004
+"EXP 028","Treatment","头皮硬度","Scalp stiffness","基线",0,24.9752104658219
+"EXP 028","Treatment","头皮硬度","Scalp stiffness","30天",30,20.8369568774901
+"EXP 028","Treatment","头皮硬度","Scalp stiffness","90天",90,18.1150668330929
+"EXP 028","Treatment","头皮硬度","Scalp stiffness","180天",180,18.8508489574898
+"EXP 028","Treatment","头皮血流","Scalp blood flow","基线",0,63.3443590785032
+"EXP 028","Treatment","头皮血流","Scalp blood flow","30天",30,148.187982854936
+"EXP 028","Treatment","头皮血流","Scalp blood flow","90天",90,186.119137873613
+"EXP 028","Treatment","头皮血流","Scalp blood flow","180天",180,190.401959367168
+"EXP 029","Treatment","毛发密度","Hair density","基线",0,140.084250842535
+"EXP 029","Treatment","毛发密度","Hair density","30天",30,154.348147157033
+"EXP 029","Treatment","毛发密度","Hair density","90天",90,191.067951491505
+"EXP 029","Treatment","毛发密度","Hair density","180天",180,203.805033280614
+"EXP 029","Treatment","毛发直径","Hair shaft diameter","基线",0,46.4234046328515
+"EXP 029","Treatment","毛发直径","Hair shaft diameter","30天",30,52.5836353559181
+"EXP 029","Treatment","毛发直径","Hair shaft diameter","90天",90,53.8737774280326
+"EXP 029","Treatment","毛发直径","Hair shaft diameter","180天",180,60.6879100151149
+"EXP 029","Treatment","覆盖率","Coverage index","基线",0,0.225422784536746
+"EXP 029","Treatment","覆盖率","Coverage index","30天",30,0.741464743817932
+"EXP 029","Treatment","覆盖率","Coverage index","90天",90,1.58014509892568
+"EXP 029","Treatment","覆盖率","Coverage index","180天",180,1.61905935487253
+"EXP 029","Treatment","终毛比例","Terminal hair ratio","基线",0,41.4981430069014
+"EXP 029","Treatment","终毛比例","Terminal hair ratio","30天",30,48.8092773814947
+"EXP 029","Treatment","终毛比例","Terminal hair ratio","90天",90,56.132551426147
+"EXP 029","Treatment","终毛比例","Terminal hair ratio","180天",180,59.8774761742152
+"EXP 029","Treatment","毳毛比例","Vellus hair ratio","基线",0,10.343724399626
+"EXP 029","Treatment","毳毛比例","Vellus hair ratio","30天",30,9.44155842173529
+"EXP 029","Treatment","毳毛比例","Vellus hair ratio","90天",90,9.45642690429947
+"EXP 029","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.34513827035831
+"EXP 029","Treatment","油脂分泌","Sebum secretion","基线",0,143.524884857227
+"EXP 029","Treatment","油脂分泌","Sebum secretion","30天",30,97.5926920219028
+"EXP 029","Treatment","油脂分泌","Sebum secretion","90天",90,92.6477182952005
+"EXP 029","Treatment","油脂分泌","Sebum secretion","180天",180,125.758662009351
+"EXP 029","Treatment","头皮硬度","Scalp stiffness","基线",0,22.5977396365875
+"EXP 029","Treatment","头皮硬度","Scalp stiffness","30天",30,19.0412385849015
+"EXP 029","Treatment","头皮硬度","Scalp stiffness","90天",90,12.8898336401895
+"EXP 029","Treatment","头皮硬度","Scalp stiffness","180天",180,14.2216558142587
+"EXP 029","Treatment","头皮血流","Scalp blood flow","基线",0,178.472728906472
+"EXP 029","Treatment","头皮血流","Scalp blood flow","30天",30,263.602306491115
+"EXP 029","Treatment","头皮血流","Scalp blood flow","90天",90,360.426726146592
+"EXP 029","Treatment","头皮血流","Scalp blood flow","180天",180,327.552478558633
+"EXP 030","Treatment","毛发密度","Hair density","基线",0,104.71161173339
+"EXP 030","Treatment","毛发密度","Hair density","30天",30,113.137806569782
+"EXP 030","Treatment","毛发密度","Hair density","90天",90,142.872830542672
+"EXP 030","Treatment","毛发密度","Hair density","180天",180,108.730459093259
+"EXP 030","Treatment","毛发直径","Hair shaft diameter","基线",0,72.8656637887749
+"EXP 030","Treatment","毛发直径","Hair shaft diameter","30天",30,73.8041114924356
+"EXP 030","Treatment","毛发直径","Hair shaft diameter","90天",90,90.6246860109408
+"EXP 030","Treatment","毛发直径","Hair shaft diameter","180天",180,82.5987296937516
+"EXP 030","Treatment","覆盖率","Coverage index","基线",0,0.654075279070814
+"EXP 030","Treatment","覆盖率","Coverage index","30天",30,1.20891922842321
+"EXP 030","Treatment","覆盖率","Coverage index","90天",90,2.2729892696412
+"EXP 030","Treatment","覆盖率","Coverage index","180天",180,2.02416841536795
+"EXP 030","Treatment","终毛比例","Terminal hair ratio","基线",0,46.9507255322947
+"EXP 030","Treatment","终毛比例","Terminal hair ratio","30天",30,54.4557167000855
+"EXP 030","Treatment","终毛比例","Terminal hair ratio","90天",90,65.8768109013725
+"EXP 030","Treatment","终毛比例","Terminal hair ratio","180天",180,65.9953288904647
+"EXP 030","Treatment","毳毛比例","Vellus hair ratio","基线",0,11.1896172013878
+"EXP 030","Treatment","毳毛比例","Vellus hair ratio","30天",30,10.9676446371093
+"EXP 030","Treatment","毳毛比例","Vellus hair ratio","90天",90,10.5223931338386
+"EXP 030","Treatment","毳毛比例","Vellus hair ratio","180天",180,9.19691400291342
+"EXP 030","Treatment","油脂分泌","Sebum secretion","基线",0,204.287391633546
+"EXP 030","Treatment","油脂分泌","Sebum secretion","30天",30,133.851845157361
+"EXP 030","Treatment","油脂分泌","Sebum secretion","90天",90,129.25454956907
+"EXP 030","Treatment","油脂分泌","Sebum secretion","180天",180,161.06548397261
+"EXP 030","Treatment","头皮硬度","Scalp stiffness","基线",0,16.306291308151
+"EXP 030","Treatment","头皮硬度","Scalp stiffness","30天",30,14.7637676293881
+"EXP 030","Treatment","头皮硬度","Scalp stiffness","90天",90,6.35500456984277
+"EXP 030","Treatment","头皮硬度","Scalp stiffness","180天",180,9.19277909807708
+"EXP 030","Treatment","头皮血流","Scalp blood flow","基线",0,142.363692287539
+"EXP 030","Treatment","头皮血流","Scalp blood flow","30天",30,209.813192100822
+"EXP 030","Treatment","头皮血流","Scalp blood flow","90天",90,273.76444853507
+"EXP 030","Treatment","头皮血流","Scalp blood flow","180天",180,261.013530366227
+"EXP 031","Treatment","毛发密度","Hair density","基线",0,191.30823536674
+"EXP 031","Treatment","毛发密度","Hair density","30天",30,198.311577412844
+"EXP 031","Treatment","毛发密度","Hair density","90天",90,202.16345802195
+"EXP 031","Treatment","毛发密度","Hair density","180天",180,204.926377215117
+"EXP 031","Treatment","毛发直径","Hair shaft diameter","基线",0,75.6444081544664
+"EXP 031","Treatment","毛发直径","Hair shaft diameter","30天",30,73.667963089126
+"EXP 031","Treatment","毛发直径","Hair shaft diameter","90天",90,86.1463513374984
+"EXP 031","Treatment","毛发直径","Hair shaft diameter","180天",180,75.833974188664
+"EXP 031","Treatment","覆盖率","Coverage index","基线",0,0.549316316286596
+"EXP 031","Treatment","覆盖率","Coverage index","30天",30,1.01037888337019
+"EXP 031","Treatment","覆盖率","Coverage index","90天",90,2.18782117877059
+"EXP 031","Treatment","覆盖率","Coverage index","180天",180,1.9087792864347
+"EXP 031","Treatment","终毛比例","Terminal hair ratio","基线",0,44.1765124635666
+"EXP 031","Treatment","终毛比例","Terminal hair ratio","30天",30,46.7942675771604
+"EXP 031","Treatment","终毛比例","Terminal hair ratio","90天",90,53.1997868979589
+"EXP 031","Treatment","终毛比例","Terminal hair ratio","180天",180,48.8870552862013
+"EXP 031","Treatment","毳毛比例","Vellus hair ratio","基线",0,8.74650489376342
+"EXP 031","Treatment","毳毛比例","Vellus hair ratio","30天",30,9.64108254525378
+"EXP 031","Treatment","毳毛比例","Vellus hair ratio","90天",90,9.68418208740448
+"EXP 031","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.97879523423959
+"EXP 031","Treatment","油脂分泌","Sebum secretion","基线",0,144.465023558927
+"EXP 031","Treatment","油脂分泌","Sebum secretion","30天",30,86.1301063935493
+"EXP 031","Treatment","油脂分泌","Sebum secretion","90天",90,85.9231333468648
+"EXP 031","Treatment","油脂分泌","Sebum secretion","180天",180,111.150841234127
+"EXP 031","Treatment","头皮硬度","Scalp stiffness","基线",0,18.4223095572824
+"EXP 031","Treatment","头皮硬度","Scalp stiffness","30天",30,18.1976362765573
+"EXP 031","Treatment","头皮硬度","Scalp stiffness","90天",90,12.6496367539674
+"EXP 031","Treatment","头皮硬度","Scalp stiffness","180天",180,14.8835253655165
+"EXP 031","Treatment","头皮血流","Scalp blood flow","基线",0,161.506431196907
+"EXP 031","Treatment","头皮血流","Scalp blood flow","30天",30,236.164503047217
+"EXP 031","Treatment","头皮血流","Scalp blood flow","90天",90,300.853130199218
+"EXP 031","Treatment","头皮血流","Scalp blood flow","180天",180,290.981082772901
+"EXP 032","Treatment","毛发密度","Hair density","基线",0,112.796340515938
+"EXP 032","Treatment","毛发密度","Hair density","30天",30,105.220720953683
+"EXP 032","Treatment","毛发密度","Hair density","90天",90,119.682696114847
+"EXP 032","Treatment","毛发密度","Hair density","180天",180,99.1701146210987
+"EXP 032","Treatment","毛发直径","Hair shaft diameter","基线",0,73.0889295125099
+"EXP 032","Treatment","毛发直径","Hair shaft diameter","30天",30,77.042396342008
+"EXP 032","Treatment","毛发直径","Hair shaft diameter","90天",90,93.0358424255531
+"EXP 032","Treatment","毛发直径","Hair shaft diameter","180天",180,82.5527879378475
+"EXP 032","Treatment","覆盖率","Coverage index","基线",0,0.738070102115339
+"EXP 032","Treatment","覆盖率","Coverage index","30天",30,1.27515206851738
+"EXP 032","Treatment","覆盖率","Coverage index","90天",90,2.09963209603747
+"EXP 032","Treatment","覆盖率","Coverage index","180天",180,1.82712316272102
+"EXP 032","Treatment","终毛比例","Terminal hair ratio","基线",0,40.9189415560873
+"EXP 032","Treatment","终毛比例","Terminal hair ratio","30天",30,43.6364796954768
+"EXP 032","Treatment","终毛比例","Terminal hair ratio","90天",90,55.0422729432816
+"EXP 032","Treatment","终毛比例","Terminal hair ratio","180天",180,58.594318560576
+"EXP 032","Treatment","毳毛比例","Vellus hair ratio","基线",0,18.3096863011529
+"EXP 032","Treatment","毳毛比例","Vellus hair ratio","30天",30,18.0947902670612
+"EXP 032","Treatment","毳毛比例","Vellus hair ratio","90天",90,15.2908912441759
+"EXP 032","Treatment","毳毛比例","Vellus hair ratio","180天",180,12.4210501515404
+"EXP 032","Treatment","油脂分泌","Sebum secretion","基线",0,144.236208874003
+"EXP 032","Treatment","油脂分泌","Sebum secretion","30天",30,90.6578425889809
+"EXP 032","Treatment","油脂分泌","Sebum secretion","90天",90,99.2490484196122
+"EXP 032","Treatment","油脂分泌","Sebum secretion","180天",180,125.833960893945
+"EXP 032","Treatment","头皮硬度","Scalp stiffness","基线",0,21.5791942758038
+"EXP 032","Treatment","头皮硬度","Scalp stiffness","30天",30,19.8157743884642
+"EXP 032","Treatment","头皮硬度","Scalp stiffness","90天",90,15.4885419842889
+"EXP 032","Treatment","头皮硬度","Scalp stiffness","180天",180,16.3790308471023
+"EXP 032","Treatment","头皮血流","Scalp blood flow","基线",0,153.017345428344
+"EXP 032","Treatment","头皮血流","Scalp blood flow","30天",30,256.037338884478
+"EXP 032","Treatment","头皮血流","Scalp blood flow","90天",90,330.536006703199
+"EXP 032","Treatment","头皮血流","Scalp blood flow","180天",180,317.310573914474
+"EXP 033","Treatment","毛发密度","Hair density","基线",0,131.850709064589
+"EXP 033","Treatment","毛发密度","Hair density","30天",30,150.182838879508
+"EXP 033","Treatment","毛发密度","Hair density","90天",90,165.701512620528
+"EXP 033","Treatment","毛发密度","Hair density","180天",180,158.255626205634
+"EXP 033","Treatment","毛发直径","Hair shaft diameter","基线",0,53.4423644974957
+"EXP 033","Treatment","毛发直径","Hair shaft diameter","30天",30,61.6995890706398
+"EXP 033","Treatment","毛发直径","Hair shaft diameter","90天",90,71.3762061403255
+"EXP 033","Treatment","毛发直径","Hair shaft diameter","180天",180,67.1656420217616
+"EXP 033","Treatment","覆盖率","Coverage index","基线",0,1.6067355399444
+"EXP 033","Treatment","覆盖率","Coverage index","30天",30,2.16040684065996
+"EXP 033","Treatment","覆盖率","Coverage index","90天",90,2.98605734911905
+"EXP 033","Treatment","覆盖率","Coverage index","180天",180,2.75439880828777
+"EXP 033","Treatment","终毛比例","Terminal hair ratio","基线",0,40.1050150371541
+"EXP 033","Treatment","终毛比例","Terminal hair ratio","30天",30,40.167942523337
+"EXP 033","Treatment","终毛比例","Terminal hair ratio","90天",90,46.157859018315
+"EXP 033","Treatment","终毛比例","Terminal hair ratio","180天",180,48.3055012598319
+"EXP 033","Treatment","毳毛比例","Vellus hair ratio","基线",0,10.7110171663037
+"EXP 033","Treatment","毳毛比例","Vellus hair ratio","30天",30,10.3511431801807
+"EXP 033","Treatment","毳毛比例","Vellus hair ratio","90天",90,9.78492490044136
+"EXP 033","Treatment","毳毛比例","Vellus hair ratio","180天",180,8.96757148983255
+"EXP 033","Treatment","油脂分泌","Sebum secretion","基线",0,142.475359763519
+"EXP 033","Treatment","油脂分泌","Sebum secretion","30天",30,83.305151436159
+"EXP 033","Treatment","油脂分泌","Sebum secretion","90天",90,97.9739212904057
+"EXP 033","Treatment","油脂分泌","Sebum secretion","180天",180,146.752558676284
+"EXP 033","Treatment","头皮硬度","Scalp stiffness","基线",0,24.0962770934753
+"EXP 033","Treatment","头皮硬度","Scalp stiffness","30天",30,18.797669043925
+"EXP 033","Treatment","头皮硬度","Scalp stiffness","90天",90,13.6100248354882
+"EXP 033","Treatment","头皮硬度","Scalp stiffness","180天",180,16.0812079880297
+"EXP 033","Treatment","头皮血流","Scalp blood flow","基线",0,143.866130307263
+"EXP 033","Treatment","头皮血流","Scalp blood flow","30天",30,189.968519643542
+"EXP 033","Treatment","头皮血流","Scalp blood flow","90天",90,246.415821896556
+"EXP 033","Treatment","头皮血流","Scalp blood flow","180天",180,241.908996725333
+"EXP 034","Treatment","毛发密度","Hair density","基线",0,73.3014158351762
+"EXP 034","Treatment","毛发密度","Hair density","30天",30,75.8761606654903
+"EXP 034","Treatment","毛发密度","Hair density","90天",90,105.840091952193
+"EXP 034","Treatment","毛发密度","Hair density","180天",180,90.5845808714658
+"EXP 034","Treatment","毛发直径","Hair shaft diameter","基线",0,47.9111782683161
+"EXP 034","Treatment","毛发直径","Hair shaft diameter","30天",30,50.1243638518439
+"EXP 034","Treatment","毛发直径","Hair shaft diameter","90天",90,50.4471158561539
+"EXP 034","Treatment","毛发直径","Hair shaft diameter","180天",180,58.3314262678103
+"EXP 034","Treatment","覆盖率","Coverage index","基线",0,0.527002610753178
+"EXP 034","Treatment","覆盖率","Coverage index","30天",30,1.05325803807673
+"EXP 034","Treatment","覆盖率","Coverage index","90天",90,2.00834382108818
+"EXP 034","Treatment","覆盖率","Coverage index","180天",180,1.84147926731322
+"EXP 034","Treatment","终毛比例","Terminal hair ratio","基线",0,32.7798911228314
+"EXP 034","Treatment","终毛比例","Terminal hair ratio","30天",30,39.3498932804964
+"EXP 034","Treatment","终毛比例","Terminal hair ratio","90天",90,45.5286879565913
+"EXP 034","Treatment","终毛比例","Terminal hair ratio","180天",180,48.9407138657862
+"EXP 034","Treatment","毳毛比例","Vellus hair ratio","基线",0,11.6678352446945
+"EXP 034","Treatment","毳毛比例","Vellus hair ratio","30天",30,10.8224214410798
+"EXP 034","Treatment","毳毛比例","Vellus hair ratio","90天",90,10.2620828531997
+"EXP 034","Treatment","毳毛比例","Vellus hair ratio","180天",180,9.08666673255361
+"EXP 034","Treatment","油脂分泌","Sebum secretion","基线",0,158.863130840106
+"EXP 034","Treatment","油脂分泌","Sebum secretion","30天",30,99.7267067118218
+"EXP 034","Treatment","油脂分泌","Sebum secretion","90天",90,118.60051566593
+"EXP 034","Treatment","油脂分泌","Sebum secretion","180天",180,159.919377207766
+"EXP 034","Treatment","头皮硬度","Scalp stiffness","基线",0,31.5554849415118
+"EXP 034","Treatment","头皮硬度","Scalp stiffness","30天",30,24.2380365310688
+"EXP 034","Treatment","头皮硬度","Scalp stiffness","90天",90,23.4828282397051
+"EXP 034","Treatment","头皮硬度","Scalp stiffness","180天",180,23.8639398615775
+"EXP 034","Treatment","头皮血流","Scalp blood flow","基线",0,188.75564493468
+"EXP 034","Treatment","头皮血流","Scalp blood flow","30天",30,285.745156920473
+"EXP 034","Treatment","头皮血流","Scalp blood flow","90天",90,338.951578978835
+"EXP 034","Treatment","头皮血流","Scalp blood flow","180天",180,329.770047343289
+"EXP 035","Treatment","毛发密度","Hair density","基线",0,148.786622994742
+"EXP 035","Treatment","毛发密度","Hair density","30天",30,154.551011180914
+"EXP 035","Treatment","毛发密度","Hair density","90天",90,177.554483116055
+"EXP 035","Treatment","毛发密度","Hair density","180天",180,185.843817689602
+"EXP 035","Treatment","毛发直径","Hair shaft diameter","基线",0,47.7605095547858
+"EXP 035","Treatment","毛发直径","Hair shaft diameter","30天",30,45.817472002075
+"EXP 035","Treatment","毛发直径","Hair shaft diameter","90天",90,46.2064835354086
+"EXP 035","Treatment","毛发直径","Hair shaft diameter","180天",180,55.4283306833999
+"EXP 035","Treatment","覆盖率","Coverage index","基线",0,0.300149107482866
+"EXP 035","Treatment","覆盖率","Coverage index","30天",30,0.866811229143997
+"EXP 035","Treatment","覆盖率","Coverage index","90天",90,1.79402946811903
+"EXP 035","Treatment","覆盖率","Coverage index","180天",180,1.6666063555626
+"EXP 035","Treatment","终毛比例","Terminal hair ratio","基线",0,38.9250739349052
+"EXP 035","Treatment","终毛比例","Terminal hair ratio","30天",30,43.6189084752055
+"EXP 035","Treatment","终毛比例","Terminal hair ratio","90天",90,51.4115064358661
+"EXP 035","Treatment","终毛比例","Terminal hair ratio","180天",180,54.264822108078
+"EXP 035","Treatment","毳毛比例","Vellus hair ratio","基线",0,12.489860223834
+"EXP 035","Treatment","毳毛比例","Vellus hair ratio","30天",30,11.3318602372466
+"EXP 035","Treatment","毳毛比例","Vellus hair ratio","90天",90,10.0397739102822
+"EXP 035","Treatment","毳毛比例","Vellus hair ratio","180天",180,9.17713532432655
+"EXP 035","Treatment","油脂分泌","Sebum secretion","基线",0,136.731026661417
+"EXP 035","Treatment","油脂分泌","Sebum secretion","30天",30,96.565381475412
+"EXP 035","Treatment","油脂分泌","Sebum secretion","90天",90,98.2826097708605
+"EXP 035","Treatment","油脂分泌","Sebum secretion","180天",180,119.6989569489
+"EXP 035","Treatment","头皮硬度","Scalp stiffness","基线",0,24.8745727154259
+"EXP 035","Treatment","头皮硬度","Scalp stiffness","30天",30,18.6475600474347
+"EXP 035","Treatment","头皮硬度","Scalp stiffness","90天",90,13.2281621726267
+"EXP 035","Treatment","头皮硬度","Scalp stiffness","180天",180,14.3842439869556
+"EXP 035","Treatment","头皮血流","Scalp blood flow","基线",0,192.862451602278
+"EXP 035","Treatment","头皮血流","Scalp blood flow","30天",30,305.602318084009
+"EXP 035","Treatment","头皮血流","Scalp blood flow","90天",90,402.092407551487
+"EXP 035","Treatment","头皮血流","Scalp blood flow","180天",180,386.624138496793
+"EXP 036","Treatment","毛发密度","Hair density","基线",0,223.870505659419
+"EXP 036","Treatment","毛发密度","Hair density","30天",30,270.920764901086
+"EXP 036","Treatment","毛发密度","Hair density","90天",90,258.265160355309
+"EXP 036","Treatment","毛发密度","Hair density","180天",180,277.612392068513
+"EXP 036","Treatment","毛发直径","Hair shaft diameter","基线",0,64.3538367864945
+"EXP 036","Treatment","毛发直径","Hair shaft diameter","30天",30,60.7786878116504
+"EXP 036","Treatment","毛发直径","Hair shaft diameter","90天",90,68.7113998641377
+"EXP 036","Treatment","毛发直径","Hair shaft diameter","180天",180,65.660281046281
+"EXP 036","Treatment","覆盖率","Coverage index","基线",0,0.756653838726272
+"EXP 036","Treatment","覆盖率","Coverage index","30天",30,1.41944631428214
+"EXP 036","Treatment","覆盖率","Coverage index","90天",90,2.33263865396896
+"EXP 036","Treatment","覆盖率","Coverage index","180天",180,2.22459350714701
+"EXP 036","Treatment","终毛比例","Terminal hair ratio","基线",0,28.7174223422949
+"EXP 036","Treatment","终毛比例","Terminal hair ratio","30天",30,32.7270397910982
+"EXP 036","Treatment","终毛比例","Terminal hair ratio","90天",90,39.3044527215912
+"EXP 036","Treatment","终毛比例","Terminal hair ratio","180天",180,40.1955340607277
+"EXP 036","Treatment","毳毛比例","Vellus hair ratio","基线",0,19.597972110326
+"EXP 036","Treatment","毳毛比例","Vellus hair ratio","30天",30,18.6207483493532
+"EXP 036","Treatment","毳毛比例","Vellus hair ratio","90天",90,16.1260411044933
+"EXP 036","Treatment","毳毛比例","Vellus hair ratio","180天",180,13.2684562875392
+"EXP 036","Treatment","油脂分泌","Sebum secretion","基线",0,153.602373779398
+"EXP 036","Treatment","油脂分泌","Sebum secretion","30天",30,96.3126939592813
+"EXP 036","Treatment","油脂分泌","Sebum secretion","90天",90,116.99703686294
+"EXP 036","Treatment","油脂分泌","Sebum secretion","180天",180,147.541497700272
+"EXP 036","Treatment","头皮硬度","Scalp stiffness","基线",0,22.3332169265311
+"EXP 036","Treatment","头皮硬度","Scalp stiffness","30天",30,19.8826286167518
+"EXP 036","Treatment","头皮硬度","Scalp stiffness","90天",90,16.7179138245438
+"EXP 036","Treatment","头皮硬度","Scalp stiffness","180天",180,18.205608601224
+"EXP 036","Treatment","头皮血流","Scalp blood flow","基线",0,140.644960147437
+"EXP 036","Treatment","头皮血流","Scalp blood flow","30天",30,223.557657973338
+"EXP 036","Treatment","头皮血流","Scalp blood flow","90天",90,298.466755973895
+"EXP 036","Treatment","头皮血流","Scalp blood flow","180天",180,288.701803887006
+"EXP 037","Treatment","毛发密度","Hair density","基线",0,217.464290528673
+"EXP 037","Treatment","毛发密度","Hair density","30天",30,241.558552895927
+"EXP 037","Treatment","毛发密度","Hair density","90天",90,268.78137240356
+"EXP 037","Treatment","毛发密度","Hair density","180天",180,280.260281847089
+"EXP 037","Treatment","毛发直径","Hair shaft diameter","基线",0,65.0754046323134
+"EXP 037","Treatment","毛发直径","Hair shaft diameter","30天",30,65.433399020593
+"EXP 037","Treatment","毛发直径","Hair shaft diameter","90天",90,79.1448306824654
+"EXP 037","Treatment","毛发直径","Hair shaft diameter","180天",180,76.225748705308
+"EXP 037","Treatment","覆盖率","Coverage index","基线",0,0.137875620889764
+"EXP 037","Treatment","覆盖率","Coverage index","30天",30,0.690883900575656
+"EXP 037","Treatment","覆盖率","Coverage index","90天",90,1.59978953155075
+"EXP 037","Treatment","覆盖率","Coverage index","180天",180,1.48303205801813
+"EXP 037","Treatment","终毛比例","Terminal hair ratio","基线",0,40.1785041669398
+"EXP 037","Treatment","终毛比例","Terminal hair ratio","30天",30,41.8781605321096
+"EXP 037","Treatment","终毛比例","Terminal hair ratio","90天",90,52.1552161363794
+"EXP 037","Treatment","终毛比例","Terminal hair ratio","180天",180,55.0808283586965
+"EXP 037","Treatment","毳毛比例","Vellus hair ratio","基线",0,23.9942090925547
+"EXP 037","Treatment","毳毛比例","Vellus hair ratio","30天",30,23.0940038165856
+"EXP 037","Treatment","毳毛比例","Vellus hair ratio","90天",90,19.0137287232884
+"EXP 037","Treatment","毳毛比例","Vellus hair ratio","180天",180,17.5562191596079
+"EXP 037","Treatment","油脂分泌","Sebum secretion","基线",0,158.214744548529
+"EXP 037","Treatment","油脂分泌","Sebum secretion","30天",30,95.4617016770442
+"EXP 037","Treatment","油脂分泌","Sebum secretion","90天",90,89.4185203265594
+"EXP 037","Treatment","油脂分泌","Sebum secretion","180天",180,136.132342967183
+"EXP 037","Treatment","头皮硬度","Scalp stiffness","基线",0,38.411867038022
+"EXP 037","Treatment","头皮硬度","Scalp stiffness","30天",30,28.0119515359145
+"EXP 037","Treatment","头皮硬度","Scalp stiffness","90天",90,26.0858041532926
+"EXP 037","Treatment","头皮硬度","Scalp stiffness","180天",180,28.1577602284792
+"EXP 037","Treatment","头皮血流","Scalp blood flow","基线",0,272.262092476614
+"EXP 037","Treatment","头皮血流","Scalp blood flow","30天",30,306.472863637229
+"EXP 037","Treatment","头皮血流","Scalp blood flow","90天",90,378.525246841306
+"EXP 037","Treatment","头皮血流","Scalp blood flow","180天",180,345.036981058951
+"EXP 038","Treatment","毛发密度","Hair density","基线",0,202.213526762537
+"EXP 038","Treatment","毛发密度","Hair density","30天",30,209.170067586288
+"EXP 038","Treatment","毛发密度","Hair density","90天",90,234.610583786482
+"EXP 038","Treatment","毛发密度","Hair density","180天",180,256.706929993878
+"EXP 038","Treatment","毛发直径","Hair shaft diameter","基线",0,48.2683373587456
+"EXP 038","Treatment","毛发直径","Hair shaft diameter","30天",30,48.6069673624849
+"EXP 038","Treatment","毛发直径","Hair shaft diameter","90天",90,49.9009048931528
+"EXP 038","Treatment","毛发直径","Hair shaft diameter","180天",180,56.7868959686847
+"EXP 038","Treatment","覆盖率","Coverage index","基线",0,0.669033187770525
+"EXP 038","Treatment","覆盖率","Coverage index","30天",30,1.13973701270424
+"EXP 038","Treatment","覆盖率","Coverage index","90天",90,2.05336212276483
+"EXP 038","Treatment","覆盖率","Coverage index","180天",180,1.9079292853319
+"EXP 038","Treatment","终毛比例","Terminal hair ratio","基线",0,30.5553634782561
+"EXP 038","Treatment","终毛比例","Terminal hair ratio","30天",30,35.6497816443148
+"EXP 038","Treatment","终毛比例","Terminal hair ratio","90天",90,45.9100477829877
+"EXP 038","Treatment","终毛比例","Terminal hair ratio","180天",180,49.2016892703616
+"EXP 038","Treatment","毳毛比例","Vellus hair ratio","基线",0,15.1437777859435
+"EXP 038","Treatment","毳毛比例","Vellus hair ratio","30天",30,16.9096181631469
+"EXP 038","Treatment","毳毛比例","Vellus hair ratio","90天",90,14.3742612585455
+"EXP 038","Treatment","毳毛比例","Vellus hair ratio","180天",180,12.4811738659644
+"EXP 038","Treatment","油脂分泌","Sebum secretion","基线",0,168.005820070142
+"EXP 038","Treatment","油脂分泌","Sebum secretion","30天",30,101.503148269273
+"EXP 038","Treatment","油脂分泌","Sebum secretion","90天",90,101.522118667083
+"EXP 038","Treatment","油脂分泌","Sebum secretion","180天",180,123.896426198318
+"EXP 038","Treatment","头皮硬度","Scalp stiffness","基线",0,32.5256822761896
+"EXP 038","Treatment","头皮硬度","Scalp stiffness","30天",30,26.8898628038624
+"EXP 038","Treatment","头皮硬度","Scalp stiffness","90天",90,25.8661802341432
+"EXP 038","Treatment","头皮硬度","Scalp stiffness","180天",180,26.0704311192567
+"EXP 038","Treatment","头皮血流","Scalp blood flow","基线",0,177.555616785563
+"EXP 038","Treatment","头皮血流","Scalp blood flow","30天",30,245.010928121442
+"EXP 038","Treatment","头皮血流","Scalp blood flow","90天",90,317.63679278374
+"EXP 038","Treatment","头皮血流","Scalp blood flow","180天",180,280.571366292634
+"CTRL 001","Control","毛发密度","Hair density","基线",0,130.328708809658
+"CTRL 001","Control","毛发密度","Hair density","30天",30,136.363611611824
+"CTRL 001","Control","毛发密度","Hair density","90天",90,168.179249691617
+"CTRL 001","Control","毛发密度","Hair density","180天",180,177.811177372156
+"CTRL 001","Control","毛发直径","Hair shaft diameter","基线",0,64.0706582615921
+"CTRL 001","Control","毛发直径","Hair shaft diameter","30天",30,61.7942847271278
+"CTRL 001","Control","毛发直径","Hair shaft diameter","90天",90,68.1473677510664
+"CTRL 001","Control","毛发直径","Hair shaft diameter","180天",180,67.8782743124779
+"CTRL 001","Control","覆盖率","Coverage index","基线",0,0.550352740564794
+"CTRL 001","Control","覆盖率","Coverage index","30天",30,0.921918266441854
+"CTRL 001","Control","覆盖率","Coverage index","90天",90,1.79795051135639
+"CTRL 001","Control","覆盖率","Coverage index","180天",180,1.83978763301378
+"CTRL 001","Control","终毛比例","Terminal hair ratio","基线",0,45.4400747417646
+"CTRL 001","Control","终毛比例","Terminal hair ratio","30天",30,49.3151085004687
+"CTRL 001","Control","终毛比例","Terminal hair ratio","90天",90,52.1896281988196
+"CTRL 001","Control","终毛比例","Terminal hair ratio","180天",180,50.7720604596785
+"CTRL 001","Control","毳毛比例","Vellus hair ratio","基线",0,13.0945883744121
+"CTRL 001","Control","毳毛比例","Vellus hair ratio","30天",30,12.2122737160027
+"CTRL 001","Control","毳毛比例","Vellus hair ratio","90天",90,9.00807267996611
+"CTRL 001","Control","毳毛比例","Vellus hair ratio","180天",180,9.19698630788363
+"CTRL 001","Control","油脂分泌","Sebum secretion","基线",0,178.373415835554
+"CTRL 001","Control","油脂分泌","Sebum secretion","30天",30,181.627629338701
+"CTRL 001","Control","油脂分泌","Sebum secretion","90天",90,179.039832514495
+"CTRL 001","Control","油脂分泌","Sebum secretion","180天",180,183.952960609984
+"CTRL 001","Control","头皮硬度","Scalp stiffness","基线",0,29.2408517342427
+"CTRL 001","Control","头皮硬度","Scalp stiffness","30天",30,31.1907984170169
+"CTRL 001","Control","头皮硬度","Scalp stiffness","90天",90,31.4302154986345
+"CTRL 001","Control","头皮硬度","Scalp stiffness","180天",180,31.2580447803723
+"CTRL 001","Control","头皮血流","Scalp blood flow","基线",0,148.422807692697
+"CTRL 001","Control","头皮血流","Scalp blood flow","30天",30,172.437617239618
+"CTRL 001","Control","头皮血流","Scalp blood flow","90天",90,181.577118542458
+"CTRL 001","Control","头皮血流","Scalp blood flow","180天",180,170.464089635767
+"CTRL 002","Control","毛发密度","Hair density","基线",0,123.405683330527
+"CTRL 002","Control","毛发密度","Hair density","30天",30,112.914392096551
+"CTRL 002","Control","毛发密度","Hair density","90天",90,118.861397403503
+"CTRL 002","Control","毛发密度","Hair density","180天",180,124.647786757017
+"CTRL 002","Control","毛发直径","Hair shaft diameter","基线",0,59.4362936954519
+"CTRL 002","Control","毛发直径","Hair shaft diameter","30天",30,59.829940372076
+"CTRL 002","Control","毛发直径","Hair shaft diameter","90天",90,67.2191968302079
+"CTRL 002","Control","毛发直径","Hair shaft diameter","180天",180,70.7839350457648
+"CTRL 002","Control","覆盖率","Coverage index","基线",0,0.344567179053136
+"CTRL 002","Control","覆盖率","Coverage index","30天",30,0.217439780128209
+"CTRL 002","Control","覆盖率","Coverage index","90天",90,0.844562053165732
+"CTRL 002","Control","覆盖率","Coverage index","180天",180,0.693608174457099
+"CTRL 002","Control","终毛比例","Terminal hair ratio","基线",0,49.282883859508
+"CTRL 002","Control","终毛比例","Terminal hair ratio","30天",30,52.4807879795379
+"CTRL 002","Control","终毛比例","Terminal hair ratio","90天",90,61.2762598269209
+"CTRL 002","Control","终毛比例","Terminal hair ratio","180天",180,65.334886970711
+"CTRL 002","Control","毳毛比例","Vellus hair ratio","基线",0,15.5169152519856
+"CTRL 002","Control","毳毛比例","Vellus hair ratio","30天",30,13.7071803732146
+"CTRL 002","Control","毳毛比例","Vellus hair ratio","90天",90,9.71989043272439
+"CTRL 002","Control","毳毛比例","Vellus hair ratio","180天",180,10.4276689186172
+"CTRL 002","Control","油脂分泌","Sebum secretion","基线",0,98.0143473231489
+"CTRL 002","Control","油脂分泌","Sebum secretion","30天",30,105.761093664616
+"CTRL 002","Control","油脂分泌","Sebum secretion","90天",90,108.151043173954
+"CTRL 002","Control","油脂分泌","Sebum secretion","180天",180,111.774238760197
+"CTRL 002","Control","头皮硬度","Scalp stiffness","基线",0,28.9617462586585
+"CTRL 002","Control","头皮硬度","Scalp stiffness","30天",30,28.3445363431256
+"CTRL 002","Control","头皮硬度","Scalp stiffness","90天",90,28.2173302029102
+"CTRL 002","Control","头皮硬度","Scalp stiffness","180天",180,28.1694114598519
+"CTRL 002","Control","头皮血流","Scalp blood flow","基线",0,135.774398585973
+"CTRL 002","Control","头皮血流","Scalp blood flow","30天",30,152.18399006084
+"CTRL 002","Control","头皮血流","Scalp blood flow","90天",90,142.366857319335
+"CTRL 002","Control","头皮血流","Scalp blood flow","180天",180,144.917270586292
+"CTRL 003","Control","毛发密度","Hair density","基线",0,191.794072254758
+"CTRL 003","Control","毛发密度","Hair density","30天",30,208.547543355722
+"CTRL 003","Control","毛发密度","Hair density","90天",90,232.902475372156
+"CTRL 003","Control","毛发密度","Hair density","180天",180,240.528304449708
+"CTRL 003","Control","毛发直径","Hair shaft diameter","基线",0,50.6126315871695
+"CTRL 003","Control","毛发直径","Hair shaft diameter","30天",30,51.1758638816983
+"CTRL 003","Control","毛发直径","Hair shaft diameter","90天",90,53.3367896491491
+"CTRL 003","Control","毛发直径","Hair shaft diameter","180天",180,47.9548629868576
+"CTRL 003","Control","覆盖率","Coverage index","基线",0,0.83611859717601
+"CTRL 003","Control","覆盖率","Coverage index","30天",30,1.14121037260646
+"CTRL 003","Control","覆盖率","Coverage index","90天",90,2.08364174229332
+"CTRL 003","Control","覆盖率","Coverage index","180天",180,2.11525450831627
+"CTRL 003","Control","终毛比例","Terminal hair ratio","基线",0,28.0616994102721
+"CTRL 003","Control","终毛比例","Terminal hair ratio","30天",30,31.5538926338068
+"CTRL 003","Control","终毛比例","Terminal hair ratio","90天",90,38.9435976346578
+"CTRL 003","Control","终毛比例","Terminal hair ratio","180天",180,40.615952816249
+"CTRL 003","Control","毳毛比例","Vellus hair ratio","基线",0,15.443337751243
+"CTRL 003","Control","毳毛比例","Vellus hair ratio","30天",30,15.088692821196
+"CTRL 003","Control","毳毛比例","Vellus hair ratio","90天",90,11.5902422074057
+"CTRL 003","Control","毳毛比例","Vellus hair ratio","180天",180,11.2739953535218
+"CTRL 003","Control","油脂分泌","Sebum secretion","基线",0,158.347818172404
+"CTRL 003","Control","油脂分泌","Sebum secretion","30天",30,143.395144886972
+"CTRL 003","Control","油脂分泌","Sebum secretion","90天",90,136.676714595166
+"CTRL 003","Control","油脂分泌","Sebum secretion","180天",180,140.968001812251
+"CTRL 003","Control","头皮硬度","Scalp stiffness","基线",0,20.2935331214494
+"CTRL 003","Control","头皮硬度","Scalp stiffness","30天",30,21.4634659219008
+"CTRL 003","Control","头皮硬度","Scalp stiffness","90天",90,20.843472631841
+"CTRL 003","Control","头皮硬度","Scalp stiffness","180天",180,22.5140952400607
+"CTRL 003","Control","头皮血流","Scalp blood flow","基线",0,217.463261311296
+"CTRL 003","Control","头皮血流","Scalp blood flow","30天",30,257.891532552754
+"CTRL 003","Control","头皮血流","Scalp blood flow","90天",90,256.791448137141
+"CTRL 003","Control","头皮血流","Scalp blood flow","180天",180,243.305031200026
+"CTRL 004","Control","毛发密度","Hair density","基线",0,210.526468305966
+"CTRL 004","Control","毛发密度","Hair density","30天",30,174.99272540388
+"CTRL 004","Control","毛发密度","Hair density","90天",90,179.86439328853
+"CTRL 004","Control","毛发密度","Hair density","180天",180,175.651877997921
+"CTRL 004","Control","毛发直径","Hair shaft diameter","基线",0,51.0090854586078
+"CTRL 004","Control","毛发直径","Hair shaft diameter","30天",30,53.8494499284871
+"CTRL 004","Control","毛发直径","Hair shaft diameter","90天",90,57.789225775478
+"CTRL 004","Control","毛发直径","Hair shaft diameter","180天",180,58.4239338999851
+"CTRL 004","Control","覆盖率","Coverage index","基线",0,0.35204298809143
+"CTRL 004","Control","覆盖率","Coverage index","30天",30,0.630178544114221
+"CTRL 004","Control","覆盖率","Coverage index","90天",90,1.61587601802565
+"CTRL 004","Control","覆盖率","Coverage index","180天",180,1.50934582717214
+"CTRL 004","Control","终毛比例","Terminal hair ratio","基线",0,33.273231506821
+"CTRL 004","Control","终毛比例","Terminal hair ratio","30天",30,35.4169533255504
+"CTRL 004","Control","终毛比例","Terminal hair ratio","90天",90,39.2083793663752
+"CTRL 004","Control","终毛比例","Terminal hair ratio","180天",180,38.5205017058611
+"CTRL 004","Control","毳毛比例","Vellus hair ratio","基线",0,12.714502407737
+"CTRL 004","Control","毳毛比例","Vellus hair ratio","30天",30,11.2100759730055
+"CTRL 004","Control","毳毛比例","Vellus hair ratio","90天",90,7.77107134525683
+"CTRL 004","Control","毳毛比例","Vellus hair ratio","180天",180,8.18936077203514
+"CTRL 004","Control","油脂分泌","Sebum secretion","基线",0,157.032726549857
+"CTRL 004","Control","油脂分泌","Sebum secretion","30天",30,138.838497447386
+"CTRL 004","Control","油脂分泌","Sebum secretion","90天",90,137.028056763355
+"CTRL 004","Control","油脂分泌","Sebum secretion","180天",180,147.857117501703
+"CTRL 004","Control","头皮硬度","Scalp stiffness","基线",0,22.3856996800817
+"CTRL 004","Control","头皮硬度","Scalp stiffness","30天",30,23.1306214157179
+"CTRL 004","Control","头皮硬度","Scalp stiffness","90天",90,24.9987114694607
+"CTRL 004","Control","头皮硬度","Scalp stiffness","180天",180,24.3298875875488
+"CTRL 004","Control","头皮血流","Scalp blood flow","基线",0,160.702123030054
+"CTRL 004","Control","头皮血流","Scalp blood flow","30天",30,156.416125303412
+"CTRL 004","Control","头皮血流","Scalp blood flow","90天",90,143.67361620236
+"CTRL 004","Control","头皮血流","Scalp blood flow","180天",180,137.782787776499
+"CTRL 005","Control","毛发密度","Hair density","基线",0,32.9458941161586
+"CTRL 005","Control","毛发密度","Hair density","30天",30,45.307318330545
+"CTRL 005","Control","毛发密度","Hair density","90天",90,57.0212755959597
+"CTRL 005","Control","毛发密度","Hair density","180天",180,44.2303667395858
+"CTRL 005","Control","毛发直径","Hair shaft diameter","基线",0,34.7457990012196
+"CTRL 005","Control","毛发直径","Hair shaft diameter","30天",30,39.0517340448796
+"CTRL 005","Control","毛发直径","Hair shaft diameter","90天",90,46.1226842396611
+"CTRL 005","Control","毛发直径","Hair shaft diameter","180天",180,40.8013473508327
+"CTRL 005","Control","覆盖率","Coverage index","基线",0,0.647483865388657
+"CTRL 005","Control","覆盖率","Coverage index","30天",30,1.02486401230977
+"CTRL 005","Control","覆盖率","Coverage index","90天",90,2.06132450748341
+"CTRL 005","Control","覆盖率","Coverage index","180天",180,1.91368036499189
+"CTRL 005","Control","终毛比例","Terminal hair ratio","基线",0,42.1325584594041
+"CTRL 005","Control","终毛比例","Terminal hair ratio","30天",30,47.3933611429913
+"CTRL 005","Control","终毛比例","Terminal hair ratio","90天",90,55.7909951872687
+"CTRL 005","Control","终毛比例","Terminal hair ratio","180天",180,59.481049629344
+"CTRL 005","Control","毳毛比例","Vellus hair ratio","基线",0,24.8975740826228
+"CTRL 005","Control","毳毛比例","Vellus hair ratio","30天",30,22.3378695622621
+"CTRL 005","Control","毳毛比例","Vellus hair ratio","90天",90,17.68811293786
+"CTRL 005","Control","毳毛比例","Vellus hair ratio","180天",180,15.9912085032702
+"CTRL 005","Control","油脂分泌","Sebum secretion","基线",0,167.116311968646
+"CTRL 005","Control","油脂分泌","Sebum secretion","30天",30,164.955388360417
+"CTRL 005","Control","油脂分泌","Sebum secretion","90天",90,164.690487307247
+"CTRL 005","Control","油脂分泌","Sebum secretion","180天",180,169.96402122206
+"CTRL 005","Control","头皮硬度","Scalp stiffness","基线",0,22.4717835362734
+"CTRL 005","Control","头皮硬度","Scalp stiffness","30天",30,22.0672155036042
+"CTRL 005","Control","头皮硬度","Scalp stiffness","90天",90,25.0246538789132
+"CTRL 005","Control","头皮硬度","Scalp stiffness","180天",180,24.5167929694299
+"CTRL 005","Control","头皮血流","Scalp blood flow","基线",0,140.377400253171
+"CTRL 005","Control","头皮血流","Scalp blood flow","30天",30,173.040508597273
+"CTRL 005","Control","头皮血流","Scalp blood flow","90天",90,186.851371087528
+"CTRL 005","Control","头皮血流","Scalp blood flow","180天",180,186.014016290037
+"CTRL 006","Control","毛发密度","Hair density","基线",0,201.477441207061
+"CTRL 006","Control","毛发密度","Hair density","30天",30,201.658466459254
+"CTRL 006","Control","毛发密度","Hair density","90天",90,197.572882677828
+"CTRL 006","Control","毛发密度","Hair density","180天",180,202.859427083912
+"CTRL 006","Control","毛发直径","Hair shaft diameter","基线",0,53.9876732301669
+"CTRL 006","Control","毛发直径","Hair shaft diameter","30天",30,56.9658677701
+"CTRL 006","Control","毛发直径","Hair shaft diameter","90天",90,69.4438325808008
+"CTRL 006","Control","毛发直径","Hair shaft diameter","180天",180,67.1186888433555
+"CTRL 006","Control","覆盖率","Coverage index","基线",0,1.33479632950188
+"CTRL 006","Control","覆盖率","Coverage index","30天",30,1.60744279959798
+"CTRL 006","Control","覆盖率","Coverage index","90天",90,2.63758373876787
+"CTRL 006","Control","覆盖率","Coverage index","180天",180,2.55975104765868
+"CTRL 006","Control","终毛比例","Terminal hair ratio","基线",0,49.974184834323
+"CTRL 006","Control","终毛比例","Terminal hair ratio","30天",30,52.5688074050631
+"CTRL 006","Control","终毛比例","Terminal hair ratio","90天",90,58.8011514088038
+"CTRL 006","Control","终毛比例","Terminal hair ratio","180天",180,63.3975375604327
+"CTRL 006","Control","毳毛比例","Vellus hair ratio","基线",0,14.1583956943199
+"CTRL 006","Control","毳毛比例","Vellus hair ratio","30天",30,13.4869764241212
+"CTRL 006","Control","毳毛比例","Vellus hair ratio","90天",90,11.1035276297755
+"CTRL 006","Control","毳毛比例","Vellus hair ratio","180天",180,10.8399594553428
+"CTRL 006","Control","油脂分泌","Sebum secretion","基线",0,154.325188119955
+"CTRL 006","Control","油脂分泌","Sebum secretion","30天",30,164.663599894039
+"CTRL 006","Control","油脂分泌","Sebum secretion","90天",90,180.301214068611
+"CTRL 006","Control","油脂分泌","Sebum secretion","180天",180,202.840853493243
+"CTRL 006","Control","头皮硬度","Scalp stiffness","基线",0,25.5326700850297
+"CTRL 006","Control","头皮硬度","Scalp stiffness","30天",30,24.9387492580303
+"CTRL 006","Control","头皮硬度","Scalp stiffness","90天",90,24.2111179455288
+"CTRL 006","Control","头皮硬度","Scalp stiffness","180天",180,23.4408444138406
+"CTRL 006","Control","头皮血流","Scalp blood flow","基线",0,100.504356044206
+"CTRL 006","Control","头皮血流","Scalp blood flow","30天",30,119.435311656909
+"CTRL 006","Control","头皮血流","Scalp blood flow","90天",90,106.972185173403
+"CTRL 006","Control","头皮血流","Scalp blood flow","180天",180,107.543222025724
+"CTRL 007","Control","毛发密度","Hair density","基线",0,187.338768796584
+"CTRL 007","Control","毛发密度","Hair density","30天",30,176.464770870875
+"CTRL 007","Control","毛发密度","Hair density","90天",90,204.050640082011
+"CTRL 007","Control","毛发密度","Hair density","180天",180,208.364554745664
+"CTRL 007","Control","毛发直径","Hair shaft diameter","基线",0,67.8761100120851
+"CTRL 007","Control","毛发直径","Hair shaft diameter","30天",30,61.8507942186124
+"CTRL 007","Control","毛发直径","Hair shaft diameter","90天",90,63.6227138372754
+"CTRL 007","Control","毛发直径","Hair shaft diameter","180天",180,67.0543372586838
+"CTRL 007","Control","覆盖率","Coverage index","基线",0,0.445161115754175
+"CTRL 007","Control","覆盖率","Coverage index","30天",30,0.813863640189727
+"CTRL 007","Control","覆盖率","Coverage index","90天",90,1.7681513443767
+"CTRL 007","Control","覆盖率","Coverage index","180天",180,1.63544211848984
+"CTRL 007","Control","终毛比例","Terminal hair ratio","基线",0,36.0466616435169
+"CTRL 007","Control","终毛比例","Terminal hair ratio","30天",30,42.0715703141899
+"CTRL 007","Control","终毛比例","Terminal hair ratio","90天",90,50.2145879303743
+"CTRL 007","Control","终毛比例","Terminal hair ratio","180天",180,52.6538706022884
+"CTRL 007","Control","毳毛比例","Vellus hair ratio","基线",0,8.26405753354028
+"CTRL 007","Control","毳毛比例","Vellus hair ratio","30天",30,8.5640876384684
+"CTRL 007","Control","毳毛比例","Vellus hair ratio","90天",90,5.02064157636317
+"CTRL 007","Control","毳毛比例","Vellus hair ratio","180天",180,6.24808831215122
+"CTRL 007","Control","油脂分泌","Sebum secretion","基线",0,150.084749000244
+"CTRL 007","Control","油脂分泌","Sebum secretion","30天",30,130.40774676617
+"CTRL 007","Control","油脂分泌","Sebum secretion","90天",90,137.75086147997
+"CTRL 007","Control","油脂分泌","Sebum secretion","180天",180,137.432672286494
+"CTRL 007","Control","头皮硬度","Scalp stiffness","基线",0,24.2709538995608
+"CTRL 007","Control","头皮硬度","Scalp stiffness","30天",30,22.7103251799064
+"CTRL 007","Control","头皮硬度","Scalp stiffness","90天",90,26.1745693763539
+"CTRL 007","Control","头皮硬度","Scalp stiffness","180天",180,25.538428255902
+"CTRL 007","Control","头皮血流","Scalp blood flow","基线",0,191.643584386047
+"CTRL 007","Control","头皮血流","Scalp blood flow","30天",30,203.958145334835
+"CTRL 007","Control","头皮血流","Scalp blood flow","90天",90,222.10853280028
+"CTRL 007","Control","头皮血流","Scalp blood flow","180天",180,219.107931876939
+"CTRL 008","Control","毛发密度","Hair density","基线",0,112.724355379321
+"CTRL 008","Control","毛发密度","Hair density","30天",30,111.941261266486
+"CTRL 008","Control","毛发密度","Hair density","90天",90,126.346276114407
+"CTRL 008","Control","毛发密度","Hair density","180天",180,126.235149603048
+"CTRL 008","Control","毛发直径","Hair shaft diameter","基线",0,53.5100225743098
+"CTRL 008","Control","毛发直径","Hair shaft diameter","30天",30,50.4024476491003
+"CTRL 008","Control","毛发直径","Hair shaft diameter","90天",90,61.5334679283323
+"CTRL 008","Control","毛发直径","Hair shaft diameter","180天",180,63.4716794134059
+"CTRL 008","Control","覆盖率","Coverage index","基线",0,1.15649750426222
+"CTRL 008","Control","覆盖率","Coverage index","30天",30,1.74471692741386
+"CTRL 008","Control","覆盖率","Coverage index","90天",90,2.65124365798884
+"CTRL 008","Control","覆盖率","Coverage index","180天",180,2.50479857535797
+"CTRL 008","Control","终毛比例","Terminal hair ratio","基线",0,50.7675701366883
+"CTRL 008","Control","终毛比例","Terminal hair ratio","30天",30,48.3076584058975
+"CTRL 008","Control","终毛比例","Terminal hair ratio","90天",90,55.1613223931915
+"CTRL 008","Control","终毛比例","Terminal hair ratio","180天",180,58.5146577517498
+"CTRL 008","Control","毳毛比例","Vellus hair ratio","基线",0,14.6011614821351
+"CTRL 008","Control","毳毛比例","Vellus hair ratio","30天",30,13.6288967126307
+"CTRL 008","Control","毳毛比例","Vellus hair ratio","90天",90,9.35507860847051
+"CTRL 008","Control","毳毛比例","Vellus hair ratio","180天",180,9.57991516702587
+"CTRL 008","Control","油脂分泌","Sebum secretion","基线",0,150.763096381402
+"CTRL 008","Control","油脂分泌","Sebum secretion","30天",30,148.339551807864
+"CTRL 008","Control","油脂分泌","Sebum secretion","90天",90,139.081470930728
+"CTRL 008","Control","油脂分泌","Sebum secretion","180天",180,146.670786094809
+"CTRL 008","Control","头皮硬度","Scalp stiffness","基线",0,23.3638211469373
+"CTRL 008","Control","头皮硬度","Scalp stiffness","30天",30,23.5897417052575
+"CTRL 008","Control","头皮硬度","Scalp stiffness","90天",90,25.7970346172753
+"CTRL 008","Control","头皮硬度","Scalp stiffness","180天",180,26.3845610430548
+"CTRL 008","Control","头皮血流","Scalp blood flow","基线",0,238.761050501186
+"CTRL 008","Control","头皮血流","Scalp blood flow","30天",30,263.774866428574
+"CTRL 008","Control","头皮血流","Scalp blood flow","90天",90,284.187112608983
+"CTRL 008","Control","头皮血流","Scalp blood flow","180天",180,288.036060989147
+"CTRL 009","Control","毛发密度","Hair density","基线",0,96.5794722250127
+"CTRL 009","Control","毛发密度","Hair density","30天",30,90.520959777132
+"CTRL 009","Control","毛发密度","Hair density","90天",90,110.155009582865
+"CTRL 009","Control","毛发密度","Hair density","180天",180,95.9005941679969
+"CTRL 009","Control","毛发直径","Hair shaft diameter","基线",0,35.3423663005357
+"CTRL 009","Control","毛发直径","Hair shaft diameter","30天",30,38.9537365617945
+"CTRL 009","Control","毛发直径","Hair shaft diameter","90天",90,41.1485056738751
+"CTRL 009","Control","毛发直径","Hair shaft diameter","180天",180,36.0563108045136
+"CTRL 009","Control","覆盖率","Coverage index","基线",0,0.363608949357466
+"CTRL 009","Control","覆盖率","Coverage index","30天",30,0.680464591069982
+"CTRL 009","Control","覆盖率","Coverage index","90天",90,1.59393783633558
+"CTRL 009","Control","覆盖率","Coverage index","180天",180,1.47935668250945
+"CTRL 009","Control","终毛比例","Terminal hair ratio","基线",0,53.0834444447247
+"CTRL 009","Control","终毛比例","Terminal hair ratio","30天",30,50.5638225466262
+"CTRL 009","Control","终毛比例","Terminal hair ratio","90天",90,53.6802102562042
+"CTRL 009","Control","终毛比例","Terminal hair ratio","180天",180,56.7657759356963
+"CTRL 009","Control","毳毛比例","Vellus hair ratio","基线",0,2.0178963472498
+"CTRL 009","Control","毳毛比例","Vellus hair ratio","30天",30,0.0323509375056608
+"CTRL 009","Control","毳毛比例","Vellus hair ratio","90天",90,2.67496171573619
+"CTRL 009","Control","毳毛比例","Vellus hair ratio","180天",180,0.01139443891136
+"CTRL 009","Control","油脂分泌","Sebum secretion","基线",0,186.680285627738
+"CTRL 009","Control","油脂分泌","Sebum secretion","30天",30,160.263410548942
+"CTRL 009","Control","油脂分泌","Sebum secretion","90天",90,165.393637792312
+"CTRL 009","Control","油脂分泌","Sebum secretion","180天",180,176.907042538551
+"CTRL 009","Control","头皮硬度","Scalp stiffness","基线",0,29.8529380676904
+"CTRL 009","Control","头皮硬度","Scalp stiffness","30天",30,27.4686733824761
+"CTRL 009","Control","头皮硬度","Scalp stiffness","90天",90,29.2719597216091
+"CTRL 009","Control","头皮硬度","Scalp stiffness","180天",180,29.1397481552987
+"CTRL 009","Control","头皮血流","Scalp blood flow","基线",0,144.615879788005
+"CTRL 009","Control","头皮血流","Scalp blood flow","30天",30,165.629732135608
+"CTRL 009","Control","头皮血流","Scalp blood flow","90天",90,157.392579783376
+"CTRL 009","Control","头皮血流","Scalp blood flow","180天",180,158.274746194062
+"CTRL 010","Control","毛发密度","Hair density","基线",0,169.964214046637
+"CTRL 010","Control","毛发密度","Hair density","30天",30,163.118146908094
+"CTRL 010","Control","毛发密度","Hair density","90天",90,177.097847953796
+"CTRL 010","Control","毛发密度","Hair density","180天",180,171.881258671409
+"CTRL 010","Control","毛发直径","Hair shaft diameter","基线",0,90.4734109171479
+"CTRL 010","Control","毛发直径","Hair shaft diameter","30天",30,88.8279920954168
+"CTRL 010","Control","毛发直径","Hair shaft diameter","90天",90,106.022013725542
+"CTRL 010","Control","毛发直径","Hair shaft diameter","180天",180,112.967499192205
+"CTRL 010","Control","覆盖率","Coverage index","基线",0,0.648331883084508
+"CTRL 010","Control","覆盖率","Coverage index","30天",30,0.963017684328869
+"CTRL 010","Control","覆盖率","Coverage index","90天",90,1.88979345978247
+"CTRL 010","Control","覆盖率","Coverage index","180天",180,1.79693406787686
+"CTRL 010","Control","终毛比例","Terminal hair ratio","基线",0,58.4698662225839
+"CTRL 010","Control","终毛比例","Terminal hair ratio","30天",30,61.6522112155775
+"CTRL 010","Control","终毛比例","Terminal hair ratio","90天",90,65.7779013895184
+"CTRL 010","Control","终毛比例","Terminal hair ratio","180天",180,69.3813136913578
+"CTRL 010","Control","毳毛比例","Vellus hair ratio","基线",0,15.7227709055829
+"CTRL 010","Control","毳毛比例","Vellus hair ratio","30天",30,13.1947732288815
+"CTRL 010","Control","毳毛比例","Vellus hair ratio","90天",90,9.81687480382428
+"CTRL 010","Control","毳毛比例","Vellus hair ratio","180天",180,9.95026066673597
+"CTRL 010","Control","油脂分泌","Sebum secretion","基线",0,140.02485485825
+"CTRL 010","Control","油脂分泌","Sebum secretion","30天",30,120.654829127853
+"CTRL 010","Control","油脂分泌","Sebum secretion","90天",90,119.527018163828
+"CTRL 010","Control","油脂分泌","Sebum secretion","180天",180,127.233401306764
+"CTRL 010","Control","头皮硬度","Scalp stiffness","基线",0,22.1670874584826
+"CTRL 010","Control","头皮硬度","Scalp stiffness","30天",30,19.5204227383528
+"CTRL 010","Control","头皮硬度","Scalp stiffness","90天",90,20.3222055824758
+"CTRL 010","Control","头皮硬度","Scalp stiffness","180天",180,19.0758227975866
+"CTRL 010","Control","头皮血流","Scalp blood flow","基线",0,92.9384336297927
+"CTRL 010","Control","头皮血流","Scalp blood flow","30天",30,121.862044892979
+"CTRL 010","Control","头皮血流","Scalp blood flow","90天",90,124.418702096687
+"CTRL 010","Control","头皮血流","Scalp blood flow","180天",180,109.526365370926
+"CTRL 011","Control","毛发密度","Hair density","基线",0,142.200935360901
+"CTRL 011","Control","毛发密度","Hair density","30天",30,127.986389527456
+"CTRL 011","Control","毛发密度","Hair density","90天",90,136.283973680585
+"CTRL 011","Control","毛发密度","Hair density","180天",180,116.522409704878
+"CTRL 011","Control","毛发直径","Hair shaft diameter","基线",0,63.6657611754628
+"CTRL 011","Control","毛发直径","Hair shaft diameter","30天",30,65.713407814603
+"CTRL 011","Control","毛发直径","Hair shaft diameter","90天",90,74.8103960331543
+"CTRL 011","Control","毛发直径","Hair shaft diameter","180天",180,78.6420405040435
+"CTRL 011","Control","覆盖率","Coverage index","基线",0,0.451212621172397
+"CTRL 011","Control","覆盖率","Coverage index","30天",30,0.882995195435721
+"CTRL 011","Control","覆盖率","Coverage index","90天",90,1.91214967644605
+"CTRL 011","Control","覆盖率","Coverage index","180天",180,1.80170872896047
+"CTRL 011","Control","终毛比例","Terminal hair ratio","基线",0,46.5779394117478
+"CTRL 011","Control","终毛比例","Terminal hair ratio","30天",30,43.210448159112
+"CTRL 011","Control","终毛比例","Terminal hair ratio","90天",90,52.9015266069056
+"CTRL 011","Control","终毛比例","Terminal hair ratio","180天",180,54.0686097691961
+"CTRL 011","Control","毳毛比例","Vellus hair ratio","基线",0,14.6918422342793
+"CTRL 011","Control","毳毛比例","Vellus hair ratio","30天",30,15.8438640829674
+"CTRL 011","Control","毳毛比例","Vellus hair ratio","90天",90,10.7640071283664
+"CTRL 011","Control","毳毛比例","Vellus hair ratio","180天",180,10.513521509904
+"CTRL 011","Control","油脂分泌","Sebum secretion","基线",0,151.79249777337
+"CTRL 011","Control","油脂分泌","Sebum secretion","30天",30,131.492084533979
+"CTRL 011","Control","油脂分泌","Sebum secretion","90天",90,133.366241398799
+"CTRL 011","Control","油脂分泌","Sebum secretion","180天",180,142.958053477553
+"CTRL 011","Control","头皮硬度","Scalp stiffness","基线",0,22.8492487066665
+"CTRL 011","Control","头皮硬度","Scalp stiffness","30天",30,21.6565940918336
+"CTRL 011","Control","头皮硬度","Scalp stiffness","90天",90,23.2538839338647
+"CTRL 011","Control","头皮硬度","Scalp stiffness","180天",180,23.5379988484235
+"CTRL 011","Control","头皮血流","Scalp blood flow","基线",0,162.091724776871
+"CTRL 011","Control","头皮血流","Scalp blood flow","30天",30,198.72686865818
+"CTRL 011","Control","头皮血流","Scalp blood flow","90天",90,209.689328348839
+"CTRL 011","Control","头皮血流","Scalp blood flow","180天",180,208.717442485607
+"CTRL 012","Control","毛发密度","Hair density","基线",0,176.439426445213
+"CTRL 012","Control","毛发密度","Hair density","30天",30,217.478628441387
+"CTRL 012","Control","毛发密度","Hair density","90天",90,223.740726925346
+"CTRL 012","Control","毛发密度","Hair density","180天",180,181.134293016253
+"CTRL 012","Control","毛发直径","Hair shaft diameter","基线",0,53.5079523900859
+"CTRL 012","Control","毛发直径","Hair shaft diameter","30天",30,64.3595765799114
+"CTRL 012","Control","毛发直径","Hair shaft diameter","90天",90,70.6918243004635
+"CTRL 012","Control","毛发直径","Hair shaft diameter","180天",180,74.3106377257008
+"CTRL 012","Control","覆盖率","Coverage index","基线",0,0.994741266611429
+"CTRL 012","Control","覆盖率","Coverage index","30天",30,1.17746051696453
+"CTRL 012","Control","覆盖率","Coverage index","90天",90,2.15806382778718
+"CTRL 012","Control","覆盖率","Coverage index","180天",180,2.07784043665852
+"CTRL 012","Control","终毛比例","Terminal hair ratio","基线",0,35.8347562874997
+"CTRL 012","Control","终毛比例","Terminal hair ratio","30天",30,37.5756564776639
+"CTRL 012","Control","终毛比例","Terminal hair ratio","90天",90,43.630758158696
+"CTRL 012","Control","终毛比例","Terminal hair ratio","180天",180,42.7755745455748
+"CTRL 012","Control","毳毛比例","Vellus hair ratio","基线",0,13.4804817896211
+"CTRL 012","Control","毳毛比例","Vellus hair ratio","30天",30,12.288712139851
+"CTRL 012","Control","毳毛比例","Vellus hair ratio","90天",90,7.90014661924511
+"CTRL 012","Control","毳毛比例","Vellus hair ratio","180天",180,8.62660725817628
+"CTRL 012","Control","油脂分泌","Sebum secretion","基线",0,133.953211364214
+"CTRL 012","Control","油脂分泌","Sebum secretion","30天",30,119.159423802335
+"CTRL 012","Control","油脂分泌","Sebum secretion","90天",90,115.451159979638
+"CTRL 012","Control","油脂分泌","Sebum secretion","180天",180,115.687764191874
+"CTRL 012","Control","头皮硬度","Scalp stiffness","基线",0,19.7765579771891
+"CTRL 012","Control","头皮硬度","Scalp stiffness","30天",30,20.3898885880602
+"CTRL 012","Control","头皮硬度","Scalp stiffness","90天",90,22.0622645420254
+"CTRL 012","Control","头皮硬度","Scalp stiffness","180天",180,22.2583853269387
+"CTRL 012","Control","头皮血流","Scalp blood flow","基线",0,192.549247930413
+"CTRL 012","Control","头皮血流","Scalp blood flow","30天",30,188.61747923104
+"CTRL 012","Control","头皮血流","Scalp blood flow","90天",90,189.366264523552
+"CTRL 012","Control","头皮血流","Scalp blood flow","180天",180,183.658716091863
+"CTRL 013","Control","毛发密度","Hair density","基线",0,225.106517634164
+"CTRL 013","Control","毛发密度","Hair density","30天",30,239.860749153506
+"CTRL 013","Control","毛发密度","Hair density","90天",90,239.598547674939
+"CTRL 013","Control","毛发密度","Hair density","180天",180,244.347664702506
+"CTRL 013","Control","毛发直径","Hair shaft diameter","基线",0,56.8211996111623
+"CTRL 013","Control","毛发直径","Hair shaft diameter","30天",30,58.7337683912403
+"CTRL 013","Control","毛发直径","Hair shaft diameter","90天",90,58.5373395247898
+"CTRL 013","Control","毛发直径","Hair shaft diameter","180天",180,46.6895121178246
+"CTRL 013","Control","覆盖率","Coverage index","基线",0,0.837663002705382
+"CTRL 013","Control","覆盖率","Coverage index","30天",30,1.31965188030642
+"CTRL 013","Control","覆盖率","Coverage index","90天",90,2.26932925832397
+"CTRL 013","Control","覆盖率","Coverage index","180天",180,2.188707144919
+"CTRL 013","Control","终毛比例","Terminal hair ratio","基线",0,39.9409327150578
+"CTRL 013","Control","终毛比例","Terminal hair ratio","30天",30,42.3688212029316
+"CTRL 013","Control","终毛比例","Terminal hair ratio","90天",90,52.387507264511
+"CTRL 013","Control","终毛比例","Terminal hair ratio","180天",180,55.4980966794881
+"CTRL 013","Control","毳毛比例","Vellus hair ratio","基线",0,30.7743680000667
+"CTRL 013","Control","毳毛比例","Vellus hair ratio","30天",30,30.9793970624189
+"CTRL 013","Control","毳毛比例","Vellus hair ratio","90天",90,24.8419357440713
+"CTRL 013","Control","毳毛比例","Vellus hair ratio","180天",180,22.1375918298304
+"CTRL 013","Control","油脂分泌","Sebum secretion","基线",0,144.682029451559
+"CTRL 013","Control","油脂分泌","Sebum secretion","30天",30,134.498551011066
+"CTRL 013","Control","油脂分泌","Sebum secretion","90天",90,140.380413714441
+"CTRL 013","Control","油脂分泌","Sebum secretion","180天",180,148.974179575786
+"CTRL 013","Control","头皮硬度","Scalp stiffness","基线",0,23.2273817940742
+"CTRL 013","Control","头皮硬度","Scalp stiffness","30天",30,22.7309619226731
+"CTRL 013","Control","头皮硬度","Scalp stiffness","90天",90,21.6014817506768
+"CTRL 013","Control","头皮硬度","Scalp stiffness","180天",180,20.7696230687859
+"CTRL 013","Control","头皮血流","Scalp blood flow","基线",0,172.973138843992
+"CTRL 013","Control","头皮血流","Scalp blood flow","30天",30,188.891500143479
+"CTRL 013","Control","头皮血流","Scalp blood flow","90天",90,188.520397292789
+"CTRL 013","Control","头皮血流","Scalp blood flow","180天",180,173.291642978638
+"CTRL 014","Control","毛发密度","Hair density","基线",0,116.867202361773
+"CTRL 014","Control","毛发密度","Hair density","30天",30,99.735358670364
+"CTRL 014","Control","毛发密度","Hair density","90天",90,111.867229357716
+"CTRL 014","Control","毛发密度","Hair density","180天",180,119.524712184097
+"CTRL 014","Control","毛发直径","Hair shaft diameter","基线",0,63.6352589095464
+"CTRL 014","Control","毛发直径","Hair shaft diameter","30天",30,58.9129266871245
+"CTRL 014","Control","毛发直径","Hair shaft diameter","90天",90,57.9069972169207
+"CTRL 014","Control","毛发直径","Hair shaft diameter","180天",180,54.0478504452099
+"CTRL 014","Control","覆盖率","Coverage index","基线",0,0.268112257841028
+"CTRL 014","Control","覆盖率","Coverage index","30天",30,0.227518505472742
+"CTRL 014","Control","覆盖率","Coverage index","90天",90,0.931041327982039
+"CTRL 014","Control","覆盖率","Coverage index","180天",180,0.777182032073422
+"CTRL 014","Control","终毛比例","Terminal hair ratio","基线",0,31.3214113785252
+"CTRL 014","Control","终毛比例","Terminal hair ratio","30天",30,33.6834459385602
+"CTRL 014","Control","终毛比例","Terminal hair ratio","90天",90,38.9258103872086
+"CTRL 014","Control","终毛比例","Terminal hair ratio","180天",180,41.3366010626494
+"CTRL 014","Control","毳毛比例","Vellus hair ratio","基线",0,12.2425472833258
+"CTRL 014","Control","毳毛比例","Vellus hair ratio","30天",30,11.6828154593523
+"CTRL 014","Control","毳毛比例","Vellus hair ratio","90天",90,8.31212129738087
+"CTRL 014","Control","毳毛比例","Vellus hair ratio","180天",180,8.70331393625304
+"CTRL 014","Control","油脂分泌","Sebum secretion","基线",0,150.130732210361
+"CTRL 014","Control","油脂分泌","Sebum secretion","30天",30,146.106406162755
+"CTRL 014","Control","油脂分泌","Sebum secretion","90天",90,147.27917587957
+"CTRL 014","Control","油脂分泌","Sebum secretion","180天",180,159.76822779735
+"CTRL 014","Control","头皮硬度","Scalp stiffness","基线",0,18.6915698804036
+"CTRL 014","Control","头皮硬度","Scalp stiffness","30天",30,18.6935590158307
+"CTRL 014","Control","头皮硬度","Scalp stiffness","90天",90,20.7496368040835
+"CTRL 014","Control","头皮硬度","Scalp stiffness","180天",180,20.6927752269947
+"CTRL 014","Control","头皮血流","Scalp blood flow","基线",0,142.381519318803
+"CTRL 014","Control","头皮血流","Scalp blood flow","30天",30,173.387273611798
+"CTRL 014","Control","头皮血流","Scalp blood flow","90天",90,165.863158019367
+"CTRL 014","Control","头皮血流","Scalp blood flow","180天",180,169.374374334885
+"CTRL 015","Control","毛发密度","Hair density","基线",0,196.276498784138
+"CTRL 015","Control","毛发密度","Hair density","30天",30,208.568929458922
+"CTRL 015","Control","毛发密度","Hair density","90天",90,218.576736080633
+"CTRL 015","Control","毛发密度","Hair density","180天",180,210.810829766402
+"CTRL 015","Control","毛发直径","Hair shaft diameter","基线",0,58.5927011809346
+"CTRL 015","Control","毛发直径","Hair shaft diameter","30天",30,57.8210181000961
+"CTRL 015","Control","毛发直径","Hair shaft diameter","90天",90,61.1982201528929
+"CTRL 015","Control","毛发直径","Hair shaft diameter","180天",180,58.3837468875384
+"CTRL 015","Control","覆盖率","Coverage index","基线",0,1.17233811610615
+"CTRL 015","Control","覆盖率","Coverage index","30天",30,1.30388284856489
+"CTRL 015","Control","覆盖率","Coverage index","90天",90,2.20273288341434
+"CTRL 015","Control","覆盖率","Coverage index","180天",180,2.14025947025527
+"CTRL 015","Control","终毛比例","Terminal hair ratio","基线",0,38.5529621029073
+"CTRL 015","Control","终毛比例","Terminal hair ratio","30天",30,37.5109260826598
+"CTRL 015","Control","终毛比例","Terminal hair ratio","90天",90,43.4676062923698
+"CTRL 015","Control","终毛比例","Terminal hair ratio","180天",180,46.6512584538559
+"CTRL 015","Control","毳毛比例","Vellus hair ratio","基线",0,15.0243756762611
+"CTRL 015","Control","毳毛比例","Vellus hair ratio","30天",30,16.3949766325332
+"CTRL 015","Control","毳毛比例","Vellus hair ratio","90天",90,13.423265183676
+"CTRL 015","Control","毳毛比例","Vellus hair ratio","180天",180,12.8391346045056
+"CTRL 015","Control","油脂分泌","Sebum secretion","基线",0,129.656447747182
+"CTRL 015","Control","油脂分泌","Sebum secretion","30天",30,129.537345089829
+"CTRL 015","Control","油脂分泌","Sebum secretion","90天",90,127.398286718766
+"CTRL 015","Control","油脂分泌","Sebum secretion","180天",180,131.819398203295
+"CTRL 015","Control","头皮硬度","Scalp stiffness","基线",0,35.5421510349892
+"CTRL 015","Control","头皮硬度","Scalp stiffness","30天",30,31.5762715513574
+"CTRL 015","Control","头皮硬度","Scalp stiffness","90天",90,34.5579186653592
+"CTRL 015","Control","头皮硬度","Scalp stiffness","180天",180,36.130094397838
+"CTRL 015","Control","头皮血流","Scalp blood flow","基线",0,194.857100776079
+"CTRL 015","Control","头皮血流","Scalp blood flow","30天",30,197.141829902007
+"CTRL 015","Control","头皮血流","Scalp blood flow","90天",90,199.552521694551
+"CTRL 015","Control","头皮血流","Scalp blood flow","180天",180,205.188236289797
+"CTRL 016","Control","毛发密度","Hair density","基线",0,105.841054943691
+"CTRL 016","Control","毛发密度","Hair density","30天",30,101.622193681166
+"CTRL 016","Control","毛发密度","Hair density","90天",90,105.394311448058
+"CTRL 016","Control","毛发密度","Hair density","180天",180,105.209073130624
+"CTRL 016","Control","毛发直径","Hair shaft diameter","基线",0,46.1876200558894
+"CTRL 016","Control","毛发直径","Hair shaft diameter","30天",30,42.500927288111
+"CTRL 016","Control","毛发直径","Hair shaft diameter","90天",90,47.2511820604207
+"CTRL 016","Control","毛发直径","Hair shaft diameter","180天",180,46.9023659437152
+"CTRL 016","Control","覆盖率","Coverage index","基线",0,0.5392192555243
+"CTRL 016","Control","覆盖率","Coverage index","30天",30,0.89951547980817
+"CTRL 016","Control","覆盖率","Coverage index","90天",90,1.7875512480935
+"CTRL 016","Control","覆盖率","Coverage index","180天",180,1.67186060760409
+"CTRL 016","Control","终毛比例","Terminal hair ratio","基线",0,40.7157172335369
+"CTRL 016","Control","终毛比例","Terminal hair ratio","30天",30,43.4442355589669
+"CTRL 016","Control","终毛比例","Terminal hair ratio","90天",90,48.6723358041559
+"CTRL 016","Control","终毛比例","Terminal hair ratio","180天",180,47.9266240403498
+"CTRL 016","Control","毳毛比例","Vellus hair ratio","基线",0,16.6175895530243
+"CTRL 016","Control","毳毛比例","Vellus hair ratio","30天",30,17.7477805617679
+"CTRL 016","Control","毳毛比例","Vellus hair ratio","90天",90,13.0070008197336
+"CTRL 016","Control","毳毛比例","Vellus hair ratio","180天",180,12.9242420810119
+"CTRL 016","Control","油脂分泌","Sebum secretion","基线",0,128.518706558776
+"CTRL 016","Control","油脂分泌","Sebum secretion","30天",30,125.002629467116
+"CTRL 016","Control","油脂分泌","Sebum secretion","90天",90,120.279450882272
+"CTRL 016","Control","油脂分泌","Sebum secretion","180天",180,118.580583171333
+"CTRL 016","Control","头皮硬度","Scalp stiffness","基线",0,29.8233957051718
+"CTRL 016","Control","头皮硬度","Scalp stiffness","30天",30,27.0321646886642
+"CTRL 016","Control","头皮硬度","Scalp stiffness","90天",90,28.3456503036015
+"CTRL 016","Control","头皮硬度","Scalp stiffness","180天",180,27.4588382183259
+"CTRL 016","Control","头皮血流","Scalp blood flow","基线",0,104.106711865754
+"CTRL 016","Control","头皮血流","Scalp blood flow","30天",30,120.43223732947
+"CTRL 016","Control","头皮血流","Scalp blood flow","90天",90,98.6733728814409
+"CTRL 016","Control","头皮血流","Scalp blood flow","180天",180,100.092068032584
+"CTRL 017","Control","毛发密度","Hair density","基线",0,93.5373205052899
+"CTRL 017","Control","毛发密度","Hair density","30天",30,119.466376019207
+"CTRL 017","Control","毛发密度","Hair density","90天",90,137.83266281799
+"CTRL 017","Control","毛发密度","Hair density","180天",180,146.161828789001
+"CTRL 017","Control","毛发直径","Hair shaft diameter","基线",0,59.4905796944665
+"CTRL 017","Control","毛发直径","Hair shaft diameter","30天",30,60.2177021997699
+"CTRL 017","Control","毛发直径","Hair shaft diameter","90天",90,67.7930394710315
+"CTRL 017","Control","毛发直径","Hair shaft diameter","180天",180,58.8362477106298
+"CTRL 017","Control","覆盖率","Coverage index","基线",0,0.145668491416292
+"CTRL 017","Control","覆盖率","Coverage index","30天",30,0.280678308926065
+"CTRL 017","Control","覆盖率","Coverage index","90天",90,1.24067541974744
+"CTRL 017","Control","覆盖率","Coverage index","180天",180,1.08591196295312
+"CTRL 017","Control","终毛比例","Terminal hair ratio","基线",0,50.108050541675
+"CTRL 017","Control","终毛比例","Terminal hair ratio","30天",30,51.5929806242377
+"CTRL 017","Control","终毛比例","Terminal hair ratio","90天",90,58.2990007426727
+"CTRL 017","Control","终毛比例","Terminal hair ratio","180天",180,60.3715631099943
+"CTRL 017","Control","毳毛比例","Vellus hair ratio","基线",0,9.70074646224876
+"CTRL 017","Control","毳毛比例","Vellus hair ratio","30天",30,10.3868567082327
+"CTRL 017","Control","毳毛比例","Vellus hair ratio","90天",90,7.66692174246427
+"CTRL 017","Control","毳毛比例","Vellus hair ratio","180天",180,8.1785782410738
+"CTRL 017","Control","油脂分泌","Sebum secretion","基线",0,150.622271190368
+"CTRL 017","Control","油脂分泌","Sebum secretion","30天",30,138.120816378759
+"CTRL 017","Control","油脂分泌","Sebum secretion","90天",90,141.141508953989
+"CTRL 017","Control","油脂分泌","Sebum secretion","180天",180,147.412326769846
+"CTRL 017","Control","头皮硬度","Scalp stiffness","基线",0,34.5459100443883
+"CTRL 017","Control","头皮硬度","Scalp stiffness","30天",30,34.5640522769793
+"CTRL 017","Control","头皮硬度","Scalp stiffness","90天",90,37.9967832317104
+"CTRL 017","Control","头皮硬度","Scalp stiffness","180天",180,40.2379401870795
+"CTRL 017","Control","头皮血流","Scalp blood flow","基线",0,225.888472956411
+"CTRL 017","Control","头皮血流","Scalp blood flow","30天",30,238.109378603051
+"CTRL 017","Control","头皮血流","Scalp blood flow","90天",90,280.708919495226
+"CTRL 017","Control","头皮血流","Scalp blood flow","180天",180,278.143700117732
+"CTRL 018","Control","毛发密度","Hair density","基线",0,148.429982717832
+"CTRL 018","Control","毛发密度","Hair density","30天",30,142.648282804082
+"CTRL 018","Control","毛发密度","Hair density","90天",90,156.403711565657
+"CTRL 018","Control","毛发密度","Hair density","180天",180,166.247604118442
+"CTRL 018","Control","毛发直径","Hair shaft diameter","基线",0,31.578192465358
+"CTRL 018","Control","毛发直径","Hair shaft diameter","30天",30,36.9684964550926
+"CTRL 018","Control","毛发直径","Hair shaft diameter","90天",90,36.4172130934576
+"CTRL 018","Control","毛发直径","Hair shaft diameter","180天",180,33.3033523043885
+"CTRL 018","Control","覆盖率","Coverage index","基线",0,0.479781182152484
+"CTRL 018","Control","覆盖率","Coverage index","30天",30,0.845429450565393
+"CTRL 018","Control","覆盖率","Coverage index","90天",90,1.81850439459391
+"CTRL 018","Control","覆盖率","Coverage index","180天",180,1.55218268628783
+"CTRL 018","Control","终毛比例","Terminal hair ratio","基线",0,46.6265951100634
+"CTRL 018","Control","终毛比例","Terminal hair ratio","30天",30,42.7265047430242
+"CTRL 018","Control","终毛比例","Terminal hair ratio","90天",90,42.4857423370243
+"CTRL 018","Control","终毛比例","Terminal hair ratio","180天",180,42.8948207901006
+"CTRL 018","Control","毳毛比例","Vellus hair ratio","基线",0,22.9520555488359
+"CTRL 018","Control","毳毛比例","Vellus hair ratio","30天",30,20.5941714295149
+"CTRL 018","Control","毳毛比例","Vellus hair ratio","90天",90,16.9327372768876
+"CTRL 018","Control","毳毛比例","Vellus hair ratio","180天",180,15.5259791153902
+"CTRL 018","Control","油脂分泌","Sebum secretion","基线",0,164.457088982755
+"CTRL 018","Control","油脂分泌","Sebum secretion","30天",30,144.232981164813
+"CTRL 018","Control","油脂分泌","Sebum secretion","90天",90,153.722814829292
+"CTRL 018","Control","油脂分泌","Sebum secretion","180天",180,156.131452980618
+"CTRL 018","Control","头皮硬度","Scalp stiffness","基线",0,12.4091937971779
+"CTRL 018","Control","头皮硬度","Scalp stiffness","30天",30,15.3762006471525
+"CTRL 018","Control","头皮硬度","Scalp stiffness","90天",90,16.5373549196758
+"CTRL 018","Control","头皮硬度","Scalp stiffness","180天",180,17.0652253602847
+"CTRL 018","Control","头皮血流","Scalp blood flow","基线",0,180.177841271106
+"CTRL 018","Control","头皮血流","Scalp blood flow","30天",30,198.870482010418
+"CTRL 018","Control","头皮血流","Scalp blood flow","90天",90,206.293808357114
+"CTRL 018","Control","头皮血流","Scalp blood flow","180天",180,204.77791946894
+"CTRL 019","Control","毛发密度","Hair density","基线",0,171.043004196009
+"CTRL 019","Control","毛发密度","Hair density","30天",30,179.55642196727
+"CTRL 019","Control","毛发密度","Hair density","90天",90,209.87690573774
+"CTRL 019","Control","毛发密度","Hair density","180天",180,219.428333276026
+"CTRL 019","Control","毛发直径","Hair shaft diameter","基线",0,91.3056748914096
+"CTRL 019","Control","毛发直径","Hair shaft diameter","30天",30,79.3045687975889
+"CTRL 019","Control","毛发直径","Hair shaft diameter","90天",90,81.4497027859134
+"CTRL 019","Control","毛发直径","Hair shaft diameter","180天",180,86.6318482937263
+"CTRL 019","Control","覆盖率","Coverage index","基线",0,0.092933474584102
+"CTRL 019","Control","覆盖率","Coverage index","30天",30,0.324561397859742
+"CTRL 019","Control","覆盖率","Coverage index","90天",90,0.925290665009766
+"CTRL 019","Control","覆盖率","Coverage index","180天",180,0.766853372153425
+"CTRL 019","Control","终毛比例","Terminal hair ratio","基线",0,44.0852472235482
+"CTRL 019","Control","终毛比例","Terminal hair ratio","30天",30,43.558478208781
+"CTRL 019","Control","终毛比例","Terminal hair ratio","90天",90,46.9698172966832
+"CTRL 019","Control","终毛比例","Terminal hair ratio","180天",180,50.5181084015724
+"CTRL 019","Control","毳毛比例","Vellus hair ratio","基线",0,7.17178739222655
+"CTRL 019","Control","毳毛比例","Vellus hair ratio","30天",30,7.28343573864016
+"CTRL 019","Control","毳毛比例","Vellus hair ratio","90天",90,3.7848168807584
+"CTRL 019","Control","毳毛比例","Vellus hair ratio","180天",180,5.27623846428585
+"CTRL 019","Control","油脂分泌","Sebum secretion","基线",0,166.384461801046
+"CTRL 019","Control","油脂分泌","Sebum secretion","30天",30,133.02746362544
+"CTRL 019","Control","油脂分泌","Sebum secretion","90天",90,124.673596081344
+"CTRL 019","Control","油脂分泌","Sebum secretion","180天",180,132.92024540872
+"CTRL 019","Control","头皮硬度","Scalp stiffness","基线",0,19.3183710604408
+"CTRL 019","Control","头皮硬度","Scalp stiffness","30天",30,18.5554231760344
+"CTRL 019","Control","头皮硬度","Scalp stiffness","90天",90,19.0685813050606
+"CTRL 019","Control","头皮硬度","Scalp stiffness","180天",180,17.9541649961368
+"CTRL 019","Control","头皮血流","Scalp blood flow","基线",0,107.099780710957
+"CTRL 019","Control","头皮血流","Scalp blood flow","30天",30,140.553666243805
+"CTRL 019","Control","头皮血流","Scalp blood flow","90天",90,138.185142880926
+"CTRL 019","Control","头皮血流","Scalp blood flow","180天",180,144.442861152857
+"CTRL 020","Control","毛发密度","Hair density","基线",0,78.7353532033584
+"CTRL 020","Control","毛发密度","Hair density","30天",30,87.3345647354856
+"CTRL 020","Control","毛发密度","Hair density","90天",90,92.7313509815127
+"CTRL 020","Control","毛发密度","Hair density","180天",180,70.3105260283481
+"CTRL 020","Control","毛发直径","Hair shaft diameter","基线",0,53.0724822191214
+"CTRL 020","Control","毛发直径","Hair shaft diameter","30天",30,51.5281553347142
+"CTRL 020","Control","毛发直径","Hair shaft diameter","90天",90,54.2865330765977
+"CTRL 020","Control","毛发直径","Hair shaft diameter","180天",180,54.1137278291194
+"CTRL 020","Control","覆盖率","Coverage index","基线",0,0.851066612433728
+"CTRL 020","Control","覆盖率","Coverage index","30天",30,1.24709410693396
+"CTRL 020","Control","覆盖率","Coverage index","90天",90,2.15412524421844
+"CTRL 020","Control","覆盖率","Coverage index","180天",180,2.09143705364439
+"CTRL 020","Control","终毛比例","Terminal hair ratio","基线",0,44.5770715448724
+"CTRL 020","Control","终毛比例","Terminal hair ratio","30天",30,43.0726308448768
+"CTRL 020","Control","终毛比例","Terminal hair ratio","90天",90,53.2765803759757
+"CTRL 020","Control","终毛比例","Terminal hair ratio","180天",180,56.1426656832342
+"CTRL 020","Control","毳毛比例","Vellus hair ratio","基线",0,9.43059657091064
+"CTRL 020","Control","毳毛比例","Vellus hair ratio","30天",30,8.82207720755538
+"CTRL 020","Control","毳毛比例","Vellus hair ratio","90天",90,5.6287789632879
+"CTRL 020","Control","毳毛比例","Vellus hair ratio","180天",180,6.4130178723297
+"CTRL 020","Control","油脂分泌","Sebum secretion","基线",0,169.695606463458
+"CTRL 020","Control","油脂分泌","Sebum secretion","30天",30,174.168828753891
+"CTRL 020","Control","油脂分泌","Sebum secretion","90天",90,156.101650790453
+"CTRL 020","Control","油脂分泌","Sebum secretion","180天",180,171.48899765621
+"CTRL 020","Control","头皮硬度","Scalp stiffness","基线",0,22.0308803015887
+"CTRL 020","Control","头皮硬度","Scalp stiffness","30天",30,20.0479312896129
+"CTRL 020","Control","头皮硬度","Scalp stiffness","90天",90,20.1523992341188
+"CTRL 020","Control","头皮硬度","Scalp stiffness","180天",180,18.5458711087449
+"CTRL 020","Control","头皮血流","Scalp blood flow","基线",0,189.437523476899
+"CTRL 020","Control","头皮血流","Scalp blood flow","30天",30,208.405450532442
+"CTRL 020","Control","头皮血流","Scalp blood flow","90天",90,222.82655303835
+"CTRL 020","Control","头皮血流","Scalp blood flow","180天",180,215.250995541498
+"CTRL 021","Control","毛发密度","Hair density","基线",0,87.6288747687438
+"CTRL 021","Control","毛发密度","Hair density","30天",30,103.545943647842
+"CTRL 021","Control","毛发密度","Hair density","90天",90,124.287547579605
+"CTRL 021","Control","毛发密度","Hair density","180天",180,120.93635130217
+"CTRL 021","Control","毛发直径","Hair shaft diameter","基线",0,34.5218248342163
+"CTRL 021","Control","毛发直径","Hair shaft diameter","30天",30,32.9497066931558
+"CTRL 021","Control","毛发直径","Hair shaft diameter","90天",90,40.0356069441692
+"CTRL 021","Control","毛发直径","Hair shaft diameter","180天",180,36.6820387854439
+"CTRL 021","Control","覆盖率","Coverage index","基线",0,0.77877002062551
+"CTRL 021","Control","覆盖率","Coverage index","30天",30,1.19282301087275
+"CTRL 021","Control","覆盖率","Coverage index","90天",90,2.06863300112406
+"CTRL 021","Control","覆盖率","Coverage index","180天",180,1.93235136525345
+"CTRL 021","Control","终毛比例","Terminal hair ratio","基线",0,49.3216397825885
+"CTRL 021","Control","终毛比例","Terminal hair ratio","30天",30,43.6844019634639
+"CTRL 021","Control","终毛比例","Terminal hair ratio","90天",90,51.1629729598533
+"CTRL 021","Control","终毛比例","Terminal hair ratio","180天",180,52.998811195168
+"CTRL 021","Control","毳毛比例","Vellus hair ratio","基线",0,14.2599638073037
+"CTRL 021","Control","毳毛比例","Vellus hair ratio","30天",30,12.4701460967647
+"CTRL 021","Control","毳毛比例","Vellus hair ratio","90天",90,10.1896855874298
+"CTRL 021","Control","毳毛比例","Vellus hair ratio","180天",180,10.2087683085973
+"CTRL 021","Control","油脂分泌","Sebum secretion","基线",0,146.55484705116
+"CTRL 021","Control","油脂分泌","Sebum secretion","30天",30,146.090382888182
+"CTRL 021","Control","油脂分泌","Sebum secretion","90天",90,136.816807855604
+"CTRL 021","Control","油脂分泌","Sebum secretion","180天",180,140.630072747139
+"CTRL 021","Control","头皮硬度","Scalp stiffness","基线",0,25.4032981180214
+"CTRL 021","Control","头皮硬度","Scalp stiffness","30天",30,21.6114720455054
+"CTRL 021","Control","头皮硬度","Scalp stiffness","90天",90,23.2171655810621
+"CTRL 021","Control","头皮硬度","Scalp stiffness","180天",180,22.7580206504505
+"CTRL 021","Control","头皮血流","Scalp blood flow","基线",0,138.503119388905
+"CTRL 021","Control","头皮血流","Scalp blood flow","30天",30,156.719934970024
+"CTRL 021","Control","头皮血流","Scalp blood flow","90天",90,172.959691620761
+"CTRL 021","Control","头皮血流","Scalp blood flow","180天",180,165.347817702675
+"CTRL 022","Control","毛发密度","Hair density","基线",0,88.0867862823352
+"CTRL 022","Control","毛发密度","Hair density","30天",30,90.1348323297269
+"CTRL 022","Control","毛发密度","Hair density","90天",90,85.8389307264716
+"CTRL 022","Control","毛发密度","Hair density","180天",180,82.7436260632383
+"CTRL 022","Control","毛发直径","Hair shaft diameter","基线",0,61.8107729523951
+"CTRL 022","Control","毛发直径","Hair shaft diameter","30天",30,62.156117774686
+"CTRL 022","Control","毛发直径","Hair shaft diameter","90天",90,65.6242811502163
+"CTRL 022","Control","毛发直径","Hair shaft diameter","180天",180,65.531420992391
+"CTRL 022","Control","覆盖率","Coverage index","基线",0,0.196214305438229
+"CTRL 022","Control","覆盖率","Coverage index","30天",30,0.404445887339091
+"CTRL 022","Control","覆盖率","Coverage index","90天",90,0.924766162485402
+"CTRL 022","Control","覆盖率","Coverage index","180天",180,0.67180000467428
+"CTRL 022","Control","终毛比例","Terminal hair ratio","基线",0,62.7541968250368
+"CTRL 022","Control","终毛比例","Terminal hair ratio","30天",30,62.3592768552145
+"CTRL 022","Control","终毛比例","Terminal hair ratio","90天",90,71.9231263476667
+"CTRL 022","Control","终毛比例","Terminal hair ratio","180天",180,76.7894835530941
+"CTRL 022","Control","毳毛比例","Vellus hair ratio","基线",0,13.832839982932
+"CTRL 022","Control","毳毛比例","Vellus hair ratio","30天",30,14.9922525825176
+"CTRL 022","Control","毳毛比例","Vellus hair ratio","90天",90,10.324110918551
+"CTRL 022","Control","毳毛比例","Vellus hair ratio","180天",180,10.0610872299801
+"CTRL 022","Control","油脂分泌","Sebum secretion","基线",0,157.130356903277
+"CTRL 022","Control","油脂分泌","Sebum secretion","30天",30,139.256856913469
+"CTRL 022","Control","油脂分泌","Sebum secretion","90天",90,133.000716736766
+"CTRL 022","Control","油脂分泌","Sebum secretion","180天",180,139.861433522001
+"CTRL 022","Control","头皮硬度","Scalp stiffness","基线",0,20.5943260074665
+"CTRL 022","Control","头皮硬度","Scalp stiffness","30天",30,20.8051106662397
+"CTRL 022","Control","头皮硬度","Scalp stiffness","90天",90,22.3226224144758
+"CTRL 022","Control","头皮硬度","Scalp stiffness","180天",180,21.5349188731891
+"CTRL 022","Control","头皮血流","Scalp blood flow","基线",0,214.665002761514
+"CTRL 022","Control","头皮血流","Scalp blood flow","30天",30,220.387773208997
+"CTRL 022","Control","头皮血流","Scalp blood flow","90天",90,219.736062707928
+"CTRL 022","Control","头皮血流","Scalp blood flow","180天",180,217.885335621486
+"CTRL 023","Control","毛发密度","Hair density","基线",0,207.704395155414
+"CTRL 023","Control","毛发密度","Hair density","30天",30,214.033921766262
+"CTRL 023","Control","毛发密度","Hair density","90天",90,238.390075840029
+"CTRL 023","Control","毛发密度","Hair density","180天",180,232.41743291656
+"CTRL 023","Control","毛发直径","Hair shaft diameter","基线",0,48.5465247814795
+"CTRL 023","Control","毛发直径","Hair shaft diameter","30天",30,50.3129086683315
+"CTRL 023","Control","毛发直径","Hair shaft diameter","90天",90,56.3898404620631
+"CTRL 023","Control","毛发直径","Hair shaft diameter","180天",180,54.1927813444744
+"CTRL 023","Control","覆盖率","Coverage index","基线",0,0.533379053569078
+"CTRL 023","Control","覆盖率","Coverage index","30天",30,0.826167688859442
+"CTRL 023","Control","覆盖率","Coverage index","90天",90,1.64351052500628
+"CTRL 023","Control","覆盖率","Coverage index","180天",180,1.72273586942119
+"CTRL 023","Control","终毛比例","Terminal hair ratio","基线",0,40.1368491379529
+"CTRL 023","Control","终毛比例","Terminal hair ratio","30天",30,46.8144154791756
+"CTRL 023","Control","终毛比例","Terminal hair ratio","90天",90,53.7818116384316
+"CTRL 023","Control","终毛比例","Terminal hair ratio","180天",180,48.3633753693435
+"CTRL 023","Control","毳毛比例","Vellus hair ratio","基线",0,16.9909561786102
+"CTRL 023","Control","毳毛比例","Vellus hair ratio","30天",30,14.3513862174798
+"CTRL 023","Control","毳毛比例","Vellus hair ratio","90天",90,11.2972022336647
+"CTRL 023","Control","毳毛比例","Vellus hair ratio","180天",180,11.1251156140993
+"CTRL 023","Control","油脂分泌","Sebum secretion","基线",0,132.454848845461
+"CTRL 023","Control","油脂分泌","Sebum secretion","30天",30,140.888508066738
+"CTRL 023","Control","油脂分泌","Sebum secretion","90天",90,132.832277083314
+"CTRL 023","Control","油脂分泌","Sebum secretion","180天",180,146.52494517467
+"CTRL 023","Control","头皮硬度","Scalp stiffness","基线",0,20.6838319819894
+"CTRL 023","Control","头皮硬度","Scalp stiffness","30天",30,19.0584281208514
+"CTRL 023","Control","头皮硬度","Scalp stiffness","90天",90,20.8397706935683
+"CTRL 023","Control","头皮硬度","Scalp stiffness","180天",180,20.675697319012
+"CTRL 023","Control","头皮血流","Scalp blood flow","基线",0,163.414780170683
+"CTRL 023","Control","头皮血流","Scalp blood flow","30天",30,184.779389185871
+"CTRL 023","Control","头皮血流","Scalp blood flow","90天",90,200.947179490686
+"CTRL 023","Control","头皮血流","Scalp blood flow","180天",180,185.039748738065
+"CTRL 024","Control","毛发密度","Hair density","基线",0,160.172846243251
+"CTRL 024","Control","毛发密度","Hair density","30天",30,147.327640089414
+"CTRL 024","Control","毛发密度","Hair density","90天",90,132.873234067832
+"CTRL 024","Control","毛发密度","Hair density","180天",180,142.761759408446
+"CTRL 024","Control","毛发直径","Hair shaft diameter","基线",0,43.208687369127
+"CTRL 024","Control","毛发直径","Hair shaft diameter","30天",30,42.2203802492903
+"CTRL 024","Control","毛发直径","Hair shaft diameter","90天",90,47.8631592531579
+"CTRL 024","Control","毛发直径","Hair shaft diameter","180天",180,42.4008039907462
+"CTRL 024","Control","覆盖率","Coverage index","基线",0,0.956722387325823
+"CTRL 024","Control","覆盖率","Coverage index","30天",30,1.51299889566891
+"CTRL 024","Control","覆盖率","Coverage index","90天",90,2.5016288545318
+"CTRL 024","Control","覆盖率","Coverage index","180天",180,2.47531694187707
+"CTRL 024","Control","终毛比例","Terminal hair ratio","基线",0,40.0621027652153
+"CTRL 024","Control","终毛比例","Terminal hair ratio","30天",30,43.7397623976477
+"CTRL 024","Control","终毛比例","Terminal hair ratio","90天",90,47.9666798226568
+"CTRL 024","Control","终毛比例","Terminal hair ratio","180天",180,51.274436047731
+"CTRL 024","Control","毳毛比例","Vellus hair ratio","基线",0,16.1451822814879
+"CTRL 024","Control","毳毛比例","Vellus hair ratio","30天",30,15.5200011611989
+"CTRL 024","Control","毳毛比例","Vellus hair ratio","90天",90,11.4567350029599
+"CTRL 024","Control","毳毛比例","Vellus hair ratio","180天",180,11.6719071902602
+"CTRL 024","Control","油脂分泌","Sebum secretion","基线",0,142.920225462014
+"CTRL 024","Control","油脂分泌","Sebum secretion","30天",30,115.697085482204
+"CTRL 024","Control","油脂分泌","Sebum secretion","90天",90,128.214581171429
+"CTRL 024","Control","油脂分泌","Sebum secretion","180天",180,133.16282954354
+"CTRL 024","Control","头皮硬度","Scalp stiffness","基线",0,25.3416872308383
+"CTRL 024","Control","头皮硬度","Scalp stiffness","30天",30,23.3003320760638
+"CTRL 024","Control","头皮硬度","Scalp stiffness","90天",90,23.5634129570532
+"CTRL 024","Control","头皮硬度","Scalp stiffness","180天",180,22.4429457419297
+"CTRL 024","Control","头皮血流","Scalp blood flow","基线",0,156.70086805605
+"CTRL 024","Control","头皮血流","Scalp blood flow","30天",30,187.10511720168
+"CTRL 024","Control","头皮血流","Scalp blood flow","90天",90,169.616015817129
+"CTRL 024","Control","头皮血流","Scalp blood flow","180天",180,169.105806946388
+"CTRL 025","Control","毛发密度","Hair density","基线",0,134.203112037404
+"CTRL 025","Control","毛发密度","Hair density","30天",30,120.604273408036
+"CTRL 025","Control","毛发密度","Hair density","90天",90,143.391545940908
+"CTRL 025","Control","毛发密度","Hair density","180天",180,147.209297827211
+"CTRL 025","Control","毛发直径","Hair shaft diameter","基线",0,76.154049246942
+"CTRL 025","Control","毛发直径","Hair shaft diameter","30天",30,77.506439928989
+"CTRL 025","Control","毛发直径","Hair shaft diameter","90天",90,84.5269150209721
+"CTRL 025","Control","毛发直径","Hair shaft diameter","180天",180,93.6147644115203
+"CTRL 025","Control","覆盖率","Coverage index","基线",0,0.069553209192536
+"CTRL 025","Control","覆盖率","Coverage index","30天",30,0.284555743774022
+"CTRL 025","Control","覆盖率","Coverage index","90天",90,1.19996978539958
+"CTRL 025","Control","覆盖率","Coverage index","180天",180,1.25079886042062
+"CTRL 025","Control","终毛比例","Terminal hair ratio","基线",0,60.3855705828832
+"CTRL 025","Control","终毛比例","Terminal hair ratio","30天",30,64.9789835102683
+"CTRL 025","Control","终毛比例","Terminal hair ratio","90天",90,66.0708615337445
+"CTRL 025","Control","终毛比例","Terminal hair ratio","180天",180,67.1913829065559
+"CTRL 025","Control","毳毛比例","Vellus hair ratio","基线",0,12.9192631677146
+"CTRL 025","Control","毳毛比例","Vellus hair ratio","30天",30,11.6119590304808
+"CTRL 025","Control","毳毛比例","Vellus hair ratio","90天",90,8.32826749539364
+"CTRL 025","Control","毳毛比例","Vellus hair ratio","180天",180,9.29408683997693
+"CTRL 025","Control","油脂分泌","Sebum secretion","基线",0,130.889978147191
+"CTRL 025","Control","油脂分泌","Sebum secretion","30天",30,149.009742697662
+"CTRL 025","Control","油脂分泌","Sebum secretion","90天",90,146.431023484512
+"CTRL 025","Control","油脂分泌","Sebum secretion","180天",180,161.513612126204
+"CTRL 025","Control","头皮硬度","Scalp stiffness","基线",0,33.1098988120698
+"CTRL 025","Control","头皮硬度","Scalp stiffness","30天",30,30.142973388935
+"CTRL 025","Control","头皮硬度","Scalp stiffness","90天",90,30.9425660022476
+"CTRL 025","Control","头皮硬度","Scalp stiffness","180天",180,31.1051211503829
+"CTRL 025","Control","头皮血流","Scalp blood flow","基线",0,165.991073969567
+"CTRL 025","Control","头皮血流","Scalp blood flow","30天",30,206.784471549299
+"CTRL 025","Control","头皮血流","Scalp blood flow","90天",90,225.377632186031
+"CTRL 025","Control","头皮血流","Scalp blood flow","180天",180,223.5893705997
+"CTRL 026","Control","毛发密度","Hair density","基线",0,109.460061941645
+"CTRL 026","Control","毛发密度","Hair density","30天",30,103.318394529694
+"CTRL 026","Control","毛发密度","Hair density","90天",90,130.58077633475
+"CTRL 026","Control","毛发密度","Hair density","180天",180,135.772430762003
+"CTRL 026","Control","毛发直径","Hair shaft diameter","基线",0,62.0673584342617
+"CTRL 026","Control","毛发直径","Hair shaft diameter","30天",30,71.6118465131614
+"CTRL 026","Control","毛发直径","Hair shaft diameter","90天",90,72.9848027885646
+"CTRL 026","Control","毛发直径","Hair shaft diameter","180天",180,78.8353430577931
+"CTRL 026","Control","覆盖率","Coverage index","基线",0,0.223891324651259
+"CTRL 026","Control","覆盖率","Coverage index","30天",30,0.391079286867609
+"CTRL 026","Control","覆盖率","Coverage index","90天",90,1.34764895663362
+"CTRL 026","Control","覆盖率","Coverage index","180天",180,1.19487437158258
+"CTRL 026","Control","终毛比例","Terminal hair ratio","基线",0,45.6791412473277
+"CTRL 026","Control","终毛比例","Terminal hair ratio","30天",30,50.2498724920899
+"CTRL 026","Control","终毛比例","Terminal hair ratio","90天",90,58.9136734602127
+"CTRL 026","Control","终毛比例","Terminal hair ratio","180天",180,58.6252007886092
+"CTRL 026","Control","毳毛比例","Vellus hair ratio","基线",0,12.8607759795623
+"CTRL 026","Control","毳毛比例","Vellus hair ratio","30天",30,10.8675861435579
+"CTRL 026","Control","毳毛比例","Vellus hair ratio","90天",90,7.46293368213009
+"CTRL 026","Control","毳毛比例","Vellus hair ratio","180天",180,7.9252199412997
+"CTRL 026","Control","油脂分泌","Sebum secretion","基线",0,142.134623674063
+"CTRL 026","Control","油脂分泌","Sebum secretion","30天",30,144.111027724337
+"CTRL 026","Control","油脂分泌","Sebum secretion","90天",90,142.188762550678
+"CTRL 026","Control","油脂分泌","Sebum secretion","180天",180,146.939881891995
+"CTRL 026","Control","头皮硬度","Scalp stiffness","基线",0,24.4617799286082
+"CTRL 026","Control","头皮硬度","Scalp stiffness","30天",30,26.3207015400414
+"CTRL 026","Control","头皮硬度","Scalp stiffness","90天",90,28.521114461693
+"CTRL 026","Control","头皮硬度","Scalp stiffness","180天",180,29.8383456832045
+"CTRL 026","Control","头皮血流","Scalp blood flow","基线",0,96.1141611571289
+"CTRL 026","Control","头皮血流","Scalp blood flow","30天",30,125.616880034855
+"CTRL 026","Control","头皮血流","Scalp blood flow","90天",90,121.864040578185
+"CTRL 026","Control","头皮血流","Scalp blood flow","180天",180,123.6789229154
+"CTRL 027","Control","毛发密度","Hair density","基线",0,106.712622722457
+"CTRL 027","Control","毛发密度","Hair density","30天",30,118.79597181504
+"CTRL 027","Control","毛发密度","Hair density","90天",90,126.758499219949
+"CTRL 027","Control","毛发密度","Hair density","180天",180,129.969768498388
+"CTRL 027","Control","毛发直径","Hair shaft diameter","基线",0,61.4056213777526
+"CTRL 027","Control","毛发直径","Hair shaft diameter","30天",30,67.4964737745103
+"CTRL 027","Control","毛发直径","Hair shaft diameter","90天",90,74.535023294077
+"CTRL 027","Control","毛发直径","Hair shaft diameter","180天",180,73.4504343054099
+"CTRL 027","Control","覆盖率","Coverage index","基线",0,0.339140873286366
+"CTRL 027","Control","覆盖率","Coverage index","30天",30,0.770853440695797
+"CTRL 027","Control","覆盖率","Coverage index","90天",90,1.53307347382584
+"CTRL 027","Control","覆盖率","Coverage index","180天",180,1.67778186266471
+"CTRL 027","Control","终毛比例","Terminal hair ratio","基线",0,32.2885167757716
+"CTRL 027","Control","终毛比例","Terminal hair ratio","30天",30,35.8655582436288
+"CTRL 027","Control","终毛比例","Terminal hair ratio","90天",90,40.0003456979675
+"CTRL 027","Control","终毛比例","Terminal hair ratio","180天",180,37.7598199791356
+"CTRL 027","Control","毳毛比例","Vellus hair ratio","基线",0,21.6282367162932
+"CTRL 027","Control","毳毛比例","Vellus hair ratio","30天",30,17.9218506613306
+"CTRL 027","Control","毳毛比例","Vellus hair ratio","90天",90,12.9562779772043
+"CTRL 027","Control","毳毛比例","Vellus hair ratio","180天",180,12.8670223149262
+"CTRL 027","Control","油脂分泌","Sebum secretion","基线",0,163.726218482444
+"CTRL 027","Control","油脂分泌","Sebum secretion","30天",30,165.860361573843
+"CTRL 027","Control","油脂分泌","Sebum secretion","90天",90,153.053049469012
+"CTRL 027","Control","油脂分泌","Sebum secretion","180天",180,155.828564180659
+"CTRL 027","Control","头皮硬度","Scalp stiffness","基线",0,28.7953474558364
+"CTRL 027","Control","头皮硬度","Scalp stiffness","30天",30,26.241879357713
+"CTRL 027","Control","头皮硬度","Scalp stiffness","90天",90,27.6727399901614
+"CTRL 027","Control","头皮硬度","Scalp stiffness","180天",180,26.7196111786408
+"CTRL 027","Control","头皮血流","Scalp blood flow","基线",0,118.422253015914
+"CTRL 027","Control","头皮血流","Scalp blood flow","30天",30,139.235561153266
+"CTRL 027","Control","头皮血流","Scalp blood flow","90天",90,136.081205486871
+"CTRL 027","Control","头皮血流","Scalp blood flow","180天",180,132.392194323659
+"CTRL 028","Control","毛发密度","Hair density","基线",0,160.276374938876
+"CTRL 028","Control","毛发密度","Hair density","30天",30,194.874025342861
+"CTRL 028","Control","毛发密度","Hair density","90天",90,203.90293840868
+"CTRL 028","Control","毛发密度","Hair density","180天",180,212.837547379429
+"CTRL 028","Control","毛发直径","Hair shaft diameter","基线",0,64.743386866937
+"CTRL 028","Control","毛发直径","Hair shaft diameter","30天",30,60.6286976899254
+"CTRL 028","Control","毛发直径","Hair shaft diameter","90天",90,61.6867373334052
+"CTRL 028","Control","毛发直径","Hair shaft diameter","180天",180,62.3153482575364
+"CTRL 028","Control","覆盖率","Coverage index","基线",0,0.400057948344047
+"CTRL 028","Control","覆盖率","Coverage index","30天",30,0.354774611754568
+"CTRL 028","Control","覆盖率","Coverage index","90天",90,0.814800232747336
+"CTRL 028","Control","覆盖率","Coverage index","180天",180,0.563222151475684
+"CTRL 028","Control","终毛比例","Terminal hair ratio","基线",0,23.9193614461864
+"CTRL 028","Control","终毛比例","Terminal hair ratio","30天",30,27.2897177791312
+"CTRL 028","Control","终毛比例","Terminal hair ratio","90天",90,33.2782544634908
+"CTRL 028","Control","终毛比例","Terminal hair ratio","180天",180,34.5467268120824
+"CTRL 028","Control","毳毛比例","Vellus hair ratio","基线",0,10.9073416475119
+"CTRL 028","Control","毳毛比例","Vellus hair ratio","30天",30,11.2104491829597
+"CTRL 028","Control","毳毛比例","Vellus hair ratio","90天",90,7.61980636417944
+"CTRL 028","Control","毳毛比例","Vellus hair ratio","180天",180,8.08895550066262
+"CTRL 028","Control","油脂分泌","Sebum secretion","基线",0,151.910367365351
+"CTRL 028","Control","油脂分泌","Sebum secretion","30天",30,138.999423389171
+"CTRL 028","Control","油脂分泌","Sebum secretion","90天",90,129.234793782335
+"CTRL 028","Control","油脂分泌","Sebum secretion","180天",180,127.487649091471
+"CTRL 028","Control","头皮硬度","Scalp stiffness","基线",0,30.5792588337092
+"CTRL 028","Control","头皮硬度","Scalp stiffness","30天",30,27.8190164680077
+"CTRL 028","Control","头皮硬度","Scalp stiffness","90天",90,29.3176675854222
+"CTRL 028","Control","头皮硬度","Scalp stiffness","180天",180,28.1217843135364
+"CTRL 028","Control","头皮血流","Scalp blood flow","基线",0,202.765331772481
+"CTRL 028","Control","头皮血流","Scalp blood flow","30天",30,250.092085228171
+"CTRL 028","Control","头皮血流","Scalp blood flow","90天",90,284.398752207997
+"CTRL 028","Control","头皮血流","Scalp blood flow","180天",180,246.07363855722
+"CTRL 029","Control","毛发密度","Hair density","基线",0,168.184795219942
+"CTRL 029","Control","毛发密度","Hair density","30天",30,152.089102655029
+"CTRL 029","Control","毛发密度","Hair density","90天",90,158.587724771946
+"CTRL 029","Control","毛发密度","Hair density","180天",180,153.144336283854
+"CTRL 029","Control","毛发直径","Hair shaft diameter","基线",0,53.9526904282952
+"CTRL 029","Control","毛发直径","Hair shaft diameter","30天",30,62.0367189787168
+"CTRL 029","Control","毛发直径","Hair shaft diameter","90天",90,65.4033248160564
+"CTRL 029","Control","毛发直径","Hair shaft diameter","180天",180,68.1662573032973
+"CTRL 029","Control","覆盖率","Coverage index","基线",0,0.083113734632122
+"CTRL 029","Control","覆盖率","Coverage index","30天",30,0.118489204340342
+"CTRL 029","Control","覆盖率","Coverage index","90天",90,0.737952086334508
+"CTRL 029","Control","覆盖率","Coverage index","180天",180,0.882084379003322
+"CTRL 029","Control","终毛比例","Terminal hair ratio","基线",0,45.0376737682927
+"CTRL 029","Control","终毛比例","Terminal hair ratio","30天",30,45.7922610204129
+"CTRL 029","Control","终毛比例","Terminal hair ratio","90天",90,50.0438982712875
+"CTRL 029","Control","终毛比例","Terminal hair ratio","180天",180,52.3373510553486
+"CTRL 029","Control","毳毛比例","Vellus hair ratio","基线",0,13.2200227190002
+"CTRL 029","Control","毳毛比例","Vellus hair ratio","30天",30,12.3316387666469
+"CTRL 029","Control","毳毛比例","Vellus hair ratio","90天",90,10.701255225544
+"CTRL 029","Control","毳毛比例","Vellus hair ratio","180天",180,10.6645623387855
+"CTRL 029","Control","油脂分泌","Sebum secretion","基线",0,152.193773186549
+"CTRL 029","Control","油脂分泌","Sebum secretion","30天",30,143.785212821064
+"CTRL 029","Control","油脂分泌","Sebum secretion","90天",90,148.721645545826
+"CTRL 029","Control","油脂分泌","Sebum secretion","180天",180,155.575750689633
+"CTRL 029","Control","头皮硬度","Scalp stiffness","基线",0,18.294439261124
+"CTRL 029","Control","头皮硬度","Scalp stiffness","30天",30,20.3314627311254
+"CTRL 029","Control","头皮硬度","Scalp stiffness","90天",90,20.181008059548
+"CTRL 029","Control","头皮硬度","Scalp stiffness","180天",180,20.2371774046632
+"CTRL 029","Control","头皮血流","Scalp blood flow","基线",0,193.871563221192
+"CTRL 029","Control","头皮血流","Scalp blood flow","30天",30,216.334373044513
+"CTRL 029","Control","头皮血流","Scalp blood flow","90天",90,245.140667383202
+"CTRL 029","Control","头皮血流","Scalp blood flow","180天",180,244.558440936538
+"CTRL 030","Control","毛发密度","Hair density","基线",0,153.09262437758
+"CTRL 030","Control","毛发密度","Hair density","30天",30,138.91626357875
+"CTRL 030","Control","毛发密度","Hair density","90天",90,166.339436954183
+"CTRL 030","Control","毛发密度","Hair density","180天",180,135.05279752197
+"CTRL 030","Control","毛发直径","Hair shaft diameter","基线",0,65.1761326397109
+"CTRL 030","Control","毛发直径","Hair shaft diameter","30天",30,71.4122994891373
+"CTRL 030","Control","毛发直径","Hair shaft diameter","90天",90,66.5956377344308
+"CTRL 030","Control","毛发直径","Hair shaft diameter","180天",180,63.3274806813614
+"CTRL 030","Control","覆盖率","Coverage index","基线",0,0.558928446489849
+"CTRL 030","Control","覆盖率","Coverage index","30天",30,0.949646758295466
+"CTRL 030","Control","覆盖率","Coverage index","90天",90,1.9441619004576
+"CTRL 030","Control","覆盖率","Coverage index","180天",180,1.75199579454553
+"CTRL 030","Control","终毛比例","Terminal hair ratio","基线",0,48.9287016869848
+"CTRL 030","Control","终毛比例","Terminal hair ratio","30天",30,50.8064066636574
+"CTRL 030","Control","终毛比例","Terminal hair ratio","90天",90,59.8973115621957
+"CTRL 030","Control","终毛比例","Terminal hair ratio","180天",180,63.4650254712035
+"CTRL 030","Control","毳毛比例","Vellus hair ratio","基线",0,13.0485532345523
+"CTRL 030","Control","毳毛比例","Vellus hair ratio","30天",30,11.4800945013887
+"CTRL 030","Control","毳毛比例","Vellus hair ratio","90天",90,8.26513835262852
+"CTRL 030","Control","毳毛比例","Vellus hair ratio","180天",180,9.17672659714028
+"CTRL 030","Control","油脂分泌","Sebum secretion","基线",0,154.337281219715
+"CTRL 030","Control","油脂分泌","Sebum secretion","30天",30,150.047900745389
+"CTRL 030","Control","油脂分泌","Sebum secretion","90天",90,143.190558217674
+"CTRL 030","Control","油脂分泌","Sebum secretion","180天",180,148.482971736188
+"CTRL 030","Control","头皮硬度","Scalp stiffness","基线",0,21.8753834200576
+"CTRL 030","Control","头皮硬度","Scalp stiffness","30天",30,19.1205738043578
+"CTRL 030","Control","头皮硬度","Scalp stiffness","90天",90,20.4271378071546
+"CTRL 030","Control","头皮硬度","Scalp stiffness","180天",180,19.3528241867168
+"CTRL 030","Control","头皮血流","Scalp blood flow","基线",0,189.028671767304
+"CTRL 030","Control","头皮血流","Scalp blood flow","30天",30,217.955214897131
+"CTRL 030","Control","头皮血流","Scalp blood flow","90天",90,239.632805838757
+"CTRL 030","Control","头皮血流","Scalp blood flow","180天",180,242.471286541391
+"CTRL 031","Control","毛发密度","Hair density","基线",0,151.251271496017
+"CTRL 031","Control","毛发密度","Hair density","30天",30,146.658579467621
+"CTRL 031","Control","毛发密度","Hair density","90天",90,167.202500215767
+"CTRL 031","Control","毛发密度","Hair density","180天",180,170.865381084889
+"CTRL 031","Control","毛发直径","Hair shaft diameter","基线",0,71.4225107783414
+"CTRL 031","Control","毛发直径","Hair shaft diameter","30天",30,69.0334580924792
+"CTRL 031","Control","毛发直径","Hair shaft diameter","90天",90,69.1725583813666
+"CTRL 031","Control","毛发直径","Hair shaft diameter","180天",180,73.9846777629402
+"CTRL 031","Control","覆盖率","Coverage index","基线",0,0.493750374378468
+"CTRL 031","Control","覆盖率","Coverage index","30天",30,0.82550703988968
+"CTRL 031","Control","覆盖率","Coverage index","90天",90,1.78689921308355
+"CTRL 031","Control","覆盖率","Coverage index","180天",180,1.60011788682674
+"CTRL 031","Control","终毛比例","Terminal hair ratio","基线",0,40.18660557083
+"CTRL 031","Control","终毛比例","Terminal hair ratio","30天",30,44.4195520925343
+"CTRL 031","Control","终毛比例","Terminal hair ratio","90天",90,53.9045993863122
+"CTRL 031","Control","终毛比例","Terminal hair ratio","180天",180,50.1464041476673
+"CTRL 031","Control","毳毛比例","Vellus hair ratio","基线",0,16.9697950928491
+"CTRL 031","Control","毳毛比例","Vellus hair ratio","30天",30,13.7342223828393
+"CTRL 031","Control","毳毛比例","Vellus hair ratio","90天",90,9.82694187984767
+"CTRL 031","Control","毳毛比例","Vellus hair ratio","180天",180,10.0485654864348
+"CTRL 031","Control","油脂分泌","Sebum secretion","基线",0,115.896417028976
+"CTRL 031","Control","油脂分泌","Sebum secretion","30天",30,123.989745154515
+"CTRL 031","Control","油脂分泌","Sebum secretion","90天",90,123.521623625737
+"CTRL 031","Control","油脂分泌","Sebum secretion","180天",180,125.147810913243
+"CTRL 031","Control","头皮硬度","Scalp stiffness","基线",0,22.4241372524028
+"CTRL 031","Control","头皮硬度","Scalp stiffness","30天",30,24.2582985704801
+"CTRL 031","Control","头皮硬度","Scalp stiffness","90天",90,25.109970098745
+"CTRL 031","Control","头皮硬度","Scalp stiffness","180天",180,26.0801962076246
+"CTRL 031","Control","头皮血流","Scalp blood flow","基线",0,226.746085193835
+"CTRL 031","Control","头皮血流","Scalp blood flow","30天",30,274.644885048822
+"CTRL 031","Control","头皮血流","Scalp blood flow","90天",90,265.071337186646
+"CTRL 031","Control","头皮血流","Scalp blood flow","180天",180,248.164624217479
+"CTRL 032","Control","毛发密度","Hair density","基线",0,151.913387684872
+"CTRL 032","Control","毛发密度","Hair density","30天",30,180.046328335547
+"CTRL 032","Control","毛发密度","Hair density","90天",90,189.378764069008
+"CTRL 032","Control","毛发密度","Hair density","180天",180,185.746233445943
+"CTRL 032","Control","毛发直径","Hair shaft diameter","基线",0,48.8178823932523
+"CTRL 032","Control","毛发直径","Hair shaft diameter","30天",30,50.2226624632288
+"CTRL 032","Control","毛发直径","Hair shaft diameter","90天",90,58.3543631137557
+"CTRL 032","Control","毛发直径","Hair shaft diameter","180天",180,56.8627045202841
+"CTRL 032","Control","覆盖率","Coverage index","基线",0,0.258961865006056
+"CTRL 032","Control","覆盖率","Coverage index","30天",30,0.210038966797412
+"CTRL 032","Control","覆盖率","Coverage index","90天",90,1.16290068147226
+"CTRL 032","Control","覆盖率","Coverage index","180天",180,0.923573705593133
+"CTRL 032","Control","终毛比例","Terminal hair ratio","基线",0,42.5152991414276
+"CTRL 032","Control","终毛比例","Terminal hair ratio","30天",30,45.9669703068778
+"CTRL 032","Control","终毛比例","Terminal hair ratio","90天",90,53.4816077401877
+"CTRL 032","Control","终毛比例","Terminal hair ratio","180天",180,54.0973123812742
+"CTRL 032","Control","毳毛比例","Vellus hair ratio","基线",0,23.3086391256637
+"CTRL 032","Control","毳毛比例","Vellus hair ratio","30天",30,21.9281444790474
+"CTRL 032","Control","毳毛比例","Vellus hair ratio","90天",90,18.6630221333332
+"CTRL 032","Control","毳毛比例","Vellus hair ratio","180天",180,19.287817742802
+"CTRL 032","Control","油脂分泌","Sebum secretion","基线",0,157.434588911514
+"CTRL 032","Control","油脂分泌","Sebum secretion","30天",30,144.678459481481
+"CTRL 032","Control","油脂分泌","Sebum secretion","90天",90,139.650394784951
+"CTRL 032","Control","油脂分泌","Sebum secretion","180天",180,143.26614544509
+"CTRL 032","Control","头皮硬度","Scalp stiffness","基线",0,23.3515518666617
+"CTRL 032","Control","头皮硬度","Scalp stiffness","30天",30,23.8351022516475
+"CTRL 032","Control","头皮硬度","Scalp stiffness","90天",90,24.5868984875288
+"CTRL 032","Control","头皮硬度","Scalp stiffness","180天",180,23.2920820194971
+"CTRL 032","Control","头皮血流","Scalp blood flow","基线",0,208.853711247021
+"CTRL 032","Control","头皮血流","Scalp blood flow","30天",30,230.729408432571
+"CTRL 032","Control","头皮血流","Scalp blood flow","90天",90,253.222641773288
+"CTRL 032","Control","头皮血流","Scalp blood flow","180天",180,239.080718682035
+"CTRL 033","Control","毛发密度","Hair density","基线",0,168.727099818669
+"CTRL 033","Control","毛发密度","Hair density","30天",30,161.41570427843
+"CTRL 033","Control","毛发密度","Hair density","90天",90,187.581815853772
+"CTRL 033","Control","毛发密度","Hair density","180天",180,176.425357172531
+"CTRL 033","Control","毛发直径","Hair shaft diameter","基线",0,49.1561990816234
+"CTRL 033","Control","毛发直径","Hair shaft diameter","30天",30,54.030905596339
+"CTRL 033","Control","毛发直径","Hair shaft diameter","90天",90,61.9836924569274
+"CTRL 033","Control","毛发直径","Hair shaft diameter","180天",180,53.3443837170427
+"CTRL 033","Control","覆盖率","Coverage index","基线",0,0.000204180225631
+"CTRL 033","Control","覆盖率","Coverage index","30天",30,0.0816665145623833
+"CTRL 033","Control","覆盖率","Coverage index","90天",90,1.02666521083467
+"CTRL 033","Control","覆盖率","Coverage index","180天",180,0.877882338787266
+"CTRL 033","Control","终毛比例","Terminal hair ratio","基线",0,35.3689768051399
+"CTRL 033","Control","终毛比例","Terminal hair ratio","30天",30,40.1250225495292
+"CTRL 033","Control","终毛比例","Terminal hair ratio","90天",90,48.3107489597958
+"CTRL 033","Control","终毛比例","Terminal hair ratio","180天",180,51.9052311768586
+"CTRL 033","Control","毳毛比例","Vellus hair ratio","基线",0,10.0127984821445
+"CTRL 033","Control","毳毛比例","Vellus hair ratio","30天",30,9.864609148962
+"CTRL 033","Control","毳毛比例","Vellus hair ratio","90天",90,6.48420508247218
+"CTRL 033","Control","毳毛比例","Vellus hair ratio","180天",180,7.30148816504145
+"CTRL 033","Control","油脂分泌","Sebum secretion","基线",0,130.193773076163
+"CTRL 033","Control","油脂分泌","Sebum secretion","30天",30,112.149548553777
+"CTRL 033","Control","油脂分泌","Sebum secretion","90天",90,107.073783070343
+"CTRL 033","Control","油脂分泌","Sebum secretion","180天",180,103.549828908881
+"CTRL 033","Control","头皮硬度","Scalp stiffness","基线",0,29.4241990205562
+"CTRL 033","Control","头皮硬度","Scalp stiffness","30天",30,25.1769364301857
+"CTRL 033","Control","头皮硬度","Scalp stiffness","90天",90,24.0356333552779
+"CTRL 033","Control","头皮硬度","Scalp stiffness","180天",180,23.9294141363564
+"CTRL 033","Control","头皮血流","Scalp blood flow","基线",0,160.708107663792
+"CTRL 033","Control","头皮血流","Scalp blood flow","30天",30,199.230553915716
+"CTRL 033","Control","头皮血流","Scalp blood flow","90天",90,185.738907527463
+"CTRL 033","Control","头皮血流","Scalp blood flow","180天",180,176.659589750972
+"CTRL 034","Control","毛发密度","Hair density","基线",0,124.879485302588
+"CTRL 034","Control","毛发密度","Hair density","30天",30,133.579229602122
+"CTRL 034","Control","毛发密度","Hair density","90天",90,134.760431940004
+"CTRL 034","Control","毛发密度","Hair density","180天",180,128.658510501492
+"CTRL 034","Control","毛发直径","Hair shaft diameter","基线",0,66.9450643781319
+"CTRL 034","Control","毛发直径","Hair shaft diameter","30天",30,69.9256901379639
+"CTRL 034","Control","毛发直径","Hair shaft diameter","90天",90,77.2985752178059
+"CTRL 034","Control","毛发直径","Hair shaft diameter","180天",180,82.6038326497148
+"CTRL 034","Control","覆盖率","Coverage index","基线",0,0.774776261553348
+"CTRL 034","Control","覆盖率","Coverage index","30天",30,1.17545316518326
+"CTRL 034","Control","覆盖率","Coverage index","90天",90,2.1745474937479
+"CTRL 034","Control","覆盖率","Coverage index","180天",180,1.94225854440477
+"CTRL 034","Control","终毛比例","Terminal hair ratio","基线",0,54.6335259688484
+"CTRL 034","Control","终毛比例","Terminal hair ratio","30天",30,53.0189732124331
+"CTRL 034","Control","终毛比例","Terminal hair ratio","90天",90,56.7611973114432
+"CTRL 034","Control","终毛比例","Terminal hair ratio","180天",180,60.2509857625777
+"CTRL 034","Control","毳毛比例","Vellus hair ratio","基线",0,11.7342608264521
+"CTRL 034","Control","毳毛比例","Vellus hair ratio","30天",30,11.1474652398115
+"CTRL 034","Control","毳毛比例","Vellus hair ratio","90天",90,7.59678125422337
+"CTRL 034","Control","毳毛比例","Vellus hair ratio","180天",180,8.24407203097056
+"CTRL 034","Control","油脂分泌","Sebum secretion","基线",0,124.629651807632
+"CTRL 034","Control","油脂分泌","Sebum secretion","30天",30,116.696277665665
+"CTRL 034","Control","油脂分泌","Sebum secretion","90天",90,115.968694505092
+"CTRL 034","Control","油脂分泌","Sebum secretion","180天",180,122.392411336416
+"CTRL 034","Control","头皮硬度","Scalp stiffness","基线",0,20.5486624012958
+"CTRL 034","Control","头皮硬度","Scalp stiffness","30天",30,19.2012695295674
+"CTRL 034","Control","头皮硬度","Scalp stiffness","90天",90,19.1497818984384
+"CTRL 034","Control","头皮硬度","Scalp stiffness","180天",180,20.0785329572837
+"CTRL 034","Control","头皮血流","Scalp blood flow","基线",0,130.627751246427
+"CTRL 034","Control","头皮血流","Scalp blood flow","30天",30,149.87808825769
+"CTRL 034","Control","头皮血流","Scalp blood flow","90天",90,142.6611368155
+"CTRL 034","Control","头皮血流","Scalp blood flow","180天",180,147.126057089247
+"CTRL 035","Control","毛发密度","Hair density","基线",0,160.697096949912
+"CTRL 035","Control","毛发密度","Hair density","30天",30,152.38514531139
+"CTRL 035","Control","毛发密度","Hair density","90天",90,182.15201401544
+"CTRL 035","Control","毛发密度","Hair density","180天",180,189.546147842516
+"CTRL 035","Control","毛发直径","Hair shaft diameter","基线",0,44.7902951506641
+"CTRL 035","Control","毛发直径","Hair shaft diameter","30天",30,37.0875353490874
+"CTRL 035","Control","毛发直径","Hair shaft diameter","90天",90,43.57661460474
+"CTRL 035","Control","毛发直径","Hair shaft diameter","180天",180,41.7245412751809
+"CTRL 035","Control","覆盖率","Coverage index","基线",0,0.530232726924792
+"CTRL 035","Control","覆盖率","Coverage index","30天",30,0.589541470374756
+"CTRL 035","Control","覆盖率","Coverage index","90天",90,0.33799436535914
+"CTRL 035","Control","覆盖率","Coverage index","180天",180,0.253342408840382
+"CTRL 035","Control","终毛比例","Terminal hair ratio","基线",0,47.0649366372737
+"CTRL 035","Control","终毛比例","Terminal hair ratio","30天",30,48.9760013095004
+"CTRL 035","Control","终毛比例","Terminal hair ratio","90天",90,55.9932689283055
+"CTRL 035","Control","终毛比例","Terminal hair ratio","180天",180,56.426501257222
+"CTRL 035","Control","毳毛比例","Vellus hair ratio","基线",0,5.36874754993384
+"CTRL 035","Control","毳毛比例","Vellus hair ratio","30天",30,5.91453134533684
+"CTRL 035","Control","毳毛比例","Vellus hair ratio","90天",90,2.80034330581519
+"CTRL 035","Control","毳毛比例","Vellus hair ratio","180天",180,4.9324819514372
+"CTRL 035","Control","油脂分泌","Sebum secretion","基线",0,148.594710220813
+"CTRL 035","Control","油脂分泌","Sebum secretion","30天",30,137.887788976347
+"CTRL 035","Control","油脂分泌","Sebum secretion","90天",90,128.619430776965
+"CTRL 035","Control","油脂分泌","Sebum secretion","180天",180,132.154372488753
+"CTRL 035","Control","头皮硬度","Scalp stiffness","基线",0,12.4624535236422
+"CTRL 035","Control","头皮硬度","Scalp stiffness","30天",30,13.8541557866295
+"CTRL 035","Control","头皮硬度","Scalp stiffness","90天",90,14.9158047471993
+"CTRL 035","Control","头皮硬度","Scalp stiffness","180天",180,14.1493895216051
+"CTRL 035","Control","头皮血流","Scalp blood flow","基线",0,152.476870488819
+"CTRL 035","Control","头皮血流","Scalp blood flow","30天",30,184.137151968843
+"CTRL 035","Control","头皮血流","Scalp blood flow","90天",90,207.870254647171
+"CTRL 035","Control","头皮血流","Scalp blood flow","180天",180,207.533372733769
+"CTRL 036","Control","毛发密度","Hair density","基线",0,120.054225591591
+"CTRL 036","Control","毛发密度","Hair density","30天",30,126.996056243145
+"CTRL 036","Control","毛发密度","Hair density","90天",90,136.719233106075
+"CTRL 036","Control","毛发密度","Hair density","180天",180,119.124374911962
+"CTRL 036","Control","毛发直径","Hair shaft diameter","基线",0,43.4485105962713
+"CTRL 036","Control","毛发直径","Hair shaft diameter","30天",30,47.3282729323395
+"CTRL 036","Control","毛发直径","Hair shaft diameter","90天",90,54.393441751397
+"CTRL 036","Control","毛发直径","Hair shaft diameter","180天",180,55.4727131692038
+"CTRL 036","Control","覆盖率","Coverage index","基线",0,0.625650512462367
+"CTRL 036","Control","覆盖率","Coverage index","30天",30,0.836262913640972
+"CTRL 036","Control","覆盖率","Coverage index","90天",90,1.78862700764036
+"CTRL 036","Control","覆盖率","Coverage index","180天",180,1.56243381093182
+"CTRL 036","Control","终毛比例","Terminal hair ratio","基线",0,40.120152583497
+"CTRL 036","Control","终毛比例","Terminal hair ratio","30天",30,37.4852149119585
+"CTRL 036","Control","终毛比例","Terminal hair ratio","90天",90,41.6484450735191
+"CTRL 036","Control","终毛比例","Terminal hair ratio","180天",180,41.1328326647937
+"CTRL 036","Control","毳毛比例","Vellus hair ratio","基线",0,22.2109832521889
+"CTRL 036","Control","毳毛比例","Vellus hair ratio","30天",30,19.4060165882647
+"CTRL 036","Control","毳毛比例","Vellus hair ratio","90天",90,14.4152645484502
+"CTRL 036","Control","毳毛比例","Vellus hair ratio","180天",180,14.671609790162
+"CTRL 036","Control","油脂分泌","Sebum secretion","基线",0,130.788881346697
+"CTRL 036","Control","油脂分泌","Sebum secretion","30天",30,151.07651380375
+"CTRL 036","Control","油脂分泌","Sebum secretion","90天",90,142.530682864739
+"CTRL 036","Control","油脂分泌","Sebum secretion","180天",180,147.76349804767
+"CTRL 036","Control","头皮硬度","Scalp stiffness","基线",0,16.1402104929561
+"CTRL 036","Control","头皮硬度","Scalp stiffness","30天",30,18.6989779643876
+"CTRL 036","Control","头皮硬度","Scalp stiffness","90天",90,19.6474468396376
+"CTRL 036","Control","头皮硬度","Scalp stiffness","180天",180,18.5769024487867
+"CTRL 036","Control","头皮血流","Scalp blood flow","基线",0,177.348141574993
+"CTRL 036","Control","头皮血流","Scalp blood flow","30天",30,188.910306484322
+"CTRL 036","Control","头皮血流","Scalp blood flow","90天",90,205.088882163
+"CTRL 036","Control","头皮血流","Scalp blood flow","180天",180,204.20291362235
+"CTRL 037","Control","毛发密度","Hair density","基线",0,194.590941242778
+"CTRL 037","Control","毛发密度","Hair density","30天",30,203.867273697537
+"CTRL 037","Control","毛发密度","Hair density","90天",90,190.992066720368
+"CTRL 037","Control","毛发密度","Hair density","180天",180,200.008790607587
+"CTRL 037","Control","毛发直径","Hair shaft diameter","基线",0,52.5252283751962
+"CTRL 037","Control","毛发直径","Hair shaft diameter","30天",30,58.0923547715184
+"CTRL 037","Control","毛发直径","Hair shaft diameter","90天",90,67.581598483962
+"CTRL 037","Control","毛发直径","Hair shaft diameter","180天",180,69.6478026100702
+"CTRL 037","Control","覆盖率","Coverage index","基线",0,0.893343388651816
+"CTRL 037","Control","覆盖率","Coverage index","30天",30,1.40094569001628
+"CTRL 037","Control","覆盖率","Coverage index","90天",90,2.35691212521411
+"CTRL 037","Control","覆盖率","Coverage index","180天",180,2.2438213027482
+"CTRL 037","Control","终毛比例","Terminal hair ratio","基线",0,48.9344931518767
+"CTRL 037","Control","终毛比例","Terminal hair ratio","30天",30,47.8795054042271
+"CTRL 037","Control","终毛比例","Terminal hair ratio","90天",90,58.5236307123077
+"CTRL 037","Control","终毛比例","Terminal hair ratio","180天",180,57.3092438858123
+"CTRL 037","Control","毳毛比例","Vellus hair ratio","基线",0,9.12189516427664
+"CTRL 037","Control","毳毛比例","Vellus hair ratio","30天",30,9.57440075571908
+"CTRL 037","Control","毳毛比例","Vellus hair ratio","90天",90,7.33465205988244
+"CTRL 037","Control","毳毛比例","Vellus hair ratio","180天",180,8.2585689416718
+"CTRL 037","Control","油脂分泌","Sebum secretion","基线",0,184.969902807713
+"CTRL 037","Control","油脂分泌","Sebum secretion","30天",30,146.725248110032
+"CTRL 037","Control","油脂分泌","Sebum secretion","90天",90,149.046876940815
+"CTRL 037","Control","油脂分泌","Sebum secretion","180天",180,156.33071561892
+"CTRL 037","Control","头皮硬度","Scalp stiffness","基线",0,18.9938013257708
+"CTRL 037","Control","头皮硬度","Scalp stiffness","30天",30,21.111682892542
+"CTRL 037","Control","头皮硬度","Scalp stiffness","90天",90,23.2955375265607
+"CTRL 037","Control","头皮硬度","Scalp stiffness","180天",180,23.7338707093784
+"CTRL 037","Control","头皮血流","Scalp blood flow","基线",0,104.055064646565
+"CTRL 037","Control","头皮血流","Scalp blood flow","30天",30,142.033912865971
+"CTRL 037","Control","头皮血流","Scalp blood flow","90天",90,133.665368525816
+"CTRL 037","Control","头皮血流","Scalp blood flow","180天",180,136.137700258225
+"CTRL 038","Control","毛发密度","Hair density","基线",0,158.616480387682
+"CTRL 038","Control","毛发密度","Hair density","30天",30,181.752147453716
+"CTRL 038","Control","毛发密度","Hair density","90天",90,206.804855894457
+"CTRL 038","Control","毛发密度","Hair density","180天",180,203.610283566792
+"CTRL 038","Control","毛发直径","Hair shaft diameter","基线",0,70.768075612071
+"CTRL 038","Control","毛发直径","Hair shaft diameter","30天",30,73.6798208831975
+"CTRL 038","Control","毛发直径","Hair shaft diameter","90天",90,88.3070505615715
+"CTRL 038","Control","毛发直径","Hair shaft diameter","180天",180,90.2687814283899
+"CTRL 038","Control","覆盖率","Coverage index","基线",0,0.559870212277307
+"CTRL 038","Control","覆盖率","Coverage index","30天",30,0.736822289700597
+"CTRL 038","Control","覆盖率","Coverage index","90天",90,1.63588177774372
+"CTRL 038","Control","覆盖率","Coverage index","180天",180,1.42141414842563
+"CTRL 038","Control","终毛比例","Terminal hair ratio","基线",0,41.5671388109112
+"CTRL 038","Control","终毛比例","Terminal hair ratio","30天",30,38.1924985951787
+"CTRL 038","Control","终毛比例","Terminal hair ratio","90天",90,43.0698864305148
+"CTRL 038","Control","终毛比例","Terminal hair ratio","180天",180,45.9323557160275
+"CTRL 038","Control","毳毛比例","Vellus hair ratio","基线",0,11.7195740486452
+"CTRL 038","Control","毳毛比例","Vellus hair ratio","30天",30,12.9855888476521
+"CTRL 038","Control","毳毛比例","Vellus hair ratio","90天",90,9.5281684245185
+"CTRL 038","Control","毳毛比例","Vellus hair ratio","180天",180,10.4673193823994
+"CTRL 038","Control","油脂分泌","Sebum secretion","基线",0,149.595447293107
+"CTRL 038","Control","油脂分泌","Sebum secretion","30天",30,148.930195092441
+"CTRL 038","Control","油脂分泌","Sebum secretion","90天",90,143.104625427766
+"CTRL 038","Control","油脂分泌","Sebum secretion","180天",180,152.045967706677
+"CTRL 038","Control","头皮硬度","Scalp stiffness","基线",0,24.7384862418869
+"CTRL 038","Control","头皮硬度","Scalp stiffness","30天",30,25.7937979816093
+"CTRL 038","Control","头皮硬度","Scalp stiffness","90天",90,24.886388788226
+"CTRL 038","Control","头皮硬度","Scalp stiffness","180天",180,24.4546691514027
+"CTRL 038","Control","头皮血流","Scalp blood flow","基线",0,177.511206708351
+"CTRL 038","Control","头皮血流","Scalp blood flow","30天",30,184.308533913026
+"CTRL 038","Control","头皮血流","Scalp blood flow","90天",90,203.321774760095
+"CTRL 038","Control","头皮血流","Scalp blood flow","180天",180,206.000168874142

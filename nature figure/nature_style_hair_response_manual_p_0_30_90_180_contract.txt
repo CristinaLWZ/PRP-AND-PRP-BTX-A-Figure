@@ -1,0 +1,13 @@
+Core conclusion: the revised figure compares PRP (control) against PRP+BTX-A (experimental) using only the five endpoints for which user-supplied P values were provided.
+Figure archetype: asymmetric mixed-modality figure.
+Target journal/output: Nature-style double-column main figure.
+Backend: R.
+Final size: 183 mm x 145 mm.
+Panel map:
+  a: hair-density trajectories at baseline, 30, 90 and 180 days.
+  b: selected secondary endpoints using the same four timepoints.
+  c: same-timepoint between-group effect map for all manually annotated endpoints.
+  d: day-180 same-timepoint standardized between-group effects.
+Statistics needed: user-supplied same-timepoint P values; Hedges g on same-timepoint group contrasts.
+Source data needed: patient-level long-format data, group summary statistics, computed same-timepoint effect sizes, and supplied P-value table.
+Reviewer risk: significance stars now follow the supplied table rather than the earlier computed change-from-baseline tests.

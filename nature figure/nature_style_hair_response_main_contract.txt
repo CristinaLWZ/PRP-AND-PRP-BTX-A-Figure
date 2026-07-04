@@ -1,0 +1,18 @@
+Provisional core conclusion: the treatment group shows a stronger delayed improvement in hair density, aligned secondary hair-growth endpoints, and a coordinated shift in scalp microenvironment compared with control.
+Figure archetype: asymmetric mixed-modality figure.
+Target journal/output: Nature-style double-column main figure.
+Backend: R.
+Final size: 183 mm x 145 mm.
+Panel map:
+  a: primary hair-density trajectories with individual patients and group mean +/- s.e.m.
+  b: supportive longitudinal trajectories for hair shaft diameter, coverage index, terminal hair ratio, and scalp blood flow.
+  c: time-resolved heatmap of standardized treatment effects across all endpoints.
+  d: day-180 forest summary of standardized treatment effects.
+Evidence hierarchy:
+  hero evidence: sustained separation in hair density after day 60.
+  validation evidence: convergent movement in diameter, coverage, terminal hair ratio, and blood flow.
+  controls/robustness: all endpoints summarized as benefit-oriented Hedges g over time and at day 180.
+Statistics needed: two-sided Welch t-tests on change from baseline; Hedges g with approximate 95% confidence intervals.
+Source data needed: patient-level long-format data, group summary statistics, and effect-size table.
+Image-integrity notes: no raster microscopy panels; all panels generated directly from tabular data in R.
+Reviewer risk: endpoint directions differ by metric, so lower-is-better variables were sign-aligned only in the heatmap and forest summaries.

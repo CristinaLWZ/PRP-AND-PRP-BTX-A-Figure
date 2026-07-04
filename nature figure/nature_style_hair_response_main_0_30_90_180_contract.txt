@@ -1,0 +1,13 @@
+Provisional core conclusion: the treatment group shows stronger improvement than control when the figure is restricted to baseline, day 30, day 90 and day 180 data.
+Figure archetype: asymmetric mixed-modality figure.
+Target journal/output: Nature-style double-column main figure.
+Backend: R.
+Final size: 183 mm x 145 mm.
+Panel map:
+  a: hair-density trajectories at baseline, 30, 90 and 180 days.
+  b: supportive selected-timepoint trajectories for four secondary endpoints.
+  c: selected-timepoint heatmap of benefit-oriented standardized effects at 30, 90 and 180 days.
+  d: day-180 forest summary of standardized treatment effects.
+Statistics needed: two-sided Welch t-tests on change from baseline; Hedges g with approximate 95% confidence intervals.
+Source data needed: filtered patient-level long-format data, summary statistics, and effect-size table.
+Reviewer risk: baseline is kept in line panels but not in the effect heatmap because change-from-baseline at baseline is structurally zero.

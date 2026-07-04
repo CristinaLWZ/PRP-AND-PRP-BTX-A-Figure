@@ -347,7 +347,7 @@
     <nav id="metricNav" class="metric-nav" aria-label="指标切换"></nav>
 
     <section class="panel">
-      <div class="data-grid">
+      <div id="standardDataGrid" class="data-grid">
         <div>
           <div class="data-head">
             <h2>PRP 原始数据</h2>
@@ -361,6 +361,36 @@
             <span id="expStatus">0 行</span>
           </div>
           <textarea id="expInput" spellcheck="false"></textarea>
+        </div>
+      </div>
+      <div id="dualDataGrid" class="data-grid" hidden>
+        <div>
+          <div class="data-head">
+            <h2>PRP 终毛比例</h2>
+            <span id="prpTerminalStatus">0 行</span>
+          </div>
+          <textarea id="prpTerminalInput" spellcheck="false"></textarea>
+        </div>
+        <div>
+          <div class="data-head">
+            <h2>PRP 毳毛比例</h2>
+            <span id="prpVellusStatus">0 行</span>
+          </div>
+          <textarea id="prpVellusInput" spellcheck="false"></textarea>
+        </div>
+        <div>
+          <div class="data-head">
+            <h2>PRP+BTX-A 终毛比例</h2>
+            <span id="expTerminalStatus">0 行</span>
+          </div>
+          <textarea id="expTerminalInput" spellcheck="false"></textarea>
+        </div>
+        <div>
+          <div class="data-head">
+            <h2>PRP+BTX-A 毳毛比例</h2>
+            <span id="expVellusStatus">0 行</span>
+          </div>
+          <textarea id="expVellusInput" spellcheck="false"></textarea>
         </div>
       </div>
     </section>
@@ -465,14 +495,29 @@
       sebum: { label: "油脂分泌", yLabel: "Sebum secretion", y: [0, 240, 40], prp: [150, 145, 143, 150], exp: [150, 95, 98, 128], sd: 24 },
       hardness: { label: "头皮硬度", yLabel: "Scalp hardness", y: [0, 50, 10], prp: [24, 23, 24, 24], exp: [24, 20, 15, 17], sd: 5 },
       bloodflow: { label: "头皮血流", yLabel: "Scalp blood flow", y: [0, 520, 100], prp: [160, 185, 190, 188], exp: [160, 240, 310, 295], sd: 45 },
+      hairtype: { label: "终毛/毳毛比例", yLabel: "终毛比例 (%)", rightYLabel: "毳毛比例 (%)", y: [0, 100, 20], rightY: [0, 100, 20], prp: [64, 66, 70, 71], exp: [64, 69, 76, 78], vellusPrp: [32, 31, 28, 27], vellusExp: [32, 29, 24, 22], sd: 8, dualAxis: true },
     };
+
+    function isDualMetric(metricKey = state.metric) {
+      return Boolean(METRICS[metricKey]?.dualAxis || METRICS[metricKey]?.dualPanels);
+    }
 
     const els = {
       metricNav: document.getElementById("metricNav"),
+      standardDataGrid: document.getElementById("standardDataGrid"),
+      dualDataGrid: document.getElementById("dualDataGrid"),
       prpInput: document.getElementById("prpInput"),
       expInput: document.getElementById("expInput"),
+      prpTerminalInput: document.getElementById("prpTerminalInput"),
+      prpVellusInput: document.getElementById("prpVellusInput"),
+      expTerminalInput: document.getElementById("expTerminalInput"),
+      expVellusInput: document.getElementById("expVellusInput"),
       prpStatus: document.getElementById("prpStatus"),
       expStatus: document.getElementById("expStatus"),
+      prpTerminalStatus: document.getElementById("prpTerminalStatus"),
+      prpVellusStatus: document.getElementById("prpVellusStatus"),
+      expTerminalStatus: document.getElementById("expTerminalStatus"),
+      expVellusStatus: document.getElementById("expVellusStatus"),
       chartHeading: document.getElementById("chartHeading"),
       chartSubtitle: document.getElementById("chartSubtitle"),
       chart: document.getElementById("chart"),
@@ -518,6 +563,10 @@
       return {
         prpText: sample.prp,
         expText: sample.exp,
+        prpTerminalText: sample.prpTerminal || "",
+        prpVellusText: sample.prpVellus || "",
+        expTerminalText: sample.expTerminal || "",
+        expVellusText: sample.expVellus || "",
         chartType: "line",
         line: defaultStyle(metricKey, "line"),
         bar: defaultStyle(metricKey, "bar"),
@@ -528,8 +577,19 @@
     function ensureMetricDefaults(metricKey) {
       const item = state.metrics[metricKey];
       const sample = makeSample(metricKey);
-      if (!String(item.prpText || "").trim() && sample.prp) item.prpText = sample.prp;
-      if (!String(item.expText || "").trim() && sample.exp) item.expText = sample.exp;
+      if (isDualMetric(metricKey)) {
+        const migratedPrp = splitDualText(item.prpText || "");
+        const migratedExp = splitDualText(item.expText || "");
+        if (!String(item.prpTerminalText || "").trim()) item.prpTerminalText = migratedPrp.terminal || sample.prpTerminal || "";
+        if (!String(item.prpVellusText || "").trim()) item.prpVellusText = migratedPrp.vellus || sample.prpVellus || "";
+        if (!String(item.expTerminalText || "").trim()) item.expTerminalText = migratedExp.terminal || sample.expTerminal || "";
+        if (!String(item.expVellusText || "").trim()) item.expVellusText = migratedExp.vellus || sample.expVellus || "";
+        item.prpText = item.prpText || sample.prp || "";
+        item.expText = item.expText || sample.exp || "";
+      } else {
+        if (!String(item.prpText || "").trim() && sample.prp) item.prpText = sample.prp;
+        if (!String(item.expText || "").trim() && sample.exp) item.expText = sample.exp;
+      }
       item.line = mergeDefaults(defaultStyle(metricKey, "line"), item.line || {});
       item.bar = mergeDefaults(defaultStyle(metricKey, "bar"), item.bar || {});
       item.saved = item.saved || {};
@@ -553,10 +613,12 @@
     function defaultStyle(metricKey, type) {
       const metric = METRICS[metricKey];
       const isBar = type === "bar";
+      const isDual = Boolean(metric.dualAxis || metric.dualPanels);
       return {
-        chartTitle: metric.label + (isBar ? "柱状图" : "随时间变化"),
+        chartTitle: isDual ? "终毛比例与毳毛比例随时间变化" : metric.label + (isBar ? "柱状图" : "随时间变化"),
         xLabel: "时间",
         yLabel: metric.yLabel,
+        rightYLabel: metric.rightYLabel || "",
         showTitle: true,
         showXLabel: true,
         showYLabel: true,
@@ -574,10 +636,13 @@
         yMin: metric.y[0],
         yMax: metric.y[1],
         yStep: metric.y[2],
+        rightYMin: metric.rightY ? metric.rightY[0] : metric.y[0],
+        rightYMax: metric.rightY ? metric.rightY[1] : metric.y[1],
+        rightYStep: metric.rightY ? metric.rightY[2] : metric.y[2],
         xMin: 0.5,
         xMax: 4.5,
         plotTop: 82,
-        plotRight: 58,
+        plotRight: isDual ? 96 : 58,
         plotBottom: 76,
         plotLeft: 96,
         titleX: 50,
@@ -608,7 +673,7 @@
         showValues: false,
         normalize: false,
         showDiff: false,
-        markMax: true,
+        markMax: !isDual,
         annotations: [],
         smooth: false,
         smoothness: 8,
@@ -626,7 +691,39 @@
       if (preset) {
         return { prp: preset.prp, exp: preset.exp };
       }
+      if (isDualMetric(metricKey)) return makeDualSample(metricKey);
       return { prp: "", exp: "" };
+    }
+
+    function makeDualSample(metricKey) {
+      const metric = METRICS[metricKey];
+      const makeRows = (prefix, groupName, means, seedOffset) => {
+        return Array.from({ length: 38 }, (_, i) => {
+          const values = means.map((base, j) => clamp(base + (seededNoise(seedOffset + i * 31 + j * 17) * metric.sd), 1, 95));
+          return `${prefix}-${String(i + 1).padStart(3, "0")} ${groupName} ${values.map((value) => formatNumber(value, 1)).join(" ")}`;
+        }).join("\n");
+      };
+      const prpTerminal = makeRows("CTRL", "对照组", metric.prp, 11);
+      const prpVellus = makeRows("CTRL", "对照组", metric.vellusPrp, 311);
+      const expTerminal = makeRows("EXP", "实验组", metric.exp, 97);
+      const expVellus = makeRows("EXP", "实验组", metric.vellusExp, 397);
+      const combineRows = (terminalText, vellusText) => {
+        const terminalLines = terminalText.split(/\r?\n/);
+        const vellusLines = vellusText.split(/\r?\n/);
+        return terminalLines.map((line, i) => {
+          const nums = numbersFromLine(vellusLines[i] || "");
+          const vellus = selectMetricValues(nums).map((value) => formatNumber(value, 1)).join(" ");
+          return `${line} ${vellus}`;
+        }).join("\n");
+      };
+      return {
+        prpTerminal,
+        prpVellus,
+        expTerminal,
+        expVellus,
+        prp: combineRows(prpTerminal, prpVellus),
+        exp: combineRows(expTerminal, expVellus),
+      };
     }
 
     function seededNoise(seed) {
@@ -645,7 +742,8 @@
     function setActiveMetric(key) {
       saveCurrentText();
       state.metric = key;
-      state.chartType = currentMetricState().chartType || "line";
+      state.chartType = isDualMetric(key) ? "line" : currentMetricState().chartType || "line";
+      currentMetricState().chartType = state.chartType;
       loadCurrentText();
       renderMetricNav();
       renderChartTabs();
@@ -654,6 +752,7 @@
     }
 
     function setChartType(type) {
+      if (isDualMetric() && type === "bar") return;
       currentMetricState().chartType = type;
       state.chartType = type;
       renderChartTabs();
@@ -664,14 +763,61 @@
 
     function saveCurrentText() {
       const item = currentMetricState();
-      item.prpText = els.prpInput.value;
-      item.expText = els.expInput.value;
+      if (isDualMetric()) {
+        item.prpTerminalText = els.prpTerminalInput.value;
+        item.prpVellusText = els.prpVellusInput.value;
+        item.expTerminalText = els.expTerminalInput.value;
+        item.expVellusText = els.expVellusInput.value;
+        item.prpText = combineDualText(item.prpTerminalText, item.prpVellusText);
+        item.expText = combineDualText(item.expTerminalText, item.expVellusText);
+      } else {
+        item.prpText = els.prpInput.value;
+        item.expText = els.expInput.value;
+      }
     }
 
     function loadCurrentText() {
       const item = currentMetricState();
-      els.prpInput.value = item.prpText || "";
-      els.expInput.value = item.expText || "";
+      setDataInputMode();
+      if (isDualMetric()) {
+        els.prpTerminalInput.value = item.prpTerminalText || "";
+        els.prpVellusInput.value = item.prpVellusText || "";
+        els.expTerminalInput.value = item.expTerminalText || "";
+        els.expVellusInput.value = item.expVellusText || "";
+      } else {
+        els.prpInput.value = item.prpText || "";
+        els.expInput.value = item.expText || "";
+      }
+    }
+
+    function setDataInputMode() {
+      const dual = isDualMetric();
+      els.standardDataGrid.hidden = dual;
+      els.dualDataGrid.hidden = !dual;
+    }
+
+    function combineDualText(terminalText, vellusText) {
+      const terminalLines = String(terminalText || "").split(/\r?\n/);
+      const vellusLines = String(vellusText || "").split(/\r?\n/);
+      return terminalLines.map((line, i) => {
+        const vellus = selectMetricValues(numbersFromLine(vellusLines[i] || ""));
+        return [line, ...vellus.map((value) => formatNumber(value, 1))].join(" ").trim();
+      }).filter(Boolean).join("\n");
+    }
+
+    function splitDualText(text) {
+      const terminal = [];
+      const vellus = [];
+      String(text || "").split(/\r?\n/).forEach((line) => {
+        const nums = numbersFromLine(line);
+        if (nums.length < 8) return;
+        const pair = extractDualValues(nums);
+        if (!pair) return;
+        const prefix = line.trim().split(/[\t,，;；\s]+/).filter(Boolean).filter((token) => !/^[-+]?(?:\d+\.?\d*|\.\d+)(?:e[-+]?\d+)?$/i.test(token)).join(" ");
+        terminal.push(`${prefix} ${pair.terminal.map((value) => formatNumber(value, 1)).join(" ")}`.trim());
+        vellus.push(`${prefix} ${pair.vellus.map((value) => formatNumber(value, 1)).join(" ")}`.trim());
+      });
+      return { terminal: terminal.join("\n"), vellus: vellus.join("\n") };
     }
 
     function renderMetricNav() {
@@ -681,21 +827,25 @@
     }
 
     function renderChartTabs() {
+      if (isDualMetric() && state.chartType !== "line") state.chartType = "line";
       els.lineTab.classList.toggle("active", state.chartType === "line");
       els.barTab.classList.toggle("active", state.chartType === "bar");
-      els.chartHeading.textContent = state.chartType === "bar" ? "柱状图" : "曲线图";
-      els.controlTitle.textContent = state.chartType === "bar" ? "柱状图控制面板" : "曲线图控制面板";
+      els.barTab.disabled = isDualMetric();
+      els.chartHeading.textContent = isDualMetric() ? "双Y轴折线图" : state.chartType === "bar" ? "柱状图" : "曲线图";
+      els.controlTitle.textContent = isDualMetric() ? "双Y轴折线图控制面板" : state.chartType === "bar" ? "柱状图控制面板" : "曲线图控制面板";
     }
 
     function renderControls() {
       const style = activeStyle();
-      const lineOnly = state.chartType === "line";
+      const dualOnly = isDualMetric();
+      const lineOnly = state.chartType === "line" && !dualOnly;
       const barOnly = state.chartType === "bar";
       const html = [
         section("坐标轴与标签"),
         field("图标题", "chartTitle", "text", "wide"),
         field("X轴标题", "xLabel", "text"),
         field("Y轴标题", "yLabel", "text"),
+        dualOnly ? field("右Y轴标题", "rightYLabel", "text") : "",
         selectField("字体", "font", [["Arial", "Arial"], ["Times New Roman", "Times New Roman"], ["Helvetica", "Helvetica"], ["SimSun", "宋体"]]),
         selectField("主题", "theme", [["sci", "SCI白底浅色"], ["dark", "深色暗黑"], ["warm", "护眼米黄"], ["contrast", "高对比度"]]),
         numField("标题字号", "titleSize", 10, 36, 1),
@@ -724,6 +874,9 @@
         numField("Y轴最小值", "yMin", -100000, 100000, 0.1),
         numField("Y轴最大值", "yMax", -100000, 100000, 0.1),
         numField("Y轴间隔", "yStep", 0.01, 100000, 0.1),
+        dualOnly ? numField("右Y轴最小值", "rightYMin", -100000, 100000, 0.1) : "",
+        dualOnly ? numField("右Y轴最大值", "rightYMax", -100000, 100000, 0.1) : "",
+        dualOnly ? numField("右Y轴间隔", "rightYStep", 0.01, 100000, 0.1) : "",
         numField("X轴最小值", "xMin", -10, 10, 0.1),
         numField("X轴最大值", "xMax", -10, 10, 0.1),
         numField("上边距", "plotTop", 20, 240, 1),
@@ -766,9 +919,9 @@
         checkField("显示数值标签", "showValues"),
         lineOnly ? checkField("平滑曲线", "smooth") : "",
         lineOnly ? numField("平滑程度", "smoothness", 2, 24, 1) : "",
-        checkField("以基线100%归一化", "normalize"),
-        checkField("叠加差异趋势", "showDiff"),
-        checkField("标记最大提升时间点", "markMax"),
+        dualOnly ? "" : checkField("以基线100%归一化", "normalize"),
+        dualOnly ? "" : checkField("叠加差异趋势", "showDiff"),
+        dualOnly ? "" : checkField("标记最大提升时间点", "markMax"),
         annotationControls(style),
       ].join("");
       els.controls.innerHTML = html;
@@ -935,19 +1088,17 @@
       }
     }
 
-    function parseInput(text) {
+    function parseInput(text, metricKey = state.metric) {
       const rows = [];
       text.split(/\r?\n/).forEach((line, index) => {
-        const tokens = line.trim().split(/[\t,，;；\s]+/).filter(Boolean);
-        const nums = tokens.filter((token) => /^[-+]?(?:\d+\.?\d*|\.\d+)(?:e[-+]?\d+)?$/i.test(token)).map(Number);
+        const nums = numbersFromLine(line);
         if (nums.length < 4) return;
-        let vals;
-        if (nums.length >= 7) vals = nums.slice(-6);
-        else if (nums.length === 5) vals = nums.slice(-4);
-        else if (nums.length >= 6) vals = nums.slice(-6);
-        else vals = nums.slice(-4);
-        if (vals.length >= 6) vals = [vals[0], vals[2], vals[4], vals[5]];
-        else vals = vals.slice(-4);
+        if (isDualMetric(metricKey)) {
+          const pair = extractDualValues(nums);
+          if (pair) rows.push({ id: "R" + (index + 1), values: pair.terminal, terminal: pair.terminal, vellus: pair.vellus });
+          return;
+        }
+        const vals = selectMetricValues(nums);
         if (vals.length === 4 && vals.every(Number.isFinite)) {
           rows.push({ id: "R" + (index + 1), values: vals });
         }
@@ -955,25 +1106,94 @@
       return rows;
     }
 
-    function getData() {
-      return {
-        prp: parseInput(els.prpInput.value),
-        exp: parseInput(els.expInput.value),
-      };
+    function numbersFromLine(line) {
+      return String(line || "")
+        .trim()
+        .split(/[\t,，;；\s]+/)
+        .filter(Boolean)
+        .filter((token) => /^[-+]?(?:\d+\.?\d*|\.\d+)(?:e[-+]?\d+)?$/i.test(token))
+        .map(Number);
     }
 
-    function rowsFor(rows, style) {
-      return rows.map((row) => {
-        if (!style.normalize) return row.values.slice();
-        const base = row.values[0];
-        if (!Number.isFinite(base) || base === 0) return row.values.slice();
-        return row.values.map((v) => v / base * 100);
+    function parseSingleInput(text) {
+      const rows = [];
+      String(text || "").split(/\r?\n/).forEach((line, index) => {
+        const nums = numbersFromLine(line);
+        if (nums.length < 4) return;
+        const vals = selectMetricValues(nums);
+        if (vals.length === 4 && vals.every(Number.isFinite)) {
+          rows.push({ id: "R" + (index + 1), values: vals });
+        }
+      });
+      return rows;
+    }
+
+    function combineDualRows(terminalRows, vellusRows) {
+      const len = Math.max(terminalRows.length, vellusRows.length);
+      return Array.from({ length: len }, (_, i) => {
+        const terminal = terminalRows[i]?.values || [NaN, NaN, NaN, NaN];
+        const vellus = vellusRows[i]?.values || [NaN, NaN, NaN, NaN];
+        return { id: terminalRows[i]?.id || vellusRows[i]?.id || "R" + (i + 1), values: terminal, terminal, vellus };
       });
     }
 
-    function getStats(data, style) {
-      const prpRows = rowsFor(data.prp, style);
-      const expRows = rowsFor(data.exp, style);
+    function selectMetricValues(nums) {
+      let vals;
+      if (nums.length >= 7) vals = nums.slice(-6);
+      else if (nums.length === 5) vals = nums.slice(-4);
+      else if (nums.length >= 6) vals = nums.slice(-6);
+      else vals = nums.slice(-4);
+      if (vals.length >= 6) vals = [vals[0], vals[2], vals[4], vals[5]];
+      else vals = vals.slice(-4);
+      return vals;
+    }
+
+    function extractDualValues(nums) {
+      let terminal;
+      let vellus;
+      if (nums.length >= 12) {
+        const vals = nums.slice(-12);
+        terminal = [vals[0], vals[2], vals[4], vals[5]];
+        vellus = [vals[6], vals[8], vals[10], vals[11]];
+      } else if (nums.length >= 8) {
+        const vals = nums.slice(-8);
+        terminal = vals.slice(0, 4);
+        vellus = vals.slice(4, 8);
+      } else {
+        terminal = selectMetricValues(nums);
+        vellus = [NaN, NaN, NaN, NaN];
+      }
+      if (terminal.length !== 4 || vellus.length !== 4) return null;
+      if (!terminal.every(Number.isFinite)) return null;
+      return { terminal, vellus };
+    }
+
+    function getData() {
+      if (isDualMetric()) {
+        return {
+          prp: combineDualRows(parseSingleInput(els.prpTerminalInput.value), parseSingleInput(els.prpVellusInput.value)),
+          exp: combineDualRows(parseSingleInput(els.expTerminalInput.value), parseSingleInput(els.expVellusInput.value)),
+        };
+      }
+      return {
+        prp: parseInput(els.prpInput.value, state.metric),
+        exp: parseInput(els.expInput.value, state.metric),
+      };
+    }
+
+    function rowsFor(rows, style, valueKey = "values") {
+      return rows.map((row) => {
+        const values = (row[valueKey] || row.values || []).slice();
+        if (!style.normalize) return values;
+        const base = values[0];
+        if (!Number.isFinite(base) || base === 0) return values;
+        return values.map((v) => v / base * 100);
+      });
+    }
+
+    function getStats(data, style, valueKey = "values") {
+      const prpRows = rowsFor(data.prp, style, valueKey);
+      const expRows = rowsFor(data.exp, style, valueKey);
       return TIMES.map((time, idx) => {
         const prpValues = prpRows.map((r) => r[idx]).filter(Number.isFinite);
         const expValues = expRows.map((r) => r[idx]).filter(Number.isFinite);
@@ -985,6 +1205,13 @@
           expValues,
         };
       });
+    }
+
+    function getDualStats(data, style) {
+      return {
+        terminal: getStats(data, style, "terminal"),
+        vellus: getStats(data, style, "vellus"),
+      };
     }
 
     function describe(values, errorType) {
@@ -1016,13 +1243,30 @@
       saveCurrentText();
       const data = getData();
       const style = activeStyle();
-      const stats = getStats(data, style);
-      els.prpStatus.textContent = data.prp.length + " 行";
-      els.expStatus.textContent = data.exp.length + " 行";
-      els.chartSubtitle.textContent = `PRP ${data.prp.length} 行，PRP+BTX-A ${data.exp.length} 行`;
+      const stats = isDualMetric() ? getDualStats(data, style) : getStats(data, style);
+      if (isDualMetric()) {
+        const prpTerminalRows = parseSingleInput(els.prpTerminalInput.value).length;
+        const prpVellusRows = parseSingleInput(els.prpVellusInput.value).length;
+        const expTerminalRows = parseSingleInput(els.expTerminalInput.value).length;
+        const expVellusRows = parseSingleInput(els.expVellusInput.value).length;
+        els.prpTerminalStatus.textContent = prpTerminalRows + " 行";
+        els.prpVellusStatus.textContent = prpVellusRows + " 行";
+        els.expTerminalStatus.textContent = expTerminalRows + " 行";
+        els.expVellusStatus.textContent = expVellusRows + " 行";
+        els.chartSubtitle.textContent = `PRP 终毛 ${prpTerminalRows} 行，PRP 毳毛 ${prpVellusRows} 行；PRP+BTX-A 终毛 ${expTerminalRows} 行，PRP+BTX-A 毳毛 ${expVellusRows} 行`;
+      } else {
+        els.prpStatus.textContent = data.prp.length + " 行";
+        els.expStatus.textContent = data.exp.length + " 行";
+        els.chartSubtitle.textContent = `PRP ${data.prp.length} 行，PRP+BTX-A ${data.exp.length} 行`;
+      }
       draw();
-      renderSummary(stats);
-      renderPValues(stats, data, style);
+      if (isDualMetric()) {
+        renderDualSummary(stats);
+        renderDualPValues(stats, data, style);
+      } else {
+        renderSummary(stats);
+        renderPValues(stats, data, style);
+      }
       persist();
     }
 
@@ -1043,6 +1287,10 @@
     function renderCanvas(ctx, width, height, interactive) {
       const style = activeStyle();
       const data = getData();
+      if (isDualMetric()) {
+        renderDualCanvas(ctx, width, height, interactive, style, data);
+        return;
+      }
       const stats = getStats(data, style);
       const plot = makePlot(width, height, style);
       state.hovers = [];
@@ -1079,6 +1327,207 @@
         x: (value) => left + (value - xMin) / (xMax - xMin) * w,
         y: (value) => top + h - (value - yMin) / (yMax - yMin) * h,
       };
+    }
+
+    function makePanelPlot(width, style, top, panelHeight) {
+      const left = clamp(style.plotLeft, 20, width - 120);
+      const right = clamp(style.plotRight, 20, width - left - 80);
+      const w = width - left - right;
+      const yMin = Number(style.yMin);
+      const yMax = Number(style.yMax);
+      const xMin = Number(style.xMin);
+      const xMax = Number(style.xMax);
+      return {
+        left, right, top, bottom: 0, w, h: panelHeight, yMin, yMax, xMin, xMax,
+        x: (value) => left + (value - xMin) / (xMax - xMin) * w,
+        y: (value) => top + panelHeight - (value - yMin) / (yMax - yMin) * panelHeight,
+      };
+    }
+
+    function renderDualCanvas(ctx, width, height, interactive, style, data) {
+      const dualStats = getDualStats(data, style);
+      const plot = makePlot(width, height, style);
+      const rightPlot = {
+        ...plot,
+        yMin: Number(style.rightYMin),
+        yMax: Number(style.rightYMax),
+        y: (value) => plot.top + plot.h - (value - Number(style.rightYMin)) / (Number(style.rightYMax) - Number(style.rightYMin)) * plot.h,
+      };
+      state.hovers = [];
+      state.handles = [];
+      ctx.save();
+      ctx.fillStyle = style.chartBg;
+      ctx.fillRect(0, 0, width, height);
+      ctx.fillStyle = style.plotBg;
+      ctx.fillRect(plot.left, plot.top, plot.w, plot.h);
+      drawGrid(ctx, plot, style);
+      drawAxes(ctx, plot, style);
+      drawRightAxis(ctx, plot, rightPlot, style);
+      drawDualAxisLines(ctx, plot, rightPlot, style, dualStats, data);
+      drawDualTitles(ctx, plot, rightPlot, style, width, height, interactive);
+      ctx.restore();
+    }
+
+    function drawRightAxis(ctx, plot, rightPlot, style) {
+      const x = plot.left + plot.w;
+      const tickLen = style.tickDirection === "in" ? -7 : 7;
+      ctx.save();
+      ctx.strokeStyle = style.axisColor;
+      ctx.fillStyle = style.textColor;
+      ctx.lineWidth = 1.8;
+      line(ctx, x, plot.top, x, plot.top + plot.h);
+      ctx.font = `${style.tickSize}px ${style.font}`;
+      ctx.textAlign = "left";
+      ctx.textBaseline = "middle";
+      forEachRightYTick(style, (tick) => {
+        const y = rightPlot.y(tick);
+        line(ctx, x, y, x + tickLen, y);
+        ctx.fillText(formatNumber(tick, 2), x + 12, y);
+      });
+      ctx.restore();
+    }
+
+    function forEachRightYTick(style, callback) {
+      const step = Number(style.rightYStep) || 1;
+      const min = Number(style.rightYMin);
+      const max = Number(style.rightYMax);
+      const start = Math.ceil(min / step) * step;
+      for (let tick = start, guard = 0; tick <= max + step * 0.0001 && guard < 1000; tick += step, guard += 1) {
+        callback(Number(tick.toFixed(10)));
+      }
+    }
+
+    function drawDualAxisLines(ctx, leftPlot, rightPlot, style, dualStats, data) {
+      if (style.showPoints) {
+        drawRawPoints(ctx, leftPlot, style, rowsFor(data.prp, style, "terminal"), "prp");
+        drawRawPoints(ctx, leftPlot, style, rowsFor(data.exp, style, "terminal"), "exp");
+        drawRawPoints(ctx, rightPlot, style, rowsFor(data.prp, style, "vellus"), "prp");
+        drawRawPoints(ctx, rightPlot, style, rowsFor(data.exp, style, "vellus"), "exp");
+      }
+      drawDualAxisSeries(ctx, leftPlot, style, dualStats.terminal, "prp", "终毛比例", "solid");
+      drawDualAxisSeries(ctx, leftPlot, style, dualStats.terminal, "exp", "终毛比例", "solid");
+      drawDualAxisSeries(ctx, rightPlot, style, dualStats.vellus, "prp", "毳毛比例", "dash");
+      drawDualAxisSeries(ctx, rightPlot, style, dualStats.vellus, "exp", "毳毛比例", "dash");
+    }
+
+    function drawDualAxisSeries(ctx, plot, style, stats, key, label, lineType) {
+      const s = style[key];
+      if (!s.visible) return;
+      const points = stats.map((row) => ({ x: plot.x(row.time.x), y: plot.y(row[key].mean), row })).filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
+      if (!points.length) return;
+      if (style.errorVisible) drawErrorBars(ctx, plot, style, stats, key);
+      ctx.save();
+      ctx.strokeStyle = s.color;
+      ctx.lineWidth = s.lineWidth;
+      ctx.lineJoin = "round";
+      ctx.lineCap = "round";
+      setDash(ctx, lineType);
+      ctx.beginPath();
+      points.forEach((p, i) => i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y));
+      ctx.stroke();
+      ctx.setLineDash([]);
+      points.forEach((p) => {
+        drawMarker(ctx, s.marker, p.x, p.y, s.markerSize, s.color);
+        addHover(p.x, p.y, s.markerSize + 8, `${key === "prp" ? "PRP" : "PRP+BTX-A"} · ${label}`, p.row.time.label, p.row[key]);
+        if (style.showValues) labelValue(ctx, p.x, p.y - 12, p.row[key].mean, style);
+      });
+      ctx.restore();
+    }
+
+    function drawDualTitles(ctx, plot, rightPlot, style, width, height, interactive) {
+      ctx.save();
+      ctx.fillStyle = style.textColor;
+      if (style.showTitle && style.chartTitle) {
+        ctx.font = `bold ${style.titleSize}px ${style.font}`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        const x = plot.left + plot.w * style.titleX / 100;
+        const y = style.titleY;
+        ctx.fillText(style.chartTitle, x, y);
+        addHandle("title", x - 180, y - 18, 360, 36, interactive);
+      }
+      if (style.showXLabel && style.xLabel) {
+        ctx.font = `${style.axisTitleSize}px ${style.font}`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        const x = plot.left + plot.w * style.xLabelX / 100;
+        const y = height - style.xLabelY;
+        ctx.fillText(style.xLabel, x, y);
+        addHandle("xLabel", x - 130, y - 18, 260, 36, interactive);
+      }
+      if (style.showYLabel && style.yLabel) {
+        ctx.font = `${style.axisTitleSize}px ${style.font}`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        const x = style.yLabelX;
+        const y = plot.top + plot.h * style.yLabelY / 100;
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(-Math.PI / 2);
+        ctx.fillText(style.yLabel, 0, 0);
+        ctx.restore();
+        addHandle("yLabel", x - 22, y - 150, 44, 300, interactive);
+      }
+      if (style.showYLabel && style.rightYLabel) {
+        ctx.font = `${style.axisTitleSize}px ${style.font}`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        const x = plot.left + plot.w + Math.max(56, style.plotRight - 28);
+        const y = plot.top + plot.h * style.yLabelY / 100;
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(Math.PI / 2);
+        ctx.fillText(style.rightYLabel, 0, 0);
+        ctx.restore();
+      }
+      if (style.showLegend) drawDualAxisLegend(ctx, plot, style, interactive);
+      drawAnnotations(ctx, plot, style, interactive);
+      ctx.restore();
+    }
+
+    function drawDualAxisLegend(ctx, plot, style, interactive) {
+      const x = style.legendX;
+      const y = style.legendY;
+      const items = [
+        ["prp", "PRP 终毛", "solid"],
+        ["prp", "PRP 毳毛", "dash"],
+        ["exp", "PRP+BTX-A 终毛", "solid"],
+        ["exp", "PRP+BTX-A 毳毛", "dash"],
+      ].filter(([key]) => style[key].visible);
+      const itemW = 150;
+      const rowH = 26;
+      const boxW = itemW * 2;
+      const boxH = rowH * Math.ceil(items.length / 2);
+      ctx.save();
+      if (style.legendBg || style.legendBorder) {
+        if (style.legendBg) {
+          ctx.fillStyle = "rgba(255,255,255,.72)";
+          ctx.fillRect(x - 12, y - 20, boxW + 20, boxH + 14);
+        }
+        if (style.legendBorder) {
+          ctx.strokeStyle = style.axisColor;
+          ctx.strokeRect(x - 12, y - 20, boxW + 20, boxH + 14);
+        }
+      }
+      ctx.font = `${style.legendSize}px ${style.font}`;
+      ctx.textBaseline = "middle";
+      items.forEach(([key, label, lineType], i) => {
+        const col = i % 2;
+        const row = Math.floor(i / 2);
+        const ix = x + col * itemW;
+        const iy = y + row * rowH;
+        const s = style[key];
+        ctx.strokeStyle = s.color;
+        ctx.lineWidth = Math.max(2, s.lineWidth);
+        setDash(ctx, lineType);
+        line(ctx, ix, iy, ix + 28, iy);
+        ctx.setLineDash([]);
+        drawMarker(ctx, s.marker, ix + 14, iy, s.markerSize, s.color);
+        ctx.fillStyle = style.textColor;
+        ctx.fillText(label, ix + 36, iy);
+      });
+      addHandle("legend", x - 12, y - 22, boxW + 20, boxH + 18, interactive);
+      ctx.restore();
     }
 
     function drawGrid(ctx, plot, style) {
@@ -1140,16 +1589,16 @@
       }
     }
 
-    function drawLines(ctx, plot, style, stats, data) {
+    function drawLines(ctx, plot, style, stats, data, valueKey = "values", panelLabel = "") {
       if (style.showPoints) {
-        drawRawPoints(ctx, plot, style, rowsFor(data.prp, style), "prp");
-        drawRawPoints(ctx, plot, style, rowsFor(data.exp, style), "exp");
+        drawRawPoints(ctx, plot, style, rowsFor(data.prp, style, valueKey), "prp");
+        drawRawPoints(ctx, plot, style, rowsFor(data.exp, style, valueKey), "exp");
       }
-      drawLineSeries(ctx, plot, style, stats, "prp");
-      drawLineSeries(ctx, plot, style, stats, "exp");
+      drawLineSeries(ctx, plot, style, stats, "prp", panelLabel);
+      drawLineSeries(ctx, plot, style, stats, "exp", panelLabel);
     }
 
-    function drawLineSeries(ctx, plot, style, stats, key) {
+    function drawLineSeries(ctx, plot, style, stats, key, panelLabel = "") {
       const s = style[key];
       if (!s.visible) return;
       const points = stats.map((row) => ({ x: plot.x(row.time.x), y: plot.y(row[key].mean), row })).filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
@@ -1172,7 +1621,8 @@
       ctx.setLineDash([]);
       points.forEach((p) => {
         drawMarker(ctx, s.marker, p.x, p.y, s.markerSize, s.color);
-        addHover(p.x, p.y, s.markerSize + 8, key === "prp" ? "PRP" : "PRP+BTX-A", p.row.time.label, p.row[key]);
+        const groupLabel = (panelLabel ? panelLabel + " · " : "") + (key === "prp" ? "PRP" : "PRP+BTX-A");
+        addHover(p.x, p.y, s.markerSize + 8, groupLabel, p.row.time.label, p.row[key]);
         if (style.showValues) labelValue(ctx, p.x, p.y - 12, p.row[key].mean, style);
       });
       ctx.restore();
@@ -1505,9 +1955,23 @@
       els.summaryTable.innerHTML = `<table><thead><tr><th>时间</th><th>PRP n</th><th>PRP 均值</th><th>PRP ${err}</th><th>PRP+BTX-A n</th><th>PRP+BTX-A 均值</th><th>PRP+BTX-A ${err}</th></tr></thead><tbody>${rows}</tbody></table>`;
     }
 
-    function pValueGroups(data, style, stats) {
-      const prpRows = rowsFor(data.prp, style);
-      const expRows = rowsFor(data.exp, style);
+    function renderDualSummary(dualStats) {
+      const err = activeStyle().errorType.toUpperCase();
+      const panelNames = { terminal: "终毛比例", vellus: "毳毛比例" };
+      const rows = Object.entries(dualStats).flatMap(([key, stats]) => stats.map((row) => `
+        <tr>
+          <td>${panelNames[key]}</td>
+          <td>${row.time.label}</td>
+          <td>${row.prp.n}</td><td>${formatNumber(row.prp.mean)}</td><td>${formatNumber(row.prp.error)}</td>
+          <td>${row.exp.n}</td><td>${formatNumber(row.exp.mean)}</td><td>${formatNumber(row.exp.error)}</td>
+        </tr>
+      `)).join("");
+      els.summaryTable.innerHTML = `<table><thead><tr><th>指标</th><th>时间</th><th>PRP n</th><th>PRP 均值</th><th>PRP ${err}</th><th>PRP+BTX-A n</th><th>PRP+BTX-A 均值</th><th>PRP+BTX-A ${err}</th></tr></thead><tbody>${rows}</tbody></table>`;
+    }
+
+    function pValueGroups(data, style, stats, valueKey = "values") {
+      const prpRows = rowsFor(data.prp, style, valueKey);
+      const expRows = rowsFor(data.exp, style, valueKey);
       return [
         ...stats.map((row, idx) => ({ label: "PRP " + row.time.label, arm: "prp", timeIndex: idx, values: row.prpValues, rows: prpRows })),
         ...stats.map((row, idx) => ({ label: "PRP+BTX-A " + row.time.label, arm: "exp", timeIndex: idx, values: row.expValues, rows: expRows })),
@@ -1533,6 +1997,27 @@
         return `<tr><th>${g1.label}</th>${cells}</tr>`;
       }).join("");
       els.pValueTable.innerHTML = `<table><thead>${head}</thead><tbody>${body}</tbody></table>`;
+    }
+
+    function pValueMatrixHtml(stats, data, style, valueKey, title) {
+      const groups = pValueGroups(data, style, stats, valueKey);
+      const head = `<tr><th>比较组</th>${groups.map((g) => `<th>${g.label}</th>`).join("")}</tr>`;
+      const body = groups.map((g1, i) => {
+        const cells = groups.map((g2, j) => {
+          if (j <= i) return "<td></td>";
+          const p = pValueForGroups(g1, g2);
+          return `<td class="${pClass(p)}">${Number.isFinite(p) ? formatP(p) : ""}</td>`;
+        }).join("");
+        return `<tr><th>${g1.label}</th>${cells}</tr>`;
+      }).join("");
+      return `<h3>${title}</h3><table><thead>${head}</thead><tbody>${body}</tbody></table>`;
+    }
+
+    function renderDualPValues(dualStats, data, style) {
+      els.pValueTable.innerHTML = [
+        pValueMatrixHtml(dualStats.terminal, data, style, "terminal", "终毛比例"),
+        pValueMatrixHtml(dualStats.vellus, data, style, "vellus", "毳毛比例"),
+      ].join("");
     }
 
     function pairedP(rows, idxA, idxB) {
@@ -1637,6 +2122,14 @@
       const style = activeStyle();
       const stats = getStats(getData(), style);
       const err = style.errorType.toUpperCase();
+      if (isDualMetric()) {
+        const dualStats = getDualStats(getData(), style);
+        const rows = [["指标", "时间", "PRP n", "PRP 均值", "PRP " + err, "PRP+BTX-A n", "PRP+BTX-A 均值", "PRP+BTX-A " + err]];
+        [["终毛比例", dualStats.terminal], ["毳毛比例", dualStats.vellus]].forEach(([label, panelStats]) => {
+          panelStats.forEach((row) => rows.push([label, row.time.label, row.prp.n, formatNumber(row.prp.mean), formatNumber(row.prp.error), row.exp.n, formatNumber(row.exp.mean), formatNumber(row.exp.error)]));
+        });
+        return rows.map((row) => row.join("\t")).join("\n");
+      }
       const rows = [["时间", "PRP n", "PRP 均值", "PRP " + err, "PRP+BTX-A n", "PRP+BTX-A 均值", "PRP+BTX-A " + err]];
       stats.forEach((row) => rows.push([row.time.label, row.prp.n, formatNumber(row.prp.mean), formatNumber(row.prp.error), row.exp.n, formatNumber(row.exp.mean), formatNumber(row.exp.error)]));
       return rows.map((row) => row.join("\t")).join("\n");
@@ -1645,9 +2138,28 @@
     function getPValueTsv() {
       const data = getData();
       const style = activeStyle();
+      if (isDualMetric()) {
+        const dualStats = getDualStats(data, style);
+        return [
+          pValueTsvBlock("终毛比例", dualStats.terminal, data, style, "terminal"),
+          "",
+          pValueTsvBlock("毳毛比例", dualStats.vellus, data, style, "vellus"),
+        ].join("\n");
+      }
       const stats = getStats(data, style);
       const groups = pValueGroups(data, style, stats);
       const rows = [["比较组", ...groups.map((g) => g.label)]];
+      groups.forEach((g1, i) => {
+        const row = [g1.label];
+        groups.forEach((g2, j) => row.push(j <= i ? "" : formatP(pValueForGroups(g1, g2))));
+        rows.push(row);
+      });
+      return rows.map((row) => row.join("\t")).join("\n");
+    }
+
+    function pValueTsvBlock(title, stats, data, style, valueKey) {
+      const groups = pValueGroups(data, style, stats, valueKey);
+      const rows = [[title], ["比较组", ...groups.map((g) => g.label)]];
       groups.forEach((g1, i) => {
         const row = [g1.label];
         groups.forEach((g2, j) => row.push(j <= i ? "" : formatP(pValueForGroups(g1, g2))));
@@ -1673,6 +2185,7 @@
     }
 
     function makeSvg(width, height) {
+      if (isDualMetric()) return makeDualSvg(width, height);
       const style = activeStyle();
       const data = getData();
       const stats = getStats(data, style);
@@ -1726,6 +2239,77 @@
         const y = plot.y(Number(annotation.y));
         parts.push(`<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle" font-size="${Number(annotation.size) || 24}" font-weight="700" fill="${annotation.color || style.textColor}">${esc(annotation.text)}</text>`);
       });
+      parts.push(`</g></svg>`);
+      return parts.join("");
+    }
+
+    function makeDualSvg(width, height) {
+      const style = activeStyle();
+      const data = getData();
+      const dualStats = getDualStats(data, style);
+      const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+      const plot = makePlot(width, height, style);
+      const rightPlot = {
+        ...plot,
+        yMin: Number(style.rightYMin),
+        yMax: Number(style.rightYMax),
+        y: (value) => plot.top + plot.h - (value - Number(style.rightYMin)) / (Number(style.rightYMax) - Number(style.rightYMin)) * plot.h,
+      };
+      const parts = [`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`];
+      parts.push(`<rect width="100%" height="100%" fill="${style.chartBg}"/>`);
+      parts.push(`<rect x="${plot.left}" y="${plot.top}" width="${plot.w}" height="${plot.h}" fill="${style.plotBg}"/>`);
+      parts.push(`<g stroke="${style.axisColor}" fill="${style.textColor}" font-family="${esc(style.font)}">`);
+      parts.push(`<line x1="${plot.left}" y1="${plot.top}" x2="${plot.left}" y2="${plot.top + plot.h}" stroke-width="1.8"/>`);
+      parts.push(`<line x1="${plot.left}" y1="${plot.top + plot.h}" x2="${plot.left + plot.w}" y2="${plot.top + plot.h}" stroke-width="1.8"/>`);
+      parts.push(`<line x1="${plot.left + plot.w}" y1="${plot.top}" x2="${plot.left + plot.w}" y2="${plot.top + plot.h}" stroke-width="1.8"/>`);
+      forEachYTick(style, (tick) => {
+        const y = plot.y(tick);
+        parts.push(`<line x1="${plot.left - 7}" y1="${y}" x2="${plot.left}" y2="${y}" stroke-width="1"/>`);
+        parts.push(`<text x="${plot.left - 12}" y="${y + 5}" text-anchor="end" font-size="${style.tickSize}">${formatNumber(tick)}</text>`);
+      });
+      forEachRightYTick(style, (tick) => {
+        const y = rightPlot.y(tick);
+        const x = plot.left + plot.w;
+        parts.push(`<line x1="${x}" y1="${y}" x2="${x + 7}" y2="${y}" stroke-width="1"/>`);
+        parts.push(`<text x="${x + 12}" y="${y + 5}" text-anchor="start" font-size="${style.tickSize}">${formatNumber(tick)}</text>`);
+      });
+      TIMES.forEach((time) => {
+        const x = plot.x(time.x);
+        parts.push(`<line x1="${x}" y1="${plot.top + plot.h}" x2="${x}" y2="${plot.top + plot.h + 7}" stroke-width="1"/>`);
+        parts.push(`<text x="${x}" y="${plot.top + plot.h + 28}" text-anchor="middle" font-size="${style.tickSize}">${time.label}</text>`);
+      });
+      const svgLine = (stats, key, axisPlot, labelType) => {
+        if (!style[key].visible) return;
+        const dash = labelType === "vellus" ? ` stroke-dasharray="10 6"` : "";
+        const pts = stats.map((row) => `${axisPlot.x(row.time.x)},${axisPlot.y(row[key].mean)}`).join(" ");
+        parts.push(`<polyline points="${pts}" fill="none" stroke="${style[key].color}" stroke-width="${style[key].lineWidth}" stroke-linejoin="round" stroke-linecap="round"${dash}/>`);
+        stats.forEach((row) => parts.push(svgMarker(style[key].marker, axisPlot.x(row.time.x), axisPlot.y(row[key].mean), style[key].markerSize, style[key].color)));
+      };
+      svgLine(dualStats.terminal, "prp", plot, "terminal");
+      svgLine(dualStats.terminal, "exp", plot, "terminal");
+      svgLine(dualStats.vellus, "prp", rightPlot, "vellus");
+      svgLine(dualStats.vellus, "exp", rightPlot, "vellus");
+      if (style.showTitle && style.chartTitle) parts.push(`<text x="${plot.left + plot.w * style.titleX / 100}" y="${style.titleY}" text-anchor="middle" font-size="${style.titleSize}" font-weight="700">${esc(style.chartTitle)}</text>`);
+      if (style.showXLabel && style.xLabel) parts.push(`<text x="${plot.left + plot.w * style.xLabelX / 100}" y="${height - style.xLabelY}" text-anchor="middle" font-size="${style.axisTitleSize}">${esc(style.xLabel)}</text>`);
+      if (style.showYLabel && style.yLabel) {
+        const x = style.yLabelX, y = plot.top + plot.h * style.yLabelY / 100;
+        parts.push(`<text x="${x}" y="${y}" text-anchor="middle" font-size="${style.axisTitleSize}" transform="rotate(-90 ${x} ${y})">${esc(style.yLabel)}</text>`);
+      }
+      if (style.showYLabel && style.rightYLabel) {
+        const x = plot.left + plot.w + Math.max(56, style.plotRight - 28), y = plot.top + plot.h * style.yLabelY / 100;
+        parts.push(`<text x="${x}" y="${y}" text-anchor="middle" font-size="${style.axisTitleSize}" transform="rotate(90 ${x} ${y})">${esc(style.rightYLabel)}</text>`);
+      }
+      if (style.showLegend) {
+        const x = style.legendX, y = style.legendY;
+        [["prp", "PRP 终毛", "solid"], ["prp", "PRP 毳毛", "dash"], ["exp", "PRP+BTX-A 终毛", "solid"], ["exp", "PRP+BTX-A 毳毛", "dash"]].filter(([key]) => style[key].visible).forEach(([key, label, lineType], i) => {
+          const ix = x + (i % 2) * 150;
+          const iy = y + Math.floor(i / 2) * 26;
+          const dash = lineType === "dash" ? ` stroke-dasharray="10 6"` : "";
+          parts.push(`<line x1="${ix}" y1="${iy}" x2="${ix + 28}" y2="${iy}" stroke="${style[key].color}" stroke-width="${style[key].lineWidth}"${dash}/>`);
+          parts.push(svgMarker(style[key].marker, ix + 14, iy, style[key].markerSize, style[key].color));
+          parts.push(`<text x="${ix + 36}" y="${iy + 5}" font-size="${style.legendSize}">${esc(label)}</text>`);
+        });
+      }
       parts.push(`</g></svg>`);
       return parts.join("");
     }
@@ -1837,15 +2421,33 @@
     els.barTab.addEventListener("click", () => setChartType("bar"));
     els.prpInput.addEventListener("input", updateAll);
     els.expInput.addEventListener("input", updateAll);
+    els.prpTerminalInput.addEventListener("input", updateAll);
+    els.prpVellusInput.addEventListener("input", updateAll);
+    els.expTerminalInput.addEventListener("input", updateAll);
+    els.expVellusInput.addEventListener("input", updateAll);
     els.loadExample.addEventListener("click", () => {
       const sample = makeSample(state.metric);
-      els.prpInput.value = sample.prp;
-      els.expInput.value = sample.exp;
+      if (isDualMetric()) {
+        els.prpTerminalInput.value = sample.prpTerminal || "";
+        els.prpVellusInput.value = sample.prpVellus || "";
+        els.expTerminalInput.value = sample.expTerminal || "";
+        els.expVellusInput.value = sample.expVellus || "";
+      } else {
+        els.prpInput.value = sample.prp;
+        els.expInput.value = sample.exp;
+      }
       updateAll();
     });
     els.clearData.addEventListener("click", () => {
-      els.prpInput.value = "";
-      els.expInput.value = "";
+      if (isDualMetric()) {
+        els.prpTerminalInput.value = "";
+        els.prpVellusInput.value = "";
+        els.expTerminalInput.value = "";
+        els.expVellusInput.value = "";
+      } else {
+        els.prpInput.value = "";
+        els.expInput.value = "";
+      }
       updateAll();
     });
     els.controls.addEventListener("input", (event) => {

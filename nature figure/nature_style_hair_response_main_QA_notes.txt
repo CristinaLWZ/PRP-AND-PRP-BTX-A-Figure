@@ -1,0 +1,17 @@
+Export bundle:
+  nature_style_hair_response_main.svg
+  nature_style_hair_response_main.pdf
+  nature_style_hair_response_main.tiff
+  nature_style_hair_response_main_preview.png
+Text/font policy:
+  Base family: Arial; base size 6.4 pt; panel tags 8 pt bold.
+Statistics:
+  Mean +/- s.e.m. for longitudinal panels.
+  Two-sided Welch t-tests for change-from-baseline contrasts.
+  Heatmap and forest plot use benefit-oriented Hedges g.
+Source data:
+  nature_style_hair_response_main_source_data_long.csv
+  nature_style_hair_response_main_summary_stats.csv
+  nature_style_hair_response_main_effects.csv
+QA note:
+  This bundle follows the local Nature-style workflow but was not re-checked against live journal author-guide pages during this run.
