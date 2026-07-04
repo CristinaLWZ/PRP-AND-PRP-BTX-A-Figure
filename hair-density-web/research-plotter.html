@@ -495,7 +495,7 @@
       sebum: { label: "油脂分泌", yLabel: "Sebum secretion", y: [0, 240, 40], prp: [150, 145, 143, 150], exp: [150, 95, 98, 128], sd: 24 },
       hardness: { label: "头皮硬度", yLabel: "Scalp hardness", y: [0, 50, 10], prp: [24, 23, 24, 24], exp: [24, 20, 15, 17], sd: 5 },
       bloodflow: { label: "头皮血流", yLabel: "Scalp blood flow", y: [0, 520, 100], prp: [160, 185, 190, 188], exp: [160, 240, 310, 295], sd: 45 },
-      hairtype: { label: "终毛/毳毛比例", yLabel: "终毛比例 (%)", rightYLabel: "毳毛比例 (%)", y: [0, 100, 20], rightY: [0, 100, 20], prp: [64, 66, 70, 71], exp: [64, 69, 76, 78], vellusPrp: [32, 31, 28, 27], vellusExp: [32, 29, 24, 22], sd: 8, dualAxis: true },
+      hairtype: { label: "终毛/毳毛比例", yLabel: "Terminal hair proportion (%)", rightYLabel: "Vellus hair proportion (%)", y: [0, 100, 20], rightY: [0, 100, 20], prp: [64, 66, 70, 71], exp: [64, 69, 76, 78], vellusPrp: [32, 31, 28, 27], vellusExp: [32, 29, 24, 22], sd: 8, dualAxis: true },
     };
 
     function isDualMetric(metricKey = state.metric) {
@@ -592,7 +592,21 @@
       }
       item.line = mergeDefaults(defaultStyle(metricKey, "line"), item.line || {});
       item.bar = mergeDefaults(defaultStyle(metricKey, "bar"), item.bar || {});
+      if (metricKey === "hairtype") {
+        normalizeHairtypeStyle(item.line);
+        normalizeHairtypeStyle(item.bar);
+      }
       item.saved = item.saved || {};
+    }
+
+    function normalizeHairtypeStyle(style) {
+      if (!style) return;
+      if (!style.yLabel || style.yLabel.includes("终毛")) style.yLabel = "Terminal hair proportion (%)";
+      if (!style.rightYLabel || style.rightYLabel.includes("毳毛")) style.rightYLabel = "Vellus hair proportion (%)";
+      style.yLabel = String(style.yLabel).replace("proportion(%)", "proportion (%)");
+      style.rightYLabel = String(style.rightYLabel).replace("proportion(%)", "proportion (%)");
+      if (!Number.isFinite(Number(style.rightYLabelX)) || Number(style.rightYLabelX) === 0) style.rightYLabelX = 70;
+      if (!Number.isFinite(Number(style.rightYLabelY))) style.rightYLabelY = style.yLabelY ?? 50;
     }
 
     function mergeDefaults(base, value) {
@@ -651,6 +665,8 @@
         xLabelY: 26,
         yLabelX: 38,
         yLabelY: 50,
+        rightYLabelX: 70,
+        rightYLabelY: 50,
         legendX: 116,
         legendY: 74,
         legendPosition: "custom",
@@ -866,6 +882,8 @@
         numField("X轴标题距底", "xLabelY", 0, 140, 1),
         numField("Y轴标题 X", "yLabelX", 0, 180, 1),
         numField("Y轴标题 Y%", "yLabelY", 0, 100, 1),
+        dualOnly ? numField("右Y轴标题距轴", "rightYLabelX", 0, 260, 1) : "",
+        dualOnly ? numField("右Y轴标题 Y%", "rightYLabelY", 0, 100, 1) : "",
         selectField("图例位置", "legendPosition", [["custom", "自定义坐标"], ["leftTop", "左上"], ["rightTop", "右上"], ["leftBottom", "左下"], ["rightBottom", "右下"], ["topCenter", "顶部居中"], ["bottomCenter", "底部居中"]]),
         numField("图例 X", "legendX", 0, 2000, 1),
         numField("图例 Y", "legendY", 0, 2000, 1),
@@ -1071,8 +1089,9 @@
       if (preset === "custom") return;
       const w = els.chart.clientWidth || 1100;
       const h = els.chart.clientHeight || 560;
-      const xCenter = style.plotLeft + (w - style.plotLeft - style.plotRight) / 2 - 95;
-      const xRight = w - style.plotRight - 190;
+      const legendW = isDualMetric() ? 460 : 190;
+      const xCenter = style.plotLeft + (w - style.plotLeft - style.plotRight) / 2 - legendW / 2;
+      const xRight = w - style.plotRight - legendW;
       const yBottom = h - style.plotBottom + 36;
       const map = {
         leftTop: [style.plotLeft + 18, style.plotTop + 18],
@@ -1472,13 +1491,14 @@
         ctx.font = `${style.axisTitleSize}px ${style.font}`;
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        const x = plot.left + plot.w + Math.max(56, style.plotRight - 28);
-        const y = plot.top + plot.h * style.yLabelY / 100;
+        const x = plot.left + plot.w + Number(style.rightYLabelX);
+        const y = plot.top + plot.h * Number(style.rightYLabelY) / 100;
         ctx.save();
         ctx.translate(x, y);
         ctx.rotate(Math.PI / 2);
         ctx.fillText(style.rightYLabel, 0, 0);
         ctx.restore();
+        addHandle("rightYLabel", x - 22, y - 180, 44, 360, interactive);
       }
       if (style.showLegend) drawDualAxisLegend(ctx, plot, style, interactive);
       drawAnnotations(ctx, plot, style, interactive);
@@ -1489,13 +1509,13 @@
       const x = style.legendX;
       const y = style.legendY;
       const items = [
-        ["prp", "PRP 终毛", "solid"],
-        ["prp", "PRP 毳毛", "dash"],
-        ["exp", "PRP+BTX-A 终毛", "solid"],
-        ["exp", "PRP+BTX-A 毳毛", "dash"],
+        ["prp", "PRP Terminal", "solid"],
+        ["prp", "PRP Vellus", "dash"],
+        ["exp", "PRP+BTX-A Terminal", "solid"],
+        ["exp", "PRP+BTX-A Vellus", "dash"],
       ].filter(([key]) => style[key].visible);
-      const itemW = 150;
-      const rowH = 26;
+      const itemW = 230;
+      const rowH = 32;
       const boxW = itemW * 2;
       const boxH = rowH * Math.ceil(items.length / 2);
       ctx.save();
@@ -1520,11 +1540,11 @@
         ctx.strokeStyle = s.color;
         ctx.lineWidth = Math.max(2, s.lineWidth);
         setDash(ctx, lineType);
-        line(ctx, ix, iy, ix + 28, iy);
+        line(ctx, ix, iy, ix + 34, iy);
         ctx.setLineDash([]);
-        drawMarker(ctx, s.marker, ix + 14, iy, s.markerSize, s.color);
+        drawMarker(ctx, s.marker, ix + 17, iy, s.markerSize, s.color);
         ctx.fillStyle = style.textColor;
-        ctx.fillText(label, ix + 36, iy);
+        ctx.fillText(label, ix + 52, iy);
       });
       addHandle("legend", x - 12, y - 22, boxW + 20, boxH + 18, interactive);
       ctx.restore();
@@ -2296,18 +2316,18 @@
         parts.push(`<text x="${x}" y="${y}" text-anchor="middle" font-size="${style.axisTitleSize}" transform="rotate(-90 ${x} ${y})">${esc(style.yLabel)}</text>`);
       }
       if (style.showYLabel && style.rightYLabel) {
-        const x = plot.left + plot.w + Math.max(56, style.plotRight - 28), y = plot.top + plot.h * style.yLabelY / 100;
+        const x = plot.left + plot.w + Number(style.rightYLabelX), y = plot.top + plot.h * Number(style.rightYLabelY) / 100;
         parts.push(`<text x="${x}" y="${y}" text-anchor="middle" font-size="${style.axisTitleSize}" transform="rotate(90 ${x} ${y})">${esc(style.rightYLabel)}</text>`);
       }
       if (style.showLegend) {
         const x = style.legendX, y = style.legendY;
-        [["prp", "PRP 终毛", "solid"], ["prp", "PRP 毳毛", "dash"], ["exp", "PRP+BTX-A 终毛", "solid"], ["exp", "PRP+BTX-A 毳毛", "dash"]].filter(([key]) => style[key].visible).forEach(([key, label, lineType], i) => {
-          const ix = x + (i % 2) * 150;
-          const iy = y + Math.floor(i / 2) * 26;
+        [["prp", "PRP Terminal", "solid"], ["prp", "PRP Vellus", "dash"], ["exp", "PRP+BTX-A Terminal", "solid"], ["exp", "PRP+BTX-A Vellus", "dash"]].filter(([key]) => style[key].visible).forEach(([key, label, lineType], i) => {
+          const ix = x + (i % 2) * 230;
+          const iy = y + Math.floor(i / 2) * 32;
           const dash = lineType === "dash" ? ` stroke-dasharray="10 6"` : "";
-          parts.push(`<line x1="${ix}" y1="${iy}" x2="${ix + 28}" y2="${iy}" stroke="${style[key].color}" stroke-width="${style[key].lineWidth}"${dash}/>`);
-          parts.push(svgMarker(style[key].marker, ix + 14, iy, style[key].markerSize, style[key].color));
-          parts.push(`<text x="${ix + 36}" y="${iy + 5}" font-size="${style.legendSize}">${esc(label)}</text>`);
+          parts.push(`<line x1="${ix}" y1="${iy}" x2="${ix + 34}" y2="${iy}" stroke="${style[key].color}" stroke-width="${style[key].lineWidth}"${dash}/>`);
+          parts.push(svgMarker(style[key].marker, ix + 17, iy, style[key].markerSize, style[key].color));
+          parts.push(`<text x="${ix + 52}" y="${iy + 5}" font-size="${style.legendSize}">${esc(label)}</text>`);
         });
       }
       parts.push(`</g></svg>`);
@@ -2360,7 +2380,7 @@
       state.unlocked = value;
       els.lockLayout.classList.toggle("active", !value);
       els.unlockLayout.classList.toggle("active", value);
-      els.controlStatus.textContent = value ? "标题、轴标题、图例可拖拽" : "布局已锁定";
+      els.controlStatus.textContent = value ? "标题、轴标题、右轴标题、图例可拖拽" : "布局已锁定";
       draw();
     }
 
@@ -2504,6 +2524,10 @@
         if (state.drag.type === "yLabel") {
           style.yLabelX = clamp(base.yLabelX + dx, 0, 220);
           style.yLabelY = clamp(base.yLabelY + dy / plot.h * 100, 0, 100);
+        }
+        if (state.drag.type === "rightYLabel") {
+          style.rightYLabelX = clamp(base.rightYLabelX + dx, 0, 260);
+          style.rightYLabelY = clamp(base.rightYLabelY + dy / plot.h * 100, 0, 100);
         }
         if (state.drag.type === "legend") {
           style.legendX = clamp(base.legendX + dx, 0, 2200);
