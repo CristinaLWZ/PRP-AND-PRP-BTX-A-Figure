@@ -1,0 +1,40 @@
+# Local tool metadata and editor noise
+/.agents/
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Runtime caches
+__pycache__/
+*.py[cod]
+/.venv/
+/venv/
+/node_modules/
+.Rhistory
+.RData
+.Rproj.user/
+
+# Generated analysis outputs
+/outputs/
+/single_metric_figures_scatter/
+/single_metric_figures_scatter_sd/
+/nature_style_*.pdf
+/nature_style_*.svg
+/nature_style_*.tiff
+/nature_style_*_preview.png
+/nature_style_*_contract.txt
+/nature_style_*_QA_notes.txt
+/nature_style_*_source_data*.csv
+/nature_style_*_summary_stats.csv
+/nature_style_*_effects.csv
+
+# Local backup and packaged artifacts
+/hair-density-web/*.bak-*
+/hair-density-web/*.zip
+
+# Local raw workbook
+/患者数据-20260625-01.xlsx

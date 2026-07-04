@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>毛发密度曲线图工具</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Hair Density Plotter</p>
+            <h1 id="appTitle">毛发密度可视化</h1>
+          </div>
+          <div class="actions">
+            <button id="loadExample" type="button">载入示例</button>
+            <button id="clearAll" type="button">清空</button>
+            <button id="exportCsv" type="button">导出 CSV</button>
+            <button id="exportPng" type="button" class="primary">导出 PNG</button>
+          </div>
+        </header>
+
+        <section id="metricNav" class="metric-nav" aria-label="指标切换"></section>
+
+        <section class="content-flow">
+          <section class="data-panel" aria-label="原始数据输入">
+            <section class="section-block">
+              <div class="section-title">
+                <h2 id="expPanelTitle">PRP+BTX-A 原始数据</h2>
+                <span id="expStatus">0 行</span>
+              </div>
+              <textarea
+                id="expInput"
+                spellcheck="false"
+                placeholder="每行一个受试者，按 T0、T1、T3、T6 顺序输入指标数值。可从 Excel 直接粘贴，支持逗号、Tab 或空格分隔。"
+              ></textarea>
+            </section>
+
+            <section class="section-block">
+              <div class="section-title">
+                <h2 id="ctrlPanelTitle">PRP 原始数据</h2>
+                <span id="ctrlStatus">0 行</span>
+              </div>
+              <textarea
+                id="ctrlInput"
+                spellcheck="false"
+                placeholder="例如：&#10;145.2 150.5 172.3 170.7&#10;138.4 149.2 165.7 163.9"
+              ></textarea>
+            </section>
+
+            <section class="section-block compact">
+              <div class="switch-row">
+                <label><input id="showPoints" type="checkbox" checked /> 显示原始散点</label>
+                <label><input id="showSd" type="checkbox" checked /> 显示 SD 误差线</label>
+              </div>
+              <p class="hint">
+                如果粘贴了包含表头的 Excel 区域，程序会优先识别毛发密度的基线、30天、90天、180天列；旧 6 列数据会自动跳过 14天 和 60天。
+              </p>
+            </section>
+          </section>
+
+          <section class="chart-panel" aria-label="曲线图">
+            <div class="chart-header">
+              <div>
+                <h2 id="chartPanelTitle">曲线图</h2>
+                <p id="chartSubtitle">等待输入数据</p>
+              </div>
+              <div class="chart-layout-actions" aria-label="图表效果保存和图中文字移动开关">
+                <button id="saveChartEffect" type="button" class="mode-button">保存当前效果</button>
+                <button id="lockLayout" type="button" class="mode-button active">锁定</button>
+                <button id="unlockLayout" type="button" class="mode-button">可移动</button>
+              </div>
+            </div>
+            <div class="chart-switch" aria-label="图表类型切换">
+              <button id="lineChartTab" type="button" class="chart-tab active">曲线图</button>
+              <button id="barChartTab" type="button" class="chart-tab">柱状图</button>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="densityChart" width="980" height="520" aria-label="毛发密度曲线图"></canvas>
+              <div id="tooltip" class="tooltip" hidden></div>
+            </div>
+            <details id="lineControlPanel" class="global-control-panel line-control-panel" open>
+              <summary>全局控制面板</summary>
+              <div class="settings-grid">
+                <div class="control-group-title">坐标轴与标签</div>
+                <label class="setting wide">
+                  <span>图标题</span>
+                  <input id="chartTitleInput" type="text" value="毛发密度随时间变化" />
+                </label>
+                <label class="setting">
+                  <span>X轴标题</span>
+                  <input id="xAxisTitleInput" type="text" value="时间" />
+                </label>
+                <label class="setting">
+                  <span>Y轴标题</span>
+                  <input id="yAxisTitleInput" type="text" value="毛发密度" />
+                </label>
+                <label class="setting">
+                  <span>标题字号</span>
+                  <input id="titleSizeInput" type="number" min="10" max="32" value="16" />
+                </label>
+                <label class="setting">
+                  <span>轴标题字号</span>
+                  <input id="axisSizeInput" type="number" min="9" max="24" value="13" />
+                </label>
+                <label class="setting">
+                  <span>刻度字号</span>
+                  <input id="tickSizeInput" type="number" min="8" max="20" value="12" />
+                </label>
+                <label class="setting">
+                  <span>图例字号</span>
+                  <input id="legendSizeInput" type="number" min="8" max="22" value="13" />
+                </label>
+                <label class="setting">
+                  <span>文字颜色</span>
+                  <input id="textColorInput" type="color" value="#384b5c" />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A</span>
+                  <input id="expColorInput" type="color" value="#2463b3" />
+                </label>
+                <label class="setting">
+                  <span>PRP</span>
+                  <input id="ctrlColorInput" type="color" value="#c84a42" />
+                </label>
+                <label class="setting">
+                  <span>显示图标题</span>
+                  <input id="showTitleInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示图例</span>
+                  <input id="showLegendInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示X轴标题</span>
+                  <input id="showXAxisTitleInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示Y轴标题</span>
+                  <input id="showYAxisTitleInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>图标题 X%</span>
+                  <input id="titleXInput" type="number" min="0" max="100" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>图标题 Y</span>
+                  <input id="titleYInput" type="number" min="0" max="120" step="1" value="12" />
+                </label>
+                <label class="setting">
+                  <span>X轴标题 X%</span>
+                  <input id="xAxisTitleXInput" type="number" min="0" max="100" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>X轴标题距底</span>
+                  <input id="xAxisTitleYInput" type="number" min="0" max="120" step="1" value="18" />
+                </label>
+                <label class="setting">
+                  <span>Y轴标题 X</span>
+                  <input id="yAxisTitleXInput" type="number" min="0" max="160" step="1" value="18" />
+                </label>
+                <label class="setting">
+                  <span>Y轴标题 Y%</span>
+                  <input id="yAxisTitleYInput" type="number" min="0" max="100" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>图例 X</span>
+                  <input id="legendXInput" type="number" min="0" max="2000" step="1" value="72" />
+                </label>
+                <label class="setting">
+                  <span>图例 Y</span>
+                  <input id="legendYInput" type="number" min="0" max="2000" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>Y轴最小值</span>
+                  <input id="yMinInput" type="number" step="1" value="0" />
+                </label>
+                <label class="setting">
+                  <span>Y轴最大值</span>
+                  <input id="yMaxInput" type="number" step="1" value="350" />
+                </label>
+                <label class="setting">
+                  <span>Y轴间隔</span>
+                  <input id="yStepInput" type="number" min="0.1" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>坐标轴颜色</span>
+                  <input id="axisColorInput" type="color" value="#aab8c5" />
+                </label>
+                <label class="setting">
+                  <span>整图背景</span>
+                  <input id="chartBgColorInput" type="color" value="#ffffff" />
+                </label>
+                <label class="setting">
+                  <span>作图区背景</span>
+                  <input id="plotBgColorInput" type="color" value="#ffffff" />
+                </label>
+                <label class="setting">
+                  <span>上边距</span>
+                  <input id="plotTopInput" type="number" min="40" max="180" step="1" value="82" />
+                </label>
+                <label class="setting">
+                  <span>右边距</span>
+                  <input id="plotRightInput" type="number" min="20" max="180" step="1" value="34" />
+                </label>
+                <label class="setting">
+                  <span>下边距</span>
+                  <input id="plotBottomInput" type="number" min="40" max="180" step="1" value="72" />
+                </label>
+                <label class="setting">
+                  <span>左边距</span>
+                  <input id="plotLeftInput" type="number" min="40" max="180" step="1" value="72" />
+                </label>
+                <label class="setting">
+                  <span>散点透明度</span>
+                  <input id="rawPointOpacityInput" type="number" min="0" max="1" step="0.05" value="0.18" />
+                </label>
+                <label class="setting">
+                  <span>散点横向抖动</span>
+                  <input id="jitterInput" type="number" min="0" max="8" step="0.1" value="1.7" />
+                </label>
+                <label class="setting">
+                  <span>误差线帽宽</span>
+                  <input id="errorCapInput" type="number" min="0" max="20" step="1" value="5" />
+                </label>
+                <div class="control-group-title">数据系列调整</div>
+                <label class="setting">
+                  <span>显示 PRP+BTX-A</span>
+                  <input id="showExpInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示 PRP</span>
+                  <input id="showCtrlInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 线型</span>
+                  <select id="expLineStyleInput">
+                    <option value="solid">实线</option>
+                    <option value="dash">虚线</option>
+                    <option value="dot">点线</option>
+                    <option value="dashdot">点划线</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>PRP 线型</span>
+                  <select id="ctrlLineStyleInput">
+                    <option value="solid">实线</option>
+                    <option value="dash">虚线</option>
+                    <option value="dot">点线</option>
+                    <option value="dashdot">点划线</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 线条粗细</span>
+                  <input id="expLineWidthInput" type="number" min="1" max="6" step="0.5" value="2.4" />
+                </label>
+                <label class="setting">
+                  <span>PRP 线条粗细</span>
+                  <input id="ctrlLineWidthInput" type="number" min="1" max="6" step="0.5" value="2.4" />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 标记</span>
+                  <select id="expMarkerStyleInput">
+                    <option value="square">方形</option>
+                    <option value="circle">圆形</option>
+                    <option value="diamond">菱形</option>
+                    <option value="triangle">三角形</option>
+                    <option value="none">无标记</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>PRP 标记</span>
+                  <select id="ctrlMarkerStyleInput">
+                    <option value="circle">圆形</option>
+                    <option value="square">方形</option>
+                    <option value="diamond">菱形</option>
+                    <option value="triangle">三角形</option>
+                    <option value="none">无标记</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 标记大小</span>
+                  <input id="expMarkerSizeInput" type="number" min="3" max="15" step="1" value="8" />
+                </label>
+                <label class="setting">
+                  <span>PRP 标记大小</span>
+                  <input id="ctrlMarkerSizeInput" type="number" min="3" max="15" step="1" value="8" />
+                </label>
+                <label class="setting">
+                  <span>显示原始散点</span>
+                  <input id="showRawPointsInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>数据点数值标签</span>
+                  <input id="showValueLabelsInput" type="checkbox" />
+                </label>
+                <div class="control-group-title">误差棒精细控制</div>
+                <label class="setting">
+                  <span>显示所有误差棒</span>
+                  <input id="showErrorBarsInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>误差棒类型</span>
+                  <select id="errorTypeInput">
+                    <option value="sd">标准差 SD</option>
+                    <option value="sem">标准误 SEM</option>
+                    <option value="ci">95% 置信区间 CI</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 误差棒颜色</span>
+                  <input id="expErrorColorInput" type="color" value="#2463b3" />
+                </label>
+                <label class="setting">
+                  <span>PRP 误差棒颜色</span>
+                  <input id="ctrlErrorColorInput" type="color" value="#c84a42" />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 误差棒粗细</span>
+                  <input id="expErrorWidthInput" type="number" min="1" max="6" step="0.5" value="1.4" />
+                </label>
+                <label class="setting">
+                  <span>PRP 误差棒粗细</span>
+                  <input id="ctrlErrorWidthInput" type="number" min="1" max="6" step="0.5" value="1.4" />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 端帽宽度</span>
+                  <input id="expErrorCapInput" type="number" min="0" max="20" step="1" value="5" />
+                </label>
+                <label class="setting">
+                  <span>PRP 端帽宽度</span>
+                  <input id="ctrlErrorCapInput" type="number" min="0" max="20" step="1" value="5" />
+                </label>
+                <div class="control-group-title">坐标轴范围与网格</div>
+                <label class="setting">
+                  <span>X轴最小值</span>
+                  <input id="xMinInput" type="number" step="0.1" value="-0.4" />
+                </label>
+                <label class="setting">
+                  <span>X轴最大值</span>
+                  <input id="xMaxInput" type="number" step="0.1" value="6.4" />
+                </label>
+                <label class="setting">
+                  <span>刻度线方向</span>
+                  <select id="tickDirectionInput">
+                    <option value="out">向外</option>
+                    <option value="in">向内</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>显示主网格</span>
+                  <input id="showMajorGridInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>显示次网格</span>
+                  <input id="showMinorGridInput" type="checkbox" />
+                </label>
+                <div class="control-group-title">图表样式与主题</div>
+                <label class="setting">
+                  <span>整体主题</span>
+                  <select id="themeInput">
+                    <option value="sci">SCI白底浅色</option>
+                    <option value="dark">深色暗黑</option>
+                    <option value="warm">护眼米黄</option>
+                    <option value="contrast">高对比度</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>字体</span>
+                  <select id="fontFamilyInput">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="SimSun">宋体</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>全局字体大小</span>
+                  <input id="globalFontSizeInput" type="number" min="10" max="20" step="1" value="13" />
+                </label>
+                <label class="setting">
+                  <span>图例位置</span>
+                  <select id="legendPositionInput">
+                    <option value="top-left">左上</option>
+                    <option value="top-right">右上</option>
+                    <option value="bottom-right">右下</option>
+                    <option value="bottom-left">左下</option>
+                    <option value="top-center">顶部居中</option>
+                    <option value="bottom-center">底部居中</option>
+                    <option value="custom">自定义坐标</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>图例半透明背景</span>
+                  <input id="legendTranslucentInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>图例边框</span>
+                  <input id="legendBorderInput" type="checkbox" />
+                </label>
+                <div class="control-group-title">曲线变换与数学调整</div>
+                <label class="setting">
+                  <span>平滑曲线</span>
+                  <input id="smoothCurveInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>平滑程度</span>
+                  <input id="smoothnessInput" type="number" min="0" max="1" step="0.05" value="0.55" />
+                </label>
+                <label class="setting">
+                  <span>以基线100%归一化</span>
+                  <input id="normalizeInput" type="checkbox" />
+                </label>
+                <div class="control-group-title">交互、导出与智能辅助</div>
+                <label class="setting">
+                  <span>交互模式</span>
+                  <select id="interactionModeInput">
+                    <option value="zoom">框选缩放</option>
+                    <option value="pan">拖拽平移</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>标记最大提升时间点</span>
+                  <input id="showMaxImprovementInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>叠加差异趋势</span>
+                  <input id="showDifferenceInput" type="checkbox" />
+                </label>
+                <div class="control-buttons">
+                  <button id="resetView" type="button">重置到保存效果</button>
+                  <button id="exportPng300" type="button">导出 300DPI PNG</button>
+                  <button id="exportSvg" type="button">导出 SVG</button>
+                </div>
+              </div>
+            </details>
+            <details id="barControlPanel" class="global-control-panel bar-control-panel" open hidden>
+              <summary>柱状图控制面板</summary>
+              <div class="settings-grid">
+                <div class="control-group-title">坐标轴与标签</div>
+                <label class="setting wide">
+                  <span>图标题</span>
+                  <input id="barChartTitleInput" type="text" value="毛发密度柱状图" />
+                </label>
+                <label class="setting">
+                  <span>X轴标题</span>
+                  <input id="barXAxisTitleInput" type="text" value="时间" />
+                </label>
+                <label class="setting">
+                  <span>Y轴标题</span>
+                  <input id="barYAxisTitleInput" type="text" value="Hair density (hairs/cm²)" />
+                </label>
+                <label class="setting">
+                  <span>标题字号</span>
+                  <input id="barTitleSizeInput" type="number" min="10" max="32" value="16" />
+                </label>
+                <label class="setting">
+                  <span>轴标题字号</span>
+                  <input id="barAxisSizeInput" type="number" min="9" max="24" value="13" />
+                </label>
+                <label class="setting">
+                  <span>刻度字号</span>
+                  <input id="barTickSizeInput" type="number" min="8" max="20" value="12" />
+                </label>
+                <label class="setting">
+                  <span>图例字号</span>
+                  <input id="barLegendSizeInput" type="number" min="8" max="22" value="13" />
+                </label>
+                <label class="setting">
+                  <span>文字颜色</span>
+                  <input id="barTextColorInput" type="color" value="#111827" />
+                </label>
+                <label class="setting">
+                  <span>显示图标题</span>
+                  <input id="barShowTitleInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示图例</span>
+                  <input id="barShowLegendInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示X轴标题</span>
+                  <input id="barShowXAxisTitleInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示Y轴标题</span>
+                  <input id="barShowYAxisTitleInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>图标题 X%</span>
+                  <input id="barTitleXInput" type="number" min="0" max="100" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>图标题 Y</span>
+                  <input id="barTitleYInput" type="number" min="0" max="160" step="1" value="14" />
+                </label>
+                <label class="setting">
+                  <span>X轴标题 X%</span>
+                  <input id="barXAxisTitleXInput" type="number" min="0" max="100" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>X轴标题距底</span>
+                  <input id="barXAxisTitleYInput" type="number" min="0" max="160" step="1" value="18" />
+                </label>
+                <label class="setting">
+                  <span>Y轴标题 X</span>
+                  <input id="barYAxisTitleXInput" type="number" min="0" max="240" step="1" value="18" />
+                </label>
+                <label class="setting">
+                  <span>Y轴标题 Y%</span>
+                  <input id="barYAxisTitleYInput" type="number" min="0" max="100" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>图例 X</span>
+                  <input id="barLegendXInput" type="number" min="0" max="2000" step="1" value="72" />
+                </label>
+                <label class="setting">
+                  <span>图例 Y</span>
+                  <input id="barLegendYInput" type="number" min="0" max="2000" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>Y轴最小值</span>
+                  <input id="barYMinInput" type="number" step="1" value="0" />
+                </label>
+                <label class="setting">
+                  <span>Y轴最大值</span>
+                  <input id="barYMaxInput" type="number" step="1" value="350" />
+                </label>
+                <label class="setting">
+                  <span>Y轴间隔</span>
+                  <input id="barYStepInput" type="number" min="0.1" step="1" value="50" />
+                </label>
+                <label class="setting">
+                  <span>X轴最小值</span>
+                  <input id="barXMinInput" type="number" step="0.1" value="-0.7" />
+                </label>
+                <label class="setting">
+                  <span>X轴最大值</span>
+                  <input id="barXMaxInput" type="number" step="0.1" value="6.7" />
+                </label>
+                <label class="setting">
+                  <span>坐标轴颜色</span>
+                  <input id="barAxisColorInput" type="color" value="#111827" />
+                </label>
+                <label class="setting">
+                  <span>整图背景</span>
+                  <input id="barChartBgColorInput" type="color" value="#ffffff" />
+                </label>
+                <label class="setting">
+                  <span>作图区背景</span>
+                  <input id="barPlotBgColorInput" type="color" value="#ffffff" />
+                </label>
+                <label class="setting">
+                  <span>上边距</span>
+                  <input id="barPlotTopInput" type="number" min="40" max="220" step="1" value="82" />
+                </label>
+                <label class="setting">
+                  <span>右边距</span>
+                  <input id="barPlotRightInput" type="number" min="10" max="240" step="1" value="34" />
+                </label>
+                <label class="setting">
+                  <span>下边距</span>
+                  <input id="barPlotBottomInput" type="number" min="40" max="220" step="1" value="72" />
+                </label>
+                <label class="setting">
+                  <span>左边距</span>
+                  <input id="barPlotLeftInput" type="number" min="40" max="240" step="1" value="72" />
+                </label>
+
+                <div class="control-group-title">柱状图数据系列</div>
+                <label class="setting">
+                  <span>显示 PRP+BTX-A</span>
+                  <input id="barShowExpInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示 PRP</span>
+                  <input id="barShowCtrlInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 柱颜色</span>
+                  <input id="barExpColorInput" type="color" value="#0078ff" />
+                </label>
+                <label class="setting">
+                  <span>PRP 柱颜色</span>
+                  <input id="barCtrlColorInput" type="color" value="#ff0000" />
+                </label>
+                <label class="setting">
+                  <span>柱宽</span>
+                  <input id="barWidthInput" type="number" min="6" max="80" step="1" value="34" />
+                </label>
+                <label class="setting">
+                  <span>组内间距</span>
+                  <input id="barGapInput" type="number" min="0" max="40" step="1" value="8" />
+                </label>
+                <label class="setting">
+                  <span>柱透明度</span>
+                  <input id="barOpacityInput" type="number" min="0.1" max="1" step="0.05" value="0.82" />
+                </label>
+                <label class="setting">
+                  <span>柱边框粗细</span>
+                  <input id="barBorderWidthInput" type="number" min="0" max="6" step="0.5" value="0" />
+                </label>
+                <label class="setting">
+                  <span>显示原始散点</span>
+                  <input id="barShowRawPointsInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>显示数值标签</span>
+                  <input id="barShowValueLabelsInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>散点透明度</span>
+                  <input id="barRawPointOpacityInput" type="number" min="0" max="1" step="0.05" value="0.18" />
+                </label>
+                <label class="setting">
+                  <span>散点横向抖动</span>
+                  <input id="barJitterInput" type="number" min="0" max="16" step="0.1" value="2.2" />
+                </label>
+
+                <div class="control-group-title">误差棒</div>
+                <label class="setting">
+                  <span>显示所有误差棒</span>
+                  <input id="barShowErrorBarsInput" type="checkbox" checked />
+                </label>
+                <label class="setting">
+                  <span>误差棒类型</span>
+                  <select id="barErrorTypeInput">
+                    <option value="sd">标准差 SD</option>
+                    <option value="sem">标准误 SEM</option>
+                    <option value="ci">95% 置信区间 CI</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 误差棒颜色</span>
+                  <input id="barExpErrorColorInput" type="color" value="#0078ff" />
+                </label>
+                <label class="setting">
+                  <span>PRP 误差棒颜色</span>
+                  <input id="barCtrlErrorColorInput" type="color" value="#ff0000" />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 误差棒粗细</span>
+                  <input id="barExpErrorWidthInput" type="number" min="1" max="6" step="0.5" value="1.4" />
+                </label>
+                <label class="setting">
+                  <span>PRP 误差棒粗细</span>
+                  <input id="barCtrlErrorWidthInput" type="number" min="1" max="6" step="0.5" value="1.4" />
+                </label>
+                <label class="setting">
+                  <span>PRP+BTX-A 端帽宽度</span>
+                  <input id="barExpErrorCapInput" type="number" min="0" max="30" step="1" value="7" />
+                </label>
+                <label class="setting">
+                  <span>PRP 端帽宽度</span>
+                  <input id="barCtrlErrorCapInput" type="number" min="0" max="30" step="1" value="7" />
+                </label>
+
+                <div class="control-group-title">图表样式与主题</div>
+                <label class="setting">
+                  <span>整体主题</span>
+                  <select id="barThemeInput">
+                    <option value="sci">SCI白底浅色</option>
+                    <option value="dark">深色暗黑</option>
+                    <option value="warm">护眼米黄</option>
+                    <option value="contrast">高对比度</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>字体</span>
+                  <select id="barFontFamilyInput">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="SimSun">宋体</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>全局字体大小</span>
+                  <input id="barGlobalFontSizeInput" type="number" min="10" max="20" step="1" value="13" />
+                </label>
+                <label class="setting">
+                  <span>图例位置</span>
+                  <select id="barLegendPositionInput">
+                    <option value="top-left">左上</option>
+                    <option value="top-right">右上</option>
+                    <option value="bottom-right">右下</option>
+                    <option value="bottom-left">左下</option>
+                    <option value="top-center">顶部居中</option>
+                    <option value="bottom-center">底部居中</option>
+                    <option value="custom">自定义坐标</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>图例半透明背景</span>
+                  <input id="barLegendTranslucentInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>图例边框</span>
+                  <input id="barLegendBorderInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>刻度线方向</span>
+                  <select id="barTickDirectionInput">
+                    <option value="out">向外</option>
+                    <option value="in">向内</option>
+                  </select>
+                </label>
+                <label class="setting">
+                  <span>显示主网格</span>
+                  <input id="barShowMajorGridInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>显示次网格</span>
+                  <input id="barShowMinorGridInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>以基线100%归一化</span>
+                  <input id="barNormalizeInput" type="checkbox" />
+                </label>
+                <label class="setting">
+                  <span>标记最大提升时间点</span>
+                  <input id="barShowMaxImprovementInput" type="checkbox" checked />
+                </label>
+                <div class="control-buttons">
+                  <button id="barResetView" type="button">重置到保存效果</button>
+                  <button id="barExportPng300" type="button">导出 300DPI PNG</button>
+                  <button id="barExportSvg" type="button">导出 SVG</button>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <section class="tables-panel" aria-label="计算表格">
+            <div class="table-section-header">
+              <div>
+                <h2>计算表格</h2>
+                <p>汇总统计与两两比较 P 值</p>
+              </div>
+            </div>
+            <div class="summary-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>PRP+BTX-A n</th>
+                    <th>PRP+BTX-A 均值</th>
+                    <th>PRP+BTX-A SD</th>
+                    <th>PRP n</th>
+                    <th>PRP 均值</th>
+                    <th>PRP SD</th>
+                  </tr>
+                </thead>
+                <tbody id="summaryBody"></tbody>
+              </table>
+            </div>
+            <section class="current-data-section">
+              <div class="pvalue-header">
+                <div>
+                  <h2>当前图表数据</h2>
+                  <p>根据当前误差类型和归一化设置实时更新</p>
+                </div>
+                <button id="copyCurrentData" type="button">复制当前数据</button>
+              </div>
+              <div class="summary-wrap">
+                <table id="currentDataTable" class="copyable-table">
+                  <thead>
+                    <tr>
+                      <th>时间</th>
+                      <th>组别</th>
+                      <th>n</th>
+                      <th>均值</th>
+                      <th>误差类型</th>
+                      <th>误差值</th>
+                      <th>PRP+BTX-A - PRP</th>
+                      <th>提升幅度%</th>
+                    </tr>
+                  </thead>
+                  <tbody id="currentDataBody"></tbody>
+                </table>
+              </div>
+            </section>
+            <section class="pvalue-section">
+              <div class="pvalue-header">
+                <div>
+                  <h2>P 值矩阵</h2>
+                  <p>8 个组合两两比较，双侧 Welch t 检验；红色 P≥0.05，黄色 0.01≤P&lt;0.05，蓝色 0.001≤P&lt;0.01，绿色 P&lt;0.001</p>
+                </div>
+                <button id="copyPValues" type="button">复制 P 值表</button>
+              </div>
+              <div class="pvalue-wrap">
+                <table id="pvalueTable" class="copyable-table">
+                  <thead id="pvalueHead"></thead>
+                  <tbody id="pvalueBody"></tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="./metric-presets.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
