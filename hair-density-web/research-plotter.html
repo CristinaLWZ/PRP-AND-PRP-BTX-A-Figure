@@ -18,6 +18,7 @@
       --shadow: 0 16px 40px rgba(25, 45, 77, 0.08);
     }
     * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
     body {
       margin: 0;
       background: var(--bg);
@@ -1495,7 +1496,7 @@
         const y = plot.top + plot.h * Number(style.rightYLabelY) / 100;
         ctx.save();
         ctx.translate(x, y);
-        ctx.rotate(Math.PI / 2);
+        ctx.rotate(-Math.PI / 2);
         ctx.fillText(style.rightYLabel, 0, 0);
         ctx.restore();
         addHandle("rightYLabel", x - 22, y - 180, 44, 360, interactive);
@@ -2317,7 +2318,7 @@
       }
       if (style.showYLabel && style.rightYLabel) {
         const x = plot.left + plot.w + Number(style.rightYLabelX), y = plot.top + plot.h * Number(style.rightYLabelY) / 100;
-        parts.push(`<text x="${x}" y="${y}" text-anchor="middle" font-size="${style.axisTitleSize}" transform="rotate(90 ${x} ${y})">${esc(style.rightYLabel)}</text>`);
+        parts.push(`<text x="${x}" y="${y}" text-anchor="middle" font-size="${style.axisTitleSize}" transform="rotate(-90 ${x} ${y})">${esc(style.rightYLabel)}</text>`);
       }
       if (style.showLegend) {
         const x = style.legendX, y = style.legendY;
